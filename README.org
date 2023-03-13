@@ -18,8 +18,8 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
   - [ ] Codicons
   - [ ] Font Logos
   - [ ] Material Design
-+ [ ] functions [0/16]
-  - [ ] ~emacs-nerd-icons-ipsicon~
++ [-] functions [1/16]
+  - [X] ~emacs-nerd-icons-ipsicon~
   - [ ] ~emacs-nerd-icons-octicon~
   - [ ] ~emacs-nerd-icons-pomicon~
   - [ ] ~emacs-nerd-icons-powerline~
