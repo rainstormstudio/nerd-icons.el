@@ -3,3 +3,37 @@
 #+LANGUAGE: en
 
 Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/nerd-fonts][Nerd Font]] icons inside Emacs. It is inspired by [[https://github.com/ryanoasis/vim-devicons][vim-devicons]] and [[https://github.com/nvim-tree/nvim-web-devicons][nvim-web-devicons]].
+
+* Roadmap [1/4]
++ [X] set up Project Hierarchy
++ [ ] font data [0/11]
+  - [ ] IEC Power Symbols
+  - [ ] Octicons
+  - [ ] Pomicons
+  - [ ] Powerline & Powerline Extra
+  - [ ] Font Awesome & Font Awesome Extension
+  - [ ] Weather Icons
+  - [ ] Seti-UI + Custom
+  - [ ] Devicons
+  - [ ] Codicons
+  - [ ] Font Logos
+  - [ ] Material Design
++ [ ] functions [0/16]
+  - [ ] ~emacs-nerd-icons-ipsicon~
+  - [ ] ~emacs-nerd-icons-octicon~
+  - [ ] ~emacs-nerd-icons-pomicon~
+  - [ ] ~emacs-nerd-icons-picon~
+  - [ ] ~emacs-nerd-icons-faicon~
+  - [ ] ~emacs-nerd-icons-wicon~
+  - [ ] ~emacs-nerd-icons-sucicon~
+  - [ ] ~emacs-nerd-icons-devicon~
+  - [ ] ~emacs-nerd-icons-codicon~
+  - [ ] ~emacs-nerd-icons-flicon~
+  - [ ] ~emacs-nerd-icons-mdicon~
+  - [ ] ~emacs-nerd-icons-icon-for-buffer~
+  - [ ] ~emacs-nerd-icons-icon-for-dir~
+  - [ ] ~emacs-nerd-icons-icon-for-file~
+  - [ ] ~emacs-nerd-icons-icon-for-mode~
+  - [ ] ~macs-nerd-icons-icon-for-url~
++ [ ] icon properties and faces
+    
