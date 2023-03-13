@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/codicons-alist
+(defvar emacs-nerd-icons/codicon-alist
   '(
     ))
 

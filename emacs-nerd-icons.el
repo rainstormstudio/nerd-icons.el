@@ -195,6 +195,16 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
   )
 
 (emacs-nerd-icons-define-icon ipsicon emacs-nerd-icons/ipsicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon octicon emacs-nerd-icons/octicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon pomicon  emacs-nerd-icons/pomicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon powerline  emacs-nerd-icons/powerline-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon faicon emacs-nerd-icons/faicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon wicon emacs-nerd-icons/wicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon sucicon emacs-nerd-icons/sucicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon devicon emacs-nerd-icons/devicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon codicon emacs-nerd-icons/codicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon flicon emacs-nerd-icons/flicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon mdicon emacs-nerd-icons/mdicon-alist emacs-nerd-icons-font-family)
 
 (provide 'emacs-nerd-icons)
 ;;; emacs-nerd-icons.el ends here

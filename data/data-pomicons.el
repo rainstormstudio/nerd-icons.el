@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/pomicons-alist
+(defvar emacs-nerd-icons/pomicon-alist
   '(
     ))
 

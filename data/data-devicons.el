@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/devicons-alist
+(defvar emacs-nerd-icons/devicon-alist
   '(
     ))
 
