@@ -6,8 +6,8 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
 
 * Roadmap [1/4]
 + [X] set up Project Hierarchy
-+ [ ] font data [0/11]
-  - [ ] IEC Power Symbols
++ [-] font data [1/11]
+  - [X] IEC Power Symbols
   - [ ] Octicons
   - [ ] Pomicons
   - [ ] Powerline & Powerline Extra

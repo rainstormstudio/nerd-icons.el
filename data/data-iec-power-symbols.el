@@ -29,6 +29,11 @@
 
 (defvar emacs-nerd-icons/iec-power-symbols-alist
   '(
+    ("nf-iec-power" . "\x23fb")
+    ("nf-iec-power_off" . "\x2b58")
+    ("nf-iec-power_on" . "\x23fd")
+    ("nf-iec-sleep_mode" . "\x23fe")
+    ("nf-iec-toggle_power" . "\x23fc")
     ))
 
 (provide 'data-iec-power-symbols)
