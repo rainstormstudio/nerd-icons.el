@@ -1,4 +1,4 @@
-;;; data-font-logos.el --- Nerd Font Font Logos -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-font-awesome.el --- Nerd Font Font Awesome icons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,14 +21,17 @@
 
 ;;; Commentary:
 
-;; Font Logos
-;; f300 - f32f
+;; Font Awesome
+;; f000 - f2e0
+;;
+;; Font Awesome Extension
+;; e200 - e2a9
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/flicon-alist
+(defvar emacs-nerd-icons/faicon-alist
   '(
     ))
 
-(provide 'data-font-logos)
-;;; data-font-logos.el ends here
+(provide 'emacs-nerd-icons-data-font-awesome)
+;;; emacs-nerd-icons-data-font-awesome.el ends here

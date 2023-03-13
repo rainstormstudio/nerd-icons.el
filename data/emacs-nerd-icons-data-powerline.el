@@ -1,4 +1,4 @@
-;;; data-material-design.el --- Nerd Font Material Design -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-powerline.el --- Nerd Font Powerline icons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,14 +21,21 @@
 
 ;;; Commentary:
 
-;; Material Design
-;; f500 - fd46
+;; Powerline
+;; e0a0 - e0a2
+;; e0b0 - e0b3
+;;
+;; Powerline Extra
+;; e0a3
+;; e0b4 - e0c8
+;; e0ca
+;; e0cc - e0d4
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/mdicon-alist
+(defvar emacs-nerd-icons/powerline-alist
   '(
     ))
 
-(provide 'data-material-design)
-;;; data-material-design.el ends here
+(provide 'emacs-nerd-icons-data-powerline)
+;;; emacs-nerd-icons-data-powerline.el ends here

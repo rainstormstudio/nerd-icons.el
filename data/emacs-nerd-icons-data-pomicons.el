@@ -1,4 +1,4 @@
-;;; data-devicons.el --- Nerd Font Codicons -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-pomicons.el --- Nerd Font Pomicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,14 +21,14 @@
 
 ;;; Commentary:
 
-;; Codicons
-;; ea60 - ebeb
+;; Pomicons
+;; e000 - e00a
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/codicon-alist
+(defvar emacs-nerd-icons/pomicon-alist
   '(
     ))
 
-(provide 'data-codicons)
-;;; data-codicons.el ends here
+(provide 'emacs-nerd-icons-data-pomicons)
+;;; emacs-nerd-icons-data-pomicons.el ends here

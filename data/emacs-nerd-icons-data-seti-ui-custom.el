@@ -1,4 +1,4 @@
-;;; data-iec-power-symbols.el --- Nerd Font IEC Power Symbols -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-seti-ui-custom.el --- Nerd Font Seti-UI + Custom -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,20 +21,14 @@
 
 ;;; Commentary:
 
-;; IEC Power Symbols
-;; 23fb - 23fe
-;; 2b58
+;; Seti-UI + Custom
+;; e5fa - e631
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/ipsicon-alist
+(defvar emacs-nerd-icons/sucicon-alist
   '(
-    ("nf-iec-power" . "\x23fb")
-    ("nf-iec-power_off" . "\x2b58")
-    ("nf-iec-power_on" . "\x23fd")
-    ("nf-iec-sleep_mode" . "\x23fe")
-    ("nf-iec-toggle_power" . "\x23fc")
     ))
 
-(provide 'data-iec-power-symbols)
-;;; data-iec-power-symbols.el ends here
+(provide 'emacs-nerd-icons-data-seti-ui-custom)
+;;; emacs-nerd-icons-data-seti-ui-custom.el ends here

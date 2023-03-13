@@ -1,4 +1,4 @@
-;;; data-powerline.el --- Nerd Font Powerline icons -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-devicons.el --- Nerd Font devicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,21 +21,14 @@
 
 ;;; Commentary:
 
-;; Powerline
-;; e0a0 - e0a2
-;; e0b0 - e0b3
-;;
-;; Powerline Extra
-;; e0a3
-;; e0b4 - e0c8
-;; e0ca
-;; e0cc - e0d4
+;; Devicons
+;; e700 - e7c5
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/powerline-alist
+(defvar emacs-nerd-icons/devicon-alist
   '(
     ))
 
-(provide 'data-powerline)
-;;; data-powerline.el ends here
+(provide 'emacs-nerd-icons-data-devicons)
+;;; emacs-nerd-icons-data-devicons.el ends here

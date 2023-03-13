@@ -1,4 +1,4 @@
-;;; data-octicons.el --- Nerd Font Octicons -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-primer-octicons.el --- Nerd Font Primer Octicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -205,5 +205,5 @@
     ("nf-oct-zap" . "\x26a1")
     ))
 
-  (provide 'data-octicons)
-;;; data-octicons.el ends here
+  (provide 'emacs-nerd-icons-data-octicons)
+;;; emacs-nerd-icons-data-octicons.el ends here

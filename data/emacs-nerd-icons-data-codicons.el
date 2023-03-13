@@ -1,4 +1,4 @@
-;;; data-weather-icons.el --- Nerd Font Weather icons -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-devicons.el --- Nerd Font Codicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,14 +21,14 @@
 
 ;;; Commentary:
 
-;; Weather Icons
-;; e300 - e3eb
+;; Codicons
+;; ea60 - ebeb
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/wicon-alist
+(defvar emacs-nerd-icons/codicon-alist
   '(
     ))
 
-(provide 'data-weather-icons)
-;;; data-weather-icons.el ends here
+(provide 'emacs-nerd-icons-data-codicons)
+;;; emacs-nerd-icons-data-codicons.el ends here

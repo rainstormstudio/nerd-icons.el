@@ -1,4 +1,4 @@
-;;; data-pomicons.el --- Nerd Font Pomicons -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-weather-icons.el --- Nerd Font Weather icons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,14 +21,14 @@
 
 ;;; Commentary:
 
-;; Pomicons
-;; e000 - e00a
+;; Weather Icons
+;; e300 - e3eb
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/pomicon-alist
+(defvar emacs-nerd-icons/wicon-alist
   '(
     ))
 
-(provide 'data-pomicons)
-;;; data-pomicons.el ends here
+(provide 'emacs-nerd-icons-data-weather-icons)
+;;; emacs-nerd-icons-data-weather-icons.el ends here

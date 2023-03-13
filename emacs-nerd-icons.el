@@ -32,17 +32,17 @@
 
 ;;; Code:
 
-(require 'data-iec-power-symbols "./data/data-iec-power-symbols")
-(require 'data-octicons "./data/data-octicons")
-(require 'data-pomicons "./data/data-pomicons")
-(require 'data-powerline "./data/data-powerline")
-(require 'data-font-awesome "./data/data-font-awesome")
-(require 'data-weather-icons "./data/data-weather-icons")
-(require 'data-seti-ui-custom "./data/data-seti-ui-custom")
-(require 'data-devicons "./data/data-devicons")
-(require 'data-codicons "./data/data-codicons")
-(require 'data-font-logos "./data/data-font-logos")
-(require 'data-material-design "./data/data-material-design")
+(require 'emacs-nerd-icons-data-iec-power-symbols "./data/emacs-nerd-icons-data-iec-power-symbols")
+(require 'emacs-nerd-icons-data-pomicons "./data/emacs-nerd-icons-data-pomicons")
+(require 'emacs-nerd-icons-data-octicons "./data/emacs-nerd-icons-data-octicons")
+(require 'emacs-nerd-icons-data-powerline "./data/emacs-nerd-icons-data-powerline")
+(require 'emacs-nerd-icons-data-font-awesome "./data/emacs-nerd-icons-data-font-awesome")
+(require 'emacs-nerd-icons-data-weather-icons "./data/emacs-nerd-icons-data-weather-icons")
+(require 'emacs-nerd-icons-data-seti-ui-custom "./data/emacs-nerd-icons-data-seti-ui-custom")
+(require 'emacs-nerd-icons-data-devicons "./data/emacs-nerd-icons-data-devicons")
+(require 'emacs-nerd-icons-data-codicons "./data/emacs-nerd-icons-data-codicons")
+(require 'emacs-nerd-icons-data-font-logos "./data/emacs-nerd-icons-data-font-logos")
+(require 'emacs-nerd-icons-data-material-design "./data/emacs-nerd-icons-data-material-design")
 
 (require 'emacs-nerd-icons-faces)
 
@@ -196,8 +196,8 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
 
 (emacs-nerd-icons-define-icon ipsicon emacs-nerd-icons/ipsicon-alist emacs-nerd-icons-font-family)
 (emacs-nerd-icons-define-icon octicon emacs-nerd-icons/octicon-alist emacs-nerd-icons-font-family)
-(emacs-nerd-icons-define-icon pomicon  emacs-nerd-icons/pomicon-alist emacs-nerd-icons-font-family)
-(emacs-nerd-icons-define-icon powerline  emacs-nerd-icons/powerline-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon pomicon emacs-nerd-icons/pomicon-alist emacs-nerd-icons-font-family)
+(emacs-nerd-icons-define-icon powerline emacs-nerd-icons/powerline-alist emacs-nerd-icons-font-family)
 (emacs-nerd-icons-define-icon faicon emacs-nerd-icons/faicon-alist emacs-nerd-icons-font-family)
 (emacs-nerd-icons-define-icon wicon emacs-nerd-icons/wicon-alist emacs-nerd-icons-font-family)
 (emacs-nerd-icons-define-icon sucicon emacs-nerd-icons/sucicon-alist emacs-nerd-icons-font-family)

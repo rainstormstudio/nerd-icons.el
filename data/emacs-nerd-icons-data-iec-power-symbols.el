@@ -1,4 +1,4 @@
-;;; data-devicons.el --- Nerd Font devicons -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-iec-power-symbols.el --- Nerd Font IEC Power Symbols -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,14 +21,20 @@
 
 ;;; Commentary:
 
-;; Devicons
-;; e700 - e7c5
+;; IEC Power Symbols
+;; 23fb - 23fe
+;; 2b58
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/devicon-alist
+(defvar emacs-nerd-icons/ipsicon-alist
   '(
+    ("nf-iec-power" . "\x23fb")
+    ("nf-iec-power_off" . "\x2b58")
+    ("nf-iec-power_on" . "\x23fd")
+    ("nf-iec-sleep_mode" . "\x23fe")
+    ("nf-iec-toggle_power" . "\x23fc")
     ))
 
-(provide 'data-devicons)
-;;; data-devicons.el ends here
+(provide 'emacs-nerd-icons-data-iec-power-symbols)
+;;; emacs-nerd-icons-data-iec-power-symbols.el ends here

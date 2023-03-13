@@ -1,4 +1,4 @@
-;;; data-seti-ui-custom.el --- Nerd Font Seti-UI + Custom -*- lexical-binding: t -*-
+;;; emacs-nerd-icons-data-material-design.el --- Nerd Font Material Design -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -21,14 +21,14 @@
 
 ;;; Commentary:
 
-;; Seti-UI + Custom
-;; e5fa - e631
+;; Material Design
+;; f500 - fd46
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/sucicon-alist
+(defvar emacs-nerd-icons/mdicon-alist
   '(
     ))
 
-(provide 'data-seti-ui-custom)
-;;; data-seti-ui-custom.el ends here
+(provide 'emacs-nerd-icons-data-material-design)
+;;; emacs-nerd-icons-data-material-design.el ends here
