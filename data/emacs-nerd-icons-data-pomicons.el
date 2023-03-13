@@ -28,6 +28,17 @@
 
 (defvar emacs-nerd-icons/pomicon-alist
   '(
+    ("nf-pom-away" . "\xe007")
+    ("nf-pom-clean_code" . "\xe000")
+    ("nf-pom-external_interruption" . "\xe00a")
+    ("nf-pom-internal_interruption" . "\xe009")
+    ("nf-pom-long_pause" . "\xe006")
+    ("nf-pom-pair_programming" . "\xe008")
+    ("nf-pom-pomodoro_done" . "\xe001")
+    ("nf-pom-pomodoro_estimated" . "\xe002")
+    ("nf-pom-pomodoro_squashed" . "\xe004")
+    ("nf-pom-pomodoro_ticking" . "\xe003")
+    ("nf-pom-short_pause" . "\xe005")
     ))
 
 (provide 'emacs-nerd-icons-data-pomicons)
