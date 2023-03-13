@@ -6,26 +6,26 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
 
 * Roadmap [1/4]
 + [X] set up Project Hierarchy
-+ [-] font data [6/11]
++ [-] font data [7/11]
   - [X] IEC Power Symbols
   - [X] Octicons
   - [X] Pomicons
   - [X] Powerline & Powerline Extra
   - [X] Font Awesome & Font Awesome Extension
   - [X] Weather Icons
-  - [ ] Seti-UI + Custom
+  - [X] Seti-UI + Custom
   - [ ] Devicons
   - [ ] Codicons
   - [ ] Font Logos
   - [ ] Material Design
-+ [-] functions [6/16]
++ [-] functions [7/16]
   - [X] ~emacs-nerd-icons-ipsicon~
   - [X] ~emacs-nerd-icons-octicon~
   - [X] ~emacs-nerd-icons-pomicon~
   - [X] ~emacs-nerd-icons-powerline~
   - [X] ~emacs-nerd-icons-faicon~
   - [X] ~emacs-nerd-icons-wicon~
-  - [ ] ~emacs-nerd-icons-sucicon~
+  - [X] ~emacs-nerd-icons-sucicon~
   - [ ] ~emacs-nerd-icons-devicon~
   - [ ] ~emacs-nerd-icons-codicon~
   - [ ] ~emacs-nerd-icons-flicon~
