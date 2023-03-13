@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/weather-icons-alist
+(defvar emacs-nerd-icons/wicon-alist
   '(
     ))
 

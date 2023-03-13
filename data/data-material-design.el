@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/material-design-alist
+(defvar emacs-nerd-icons/mdicon-alist
   '(
     ))
 

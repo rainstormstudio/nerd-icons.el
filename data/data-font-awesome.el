@@ -29,7 +29,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/font-awesome-alist
+(defvar emacs-nerd-icons/faicon-alist
   '(
     ))
 

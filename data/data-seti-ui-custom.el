@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/seti-ui-custom-alist
+(defvar emacs-nerd-icons/sucicon-alist
   '(
     ))
 

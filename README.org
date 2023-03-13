@@ -22,7 +22,7 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
   - [ ] ~emacs-nerd-icons-ipsicon~
   - [ ] ~emacs-nerd-icons-octicon~
   - [ ] ~emacs-nerd-icons-pomicon~
-  - [ ] ~emacs-nerd-icons-picon~
+  - [ ] ~emacs-nerd-icons-powerline~
   - [ ] ~emacs-nerd-icons-faicon~
   - [ ] ~emacs-nerd-icons-wicon~
   - [ ] ~emacs-nerd-icons-sucicon~

@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/iec-power-symbols-alist
+(defvar emacs-nerd-icons/ipsicon-alist
   '(
     ("nf-iec-power" . "\x23fb")
     ("nf-iec-power_off" . "\x2b58")

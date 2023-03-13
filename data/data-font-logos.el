@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/font-logos-alist
+(defvar emacs-nerd-icons/flicon-alist
   '(
     ))
 
