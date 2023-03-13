@@ -57,12 +57,12 @@
   :group 'emacs-nerd-icons
   :type 'boolean)
 
-(defcustom emacs-nerd-icons-scale-factor 1.2
+(defcustom emacs-nerd-icons-scale-factor 1.0
   "The base Scale Factor for the `height' face property of an icon."
   :group 'emacs-nerd-icons
   :type 'number)
 
-(defcustom emacs-nerd-icons-default-adjust -0.2
+(defcustom emacs-nerd-icons-default-adjust 0.0
   "The default adjustment to be made to the `raise' display property of an icon."
   :group 'emacs-nerd-icons
   :type 'number)
@@ -149,7 +149,7 @@ pause for DURATION seconds between printing each character."
   (let* ((data-f    (emacs-nerd-icons--data-name family))
          (insert-f  (emacs-nerd-icons--function-name family))
 
-         (height (or height 2.0))
+         (height (or height 1.0))
          (data (funcall data-f)))
     (mapc
      (lambda (it)
