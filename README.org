@@ -4,9 +4,9 @@
 
 Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/nerd-fonts][Nerd Font]] icons inside Emacs. It is inspired by [[https://github.com/domtronn/all-the-icons.el][all-the-icons]], [[https://github.com/seagle0128/icons-in-terminal.el][icons-in-terminal]], [[https://github.com/ryanoasis/vim-devicons][vim-devicons]], and [[https://github.com/nvim-tree/nvim-web-devicons][nvim-web-devicons]].
 
-* Roadmap [1/4]
+* Roadmap [2/4]
 + [X] set up Project Hierarchy
-+ [-] font data [10/11]
++ [X] font data [11/11]
   - [X] IEC Power Symbols
   - [X] Octicons
   - [X] Pomicons
@@ -15,10 +15,10 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
   - [X] Weather Icons
   - [X] Seti-UI + Custom
   - [X] Devicons
-  - [ ] Codicons
+  - [X] Codicons
   - [X] Font Logos
   - [X] Material Design
-+ [-] functions [10/16]
++ [-] functions [11/16]
   - [X] ~emacs-nerd-icons-ipsicon~
   - [X] ~emacs-nerd-icons-octicon~
   - [X] ~emacs-nerd-icons-pomicon~
@@ -27,7 +27,7 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
   - [X] ~emacs-nerd-icons-wicon~
   - [X] ~emacs-nerd-icons-sucicon~
   - [X] ~emacs-nerd-icons-devicon~
-  - [ ] ~emacs-nerd-icons-codicon~
+  - [X] ~emacs-nerd-icons-codicon~
   - [X] ~emacs-nerd-icons-flicon~
   - [X] ~emacs-nerd-icons-mdicon~
   - [ ] ~emacs-nerd-icons-icon-for-buffer~
