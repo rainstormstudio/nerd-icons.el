@@ -69,6 +69,40 @@
 
 (defvar emacs-nerd-icons-font-family "FiraCode Nerd Font") ;; temporary font
 
+(defvar emacs-nerd-icons-weather-icon-alist
+  '(
+    ("tornado"               emacs-nerd-icons-wicon "nf-weather-tornado")
+    ("hurricane"             emacs-nerd-icons-wicon "nf-weather-hurricane")
+    ("thunderstorms"         emacs-nerd-icons-wicon "nf-weather-thunderstorm")
+    ("sunny"                 emacs-nerd-icons-wicon "nf-weather-day_sunny")
+    ("rain.*snow"            emacs-nerd-icons-wicon "nf-weather-rain_mix")
+    ("rain.*hail"            emacs-nerd-icons-wicon "nf-weather-rain_mix")
+    ("sleet"                 emacs-nerd-icons-wicon "nf-weather-sleet")
+    ("hail"                  emacs-nerd-icons-wicon "nf-weather-hail")
+    ("drizzle"               emacs-nerd-icons-wicon "nf-weather-sprinkle")
+    ("rain"                  emacs-nerd-icons-wicon "nf-weather-showers")
+    ("showers"               emacs-nerd-icons-wicon "nf-weather-showers")
+    ("blowing.*snow"         emacs-nerd-icons-wicon "nf-weather-snow_wind")
+    ("snow"                  emacs-nerd-icons-wicon "nf-weather-snow")
+    ("dust"                  emacs-nerd-icons-wicon "nf-weather-dust")
+    ("fog"                   emacs-nerd-icons-wicon "nf-weather-fog")
+    ("haze"                  emacs-nerd-icons-wicon "nf-weather-day_haze")
+    ("smoky"                 emacs-nerd-icons-wicon "nf-weather-smoke")
+    ("blustery"              emacs-nerd-icons-wicon "nf-weather-cloudy_windy")
+    ("windy"                 emacs-nerd-icons-wicon "nf-weather-cloudy_gusts")
+    ("cold"                  emacs-nerd-icons-wicon "nf-weather-snowflake_cold")
+    ("partly.*cloudy.*night" emacs-nerd-icons-wicon "nf-weather-night_alt_partly_cloudy")
+    ("partly.*cloudy"        emacs-nerd-icons-wicon "nf-weather-day_cloudy_high")
+    ("cloudy.*night"         emacs-nerd-icons-wicon "nf-weather-night_alt_cloudy")
+    ("cxloudy.*day"          emacs-nerd-icons-wicon "nf-weather-day_cloudy")
+    ("cloudy"                emacs-nerd-icons-wicon "nf-weather-cloudy")
+    ("clear.*night"          emacs-nerd-icons-wicon "nf-weather-night_clear")
+    ("fair.*night"           emacs-nerd-icons-wicon "nf-weather-stars")
+    ("fair.*day"             emacs-nerd-icons-wicon "nf-weather-horizon")
+    ("hot"                   emacs-nerd-icons-wicon "nf-weather-hot")
+    ("not.*available"        emacs-nerd-icons-wicon "nf-weather-na")
+    ))
+
 (defun emacs-nerd-icons-auto-mode-match? (&optional file)
   "Whether or not FILE's `major-mode' match against its `auto-mode-alist'."
   (let* ((file (or file (buffer-file-name) (buffer-name)))
@@ -121,6 +155,12 @@ When FAMILY is non-nil, limit the candidates to the icon set matching it."
          (result    (cdr (assoc selection candidates))))
 
     (if arg (prin1 result) (insert result))))
+
+;; Weather icons
+(defun emacs-nerd-icons-icon-for-weather (weather)
+  "Get an icon for a WEATHER status."
+  (let ((icon (emacs-nerd-icons-match-to-alist weather emacs-nerd-icons-weather-icon-alist)))
+    (if icon (apply (car icon) (cdr icon)) weather)))
 
 (eval-and-compile
   (defun emacs-nerd-icons--function-name (name)
