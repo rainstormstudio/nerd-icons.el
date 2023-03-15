@@ -580,13 +580,13 @@ Note: You want chevron, please use `emacs-nerd-icons-icon-for-dir-with-chevron'.
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (cond
      ((file-remote-p path)
-      (apply #'emacs-nerd-icons-octicon "terminal" (cdr args)))
+      (apply #'emacs-nerd-icons-octicon "nf-oct-terminal" (cdr args)))
      ((file-symlink-p path)
-      (apply #'emacs-nerd-icons-octicon "file-symlink-directory" (cdr args)))
+      (apply #'emacs-nerd-icons-octicon "nf-oct-file_symlink_directory" (cdr args)))
      ((emacs-nerd-icons-dir-is-submodule path)
-      (apply #'emacs-nerd-icons-octicon "file-submodule" (cdr args)))
+      (apply #'emacs-nerd-icons-octicon "nf-oct-file_submodule" (cdr args)))
      ((file-exists-p (format "%s/.git" path))
-      (apply #'emacs-nerd-icons-octicon "repo" (cdr args)))
+      (apply #'emacs-nerd-icons-octicon "nf-oct-repo" (cdr args)))
      (t (apply (car icon) args)))))
 
 ;;;###autoload
