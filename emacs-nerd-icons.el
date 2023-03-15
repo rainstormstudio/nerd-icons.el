@@ -32,6 +32,8 @@
 
 ;;; Code:
 
+(require 'cl-lib)
+
 (require 'emacs-nerd-icons-data-iec-power-symbols "./data/emacs-nerd-icons-data-iec-power-symbols")
 (require 'emacs-nerd-icons-data-pomicons "./data/emacs-nerd-icons-data-pomicons")
 (require 'emacs-nerd-icons-data-octicons "./data/emacs-nerd-icons-data-octicons")
@@ -704,6 +706,10 @@
     ;; (man-common                         emacs-nerd-icons-fileicon "man-page"         :face emacs-nerd-icons-blue)
     ))
 
+(defvar emacs-nerd-icons-url-alist
+  '(
+    ))
+
 (defun emacs-nerd-icons-auto-mode-match? (&optional file)
   "Whether or not FILE's `major-mode' match against its `auto-mode-alist'."
   (let* ((file (or file (buffer-file-name) (buffer-name)))
@@ -818,6 +824,47 @@ inserting functions."
          (args (cdr icon)))
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (if icon (apply (car icon) args) mode)))
+
+;;;###autoload
+(defun emacs-nerd-icons-icon-for-url (url &rest arg-overrides)
+  "Get the formatted icon for URL.
+If an icon for URL isn't found in `emacs-nerd-icons-url-alist', a globe is used.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions."
+  (let* ((icon (emacs-nerd-icons-match-to-alist url emacs-nerd-icons-url-alist))
+         (args (cdr icon)))
+    (unless icon
+      (setq icon '(emacs-nerd-icons-faicon "globe"))
+      (setq args (cdr icon)))
+    (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
+    (apply (car icon) args)))
+
+(defcustom emacs-nerd-icons--cache-limit 2048
+  "Maximum cache size for functions cached by `emacs-nerd-icons-cache'."
+  :type 'integer)
+
+(defun emacs-nerd-icons-cache (func)
+  "Set a cache for FUNC.  Does not work on interactive functions."
+  (unless (get func 'emacs-nerd-icons--cached)
+    (let ((cache (make-hash-table :test #'equal
+                                  :size emacs-nerd-icons--cache-limit))
+          (orig-fn (symbol-function func)))
+      (fset func
+            (lambda (&rest args)
+              (or (gethash args cache)
+                  (progn
+                    (when (> (hash-table-count cache)
+                             emacs-nerd-icons--cache-limit)
+                      (clrhash cache))
+                    (puthash args (apply orig-fn args) cache)))))))
+
+  (put func 'emacs-nerd-icons--cached t))
+
+(emacs-nerd-icons-cache #'emacs-nerd-icons-icon-for-dir)
+(emacs-nerd-icons-cache #'emacs-nerd-icons-icon-for-file)
+(emacs-nerd-icons-cache #'emacs-nerd-icons-icon-for-mode)
+(emacs-nerd-icons-cache #'emacs-nerd-icons-icon-for-url)
 
 (defun emacs-nerd-icons--icon-info-for-buffer (&optional f)
   "Get icon info for the current buffer.
