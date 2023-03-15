@@ -4,7 +4,21 @@
 
 Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/nerd-fonts][Nerd Font]] icons inside Emacs. It is inspired by [[https://github.com/domtronn/all-the-icons.el][all-the-icons]], [[https://github.com/seagle0128/icons-in-terminal.el][icons-in-terminal]], [[https://github.com/ryanoasis/vim-devicons][vim-devicons]], and [[https://github.com/nvim-tree/nvim-web-devicons][nvim-web-devicons]].
 
-* Roadmap [2/4]
+* Usage
+using ~straight~
+#+BEGIN_SRC emacs-lisp
+  (use-package emacs-nerd-icons
+    :straight (emacs-nerd-icons
+               :type git
+               :host github
+               :repo "rainstormstudio/emacs-nerd-icons"
+               :files (:defaults "data")))
+#+END_SRC
+
+* Related Packages
++ [[https://github.com/rainstormstudio/emacs-nerd-icons-dired][emacs-nerd-icons-dired]]
+
+* Roadmap [3/4]
 + [X] set up Project Hierarchy
 + [X] font data [11/11]
   - [X] IEC Power Symbols
@@ -36,5 +50,5 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
   - [X] ~emacs-nerd-icons-icon-for-file~
   - [ ] ~emacs-nerd-icons-icon-for-mode~
   - [ ] ~macs-nerd-icons-icon-for-url~
-+ [ ] icon properties and faces
++ [X] icon properties and faces
     
