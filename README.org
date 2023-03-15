@@ -18,7 +18,7 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
   - [X] Codicons
   - [X] Font Logos
   - [X] Material Design
-+ [-] functions [12/17]
++ [-] functions [14/17]
   - [X] ~emacs-nerd-icons-ipsicon~
   - [X] ~emacs-nerd-icons-octicon~
   - [X] ~emacs-nerd-icons-pomicon~
@@ -31,9 +31,9 @@ Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/ne
   - [X] ~emacs-nerd-icons-flicon~
   - [X] ~emacs-nerd-icons-mdicon~
   - [ ] ~emacs-nerd-icons-icon-for-buffer~
-  - [ ] ~emacs-nerd-icons-icon-for-dir~
+  - [X] ~emacs-nerd-icons-icon-for-dir~
   - [X] ~emacs-nerd-icons-icon-for-weather~
-  - [ ] ~emacs-nerd-icons-icon-for-file~
+  - [X] ~emacs-nerd-icons-icon-for-file~
   - [ ] ~emacs-nerd-icons-icon-for-mode~
   - [ ] ~macs-nerd-icons-icon-for-url~
 + [ ] icon properties and faces
