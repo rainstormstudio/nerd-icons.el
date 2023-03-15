@@ -12,7 +12,10 @@ using ~straight~
                :type git
                :host github
                :repo "rainstormstudio/emacs-nerd-icons"
-               :files (:defaults "data")))
+               :files (:defaults "data"))
+    :custom
+    (emacs-nerd-icons-font-family "FiraCode Nerd Font") ;; The Nerd Font you want to use
+    )
 #+END_SRC
 
 * Related Packages

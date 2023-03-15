@@ -67,7 +67,10 @@
   :group 'emacs-nerd-icons
   :type 'number)
 
-(defvar emacs-nerd-icons-font-family "FiraCode Nerd Font") ;; temporary font
+(defcustom emacs-nerd-icons-font-family "FiraCode Nerd Font"
+  "The Nerd Font for display icons."
+  :group 'emacs-nerd-icons
+  :type 'string)
 
 (defvar emacs-nerd-icons-extension-icon-alist
   '(
