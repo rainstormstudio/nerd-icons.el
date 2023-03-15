@@ -2,7 +2,9 @@
 #+AUTHOR: Hongyu Ding
 #+LANGUAGE: en
 
-Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/nerd-fonts][Nerd Font]] icons inside Emacs, an alternative to  [[https://github.com/domtronn/all-the-icons.el][all-the-icons]].
+Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/nerd-fonts][Nerd Font]] icons inside Emacs, an alternative to [[https://github.com/domtronn/all-the-icons.el][all-the-icons]].
+
+It works on both GUI and terminal! You only need a [[https://www.nerdfonts.com/#home][Nerd Font]] installed on your system.
 
 It is inspired by [[https://github.com/domtronn/all-the-icons.el][all-the-icons]], [[https://github.com/seagle0128/icons-in-terminal.el][icons-in-terminal]], [[https://github.com/ryanoasis/vim-devicons][vim-devicons]], and [[https://github.com/nvim-tree/nvim-web-devicons][nvim-web-devicons]].
 
