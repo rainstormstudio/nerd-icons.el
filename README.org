@@ -20,6 +20,7 @@ using ~straight~
 
 * Related Packages
 + [[https://github.com/rainstormstudio/emacs-nerd-icons-dired][emacs-nerd-icons-dired]]
++ [[https://github.com/rainstormstudio/treemacs-nerd-icons][treemacs-nerd-icons]]
 
 * Roadmap [3/4]
 + [X] set up Project Hierarchy
