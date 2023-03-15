@@ -14,7 +14,7 @@ using ~straight~
                :repo "rainstormstudio/emacs-nerd-icons"
                :files (:defaults "data"))
     :custom
-    (emacs-nerd-icons-font-family "FiraCode Nerd Font") ;; The Nerd Font you want to use
+    (emacs-nerd-icons-font-family "FiraCode Nerd Font") ;; The Nerd Font you want to use in GUI
     )
 #+END_SRC
 
