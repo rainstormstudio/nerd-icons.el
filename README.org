@@ -36,7 +36,7 @@ using ~straight~
   - [X] Codicons
   - [X] Font Logos
   - [X] Material Design
-+ [-] functions [14/17]
++ [-] functions [16/17]
   - [X] ~emacs-nerd-icons-ipsicon~
   - [X] ~emacs-nerd-icons-octicon~
   - [X] ~emacs-nerd-icons-pomicon~
@@ -48,11 +48,11 @@ using ~straight~
   - [X] ~emacs-nerd-icons-codicon~
   - [X] ~emacs-nerd-icons-flicon~
   - [X] ~emacs-nerd-icons-mdicon~
-  - [ ] ~emacs-nerd-icons-icon-for-buffer~
+  - [X] ~emacs-nerd-icons-icon-for-buffer~
   - [X] ~emacs-nerd-icons-icon-for-dir~
   - [X] ~emacs-nerd-icons-icon-for-weather~
   - [X] ~emacs-nerd-icons-icon-for-file~
-  - [ ] ~emacs-nerd-icons-icon-for-mode~
+  - [X] ~emacs-nerd-icons-icon-for-mode~
   - [ ] ~macs-nerd-icons-icon-for-url~
 + [X] icon properties and faces
     
