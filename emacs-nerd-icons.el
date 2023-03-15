@@ -285,8 +285,8 @@
     ("frag"     emacs-nerd-icons-faicon "nf-fa-paint_brush" :face emacs-nerd-icons-red)
     ("comp"     emacs-nerd-icons-faicon "nf-fa-paint_brush" :face emacs-nerd-icons-dblue)
     ;; CUDA
-    ("cu"       emacs-nerd-icons-sucicon "nf-custom-c") ;; TODO: green face
-    ("cuh"      emacs-nerd-icons-faicon "nf-fa-h_square") ;; TODO: green face
+    ("cu"       emacs-nerd-icons-sucicon "nf-custom-c" :face emacs-nerd-icons-green)
+    ("cuh"      emacs-nerd-icons-faicon "nf-fa-h_square" :face emacs-nerd-icons-green)
     ;; Fortran
     ("f90"      emacs-nerd-icons-mdicon "nf-md-language_fortran" :face emacs-nerd-icons-purple)
     ;; C#
