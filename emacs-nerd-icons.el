@@ -331,6 +331,10 @@
     ("ttf"          emacs-nerd-icons-faicon "nf-fa-font" :face all-the-icons-dcyan)
     ("woff"         emacs-nerd-icons-faicon "nf-fa-font" :face all-the-icons-cyan)
     ("woff2"        emacs-nerd-icons-faicon "nf-fa-font" :face all-the-icons-cyan)
+    ;; Archives
+    ("tar" emacs-nerd-icons-mdicon "nf-md-zip_box" :face all-the-icons-orange)
+    ("rar" emacs-nerd-icons-mdicon "nf-md-zip_box" :face all-the-icons-orange)
+    ("tgz" emacs-nerd-icons-mdicon "nf-md-zip_box" :face all-the-icons-orange)
     ;; Doc
     ("pdf" emacs-nerd-icons-octicon "nf-oct-file_pdf" :face all-the-icons-dred)
     ("text" emacs-nerd-icons-octicon "nf-oct-file_text" :face all-the-icons-cyan)
