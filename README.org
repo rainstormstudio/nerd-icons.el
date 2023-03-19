@@ -32,7 +32,7 @@ using ~straight~
 + [[https://github.com/rainstormstudio/emacs-nerd-icons-dired][emacs-nerd-icons-dired]]
 + [[https://github.com/rainstormstudio/treemacs-nerd-icons][treemacs-nerd-icons]]
 
-* Roadmap [3/4]
+* Roadmap [4/4]
 + [X] set up Project Hierarchy
 + [X] font data [11/11]
   - [X] IEC Power Symbols
@@ -46,7 +46,7 @@ using ~straight~
   - [X] Codicons
   - [X] Font Logos
   - [X] Material Design
-+ [-] functions [16/17]
++ [X] functions [17/17]
   - [X] ~emacs-nerd-icons-ipsicon~
   - [X] ~emacs-nerd-icons-octicon~
   - [X] ~emacs-nerd-icons-pomicon~
@@ -63,6 +63,6 @@ using ~straight~
   - [X] ~emacs-nerd-icons-icon-for-weather~
   - [X] ~emacs-nerd-icons-icon-for-file~
   - [X] ~emacs-nerd-icons-icon-for-mode~
-  - [ ] ~macs-nerd-icons-icon-for-url~
+  - [X] ~macs-nerd-icons-icon-for-url~
 + [X] icon properties and faces
     
