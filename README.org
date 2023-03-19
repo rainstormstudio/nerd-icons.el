@@ -32,37 +32,4 @@ using ~straight~
 + [[https://github.com/rainstormstudio/emacs-nerd-icons-dired][emacs-nerd-icons-dired]]
 + [[https://github.com/rainstormstudio/treemacs-nerd-icons][treemacs-nerd-icons]]
 
-* Roadmap [4/4]
-+ [X] set up Project Hierarchy
-+ [X] font data [11/11]
-  - [X] IEC Power Symbols
-  - [X] Octicons
-  - [X] Pomicons
-  - [X] Powerline & Powerline Extra
-  - [X] Font Awesome & Font Awesome Extension
-  - [X] Weather Icons
-  - [X] Seti-UI + Custom
-  - [X] Devicons
-  - [X] Codicons
-  - [X] Font Logos
-  - [X] Material Design
-+ [X] functions [17/17]
-  - [X] ~emacs-nerd-icons-ipsicon~
-  - [X] ~emacs-nerd-icons-octicon~
-  - [X] ~emacs-nerd-icons-pomicon~
-  - [X] ~emacs-nerd-icons-powerline~
-  - [X] ~emacs-nerd-icons-faicon~
-  - [X] ~emacs-nerd-icons-wicon~
-  - [X] ~emacs-nerd-icons-sucicon~
-  - [X] ~emacs-nerd-icons-devicon~
-  - [X] ~emacs-nerd-icons-codicon~
-  - [X] ~emacs-nerd-icons-flicon~
-  - [X] ~emacs-nerd-icons-mdicon~
-  - [X] ~emacs-nerd-icons-icon-for-buffer~
-  - [X] ~emacs-nerd-icons-icon-for-dir~
-  - [X] ~emacs-nerd-icons-icon-for-weather~
-  - [X] ~emacs-nerd-icons-icon-for-file~
-  - [X] ~emacs-nerd-icons-icon-for-mode~
-  - [X] ~macs-nerd-icons-icon-for-url~
-+ [X] icon properties and faces
     
