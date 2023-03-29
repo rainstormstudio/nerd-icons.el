@@ -81,9 +81,10 @@
 
 (defvar emacs-nerd-icons-font-names
   '(
-    "NFM"
-    ;; "NFM-Windows-Compatible"
-    ) "List of defined font file names.")
+    "NFM.ttf"
+    ;; "NFM-Windows-Compatible.ttf"
+    )
+  "List of defined font file names.")
 
 (defvar emacs-nerd-icons-extension-icon-alist
   '(
