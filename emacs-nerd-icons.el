@@ -79,7 +79,11 @@
   :group 'emacs-nerd-icons
   :type 'directory)
 
-(defvar emacs-nerd-icons-font-names '() "List of defined font file names.")
+(defvar emacs-nerd-icons-font-names
+  '(
+    "NFM"
+    ;; "NFM-Windows-Compatible"
+    ) "List of defined font file names.")
 
 (defvar emacs-nerd-icons-extension-icon-alist
   '(
