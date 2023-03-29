@@ -69,10 +69,17 @@
   :group 'emacs-nerd-icons
   :type 'number)
 
-(defcustom emacs-nerd-icons-font-family "FiraCode Nerd Font"
+(defcustom emacs-nerd-icons-font-family "Symbols Nerd Font Mono"
   "The Nerd Font for display icons."
   :group 'emacs-nerd-icons
   :type 'string)
+
+(defcustom emacs-nerd-icons-fonts-subdirectory nil
+  "The subdirectory within the system fonts folder where the icons are installed."
+  :group 'emacs-nerd-icons
+  :type 'directory)
+
+(defvar emacs-nerd-icons-font-names '() "List of defined font file names.")
 
 (defvar emacs-nerd-icons-extension-icon-alist
   '(
@@ -850,6 +857,41 @@ If SHOW-FAMILY is non-nil, displays the icons family in the candidate string."
 
          (cons candidate-name candidate-icon)))
      data)))
+
+;;;###autoload
+(defun emacs-nerd-icons-install-fonts (&optional pfx)
+  "Helper function to download and install the latests fonts based on OS.
+When PFX is non-nil, ignore the prompt and just install"
+  (interactive "P")
+  (when (or pfx (yes-or-no-p "This will download and install fonts, are you sure you want to do this?"))
+    (let* ((url-format "https://raw.githubusercontent.com/rainstormstudio/emacs-nerd-icons/master/fonts/%s")
+           (font-dest (cond
+                       ;; Default Linux install directories
+                       ((member system-type '(gnu gnu/linux gnu/kfreebsd))
+                        (concat (or (getenv "XDG_DATA_HOME")
+                                    (concat (getenv "HOME") "/.local/share"))
+                                "/fonts/"
+                                emacs-nerd-icons-fonts-subdirectory))
+                       ;; Default MacOS install directory
+                       ((eq system-type 'darwin)
+                        (concat (getenv "HOME")
+                                "/Library/Fonts/"
+                                emacs-nerd-icons-fonts-subdirectory))))
+           (known-dest? (stringp font-dest))
+           (font-dest (or font-dest (read-directory-name "Font installation directory: " "~/"))))
+
+      (unless (file-directory-p font-dest) (mkdir font-dest t))
+
+      (mapc (lambda (font)
+              (url-copy-file (format url-format font) (expand-file-name font font-dest) t))
+            emacs-nerd-icons-font-names)
+      (when known-dest?
+        (message "Fonts downloaded, updating font cache... <fc-cache -f -v> ")
+        (shell-command-to-string (format "fc-cache -f -v")))
+      (message "%s Successfully %s `emacs-nerd-icons' fonts to `%s'!"
+               (emacs-nerd-icons-wicon "stars" :v-adjust 0.0)
+               (if known-dest? "installed" "downloaded")
+               font-dest))))
 
 ;;;###autoload
 (defun emacs-nerd-icons-insert (&optional arg family)
