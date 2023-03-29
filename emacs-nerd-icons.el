@@ -889,7 +889,7 @@ When PFX is non-nil, ignore the prompt and just install"
         (message "Fonts downloaded, updating font cache... <fc-cache -f -v> ")
         (shell-command-to-string (format "fc-cache -f -v")))
       (message "%s Successfully %s `emacs-nerd-icons' fonts to `%s'!"
-               (emacs-nerd-icons-wicon "stars" :v-adjust 0.0)
+               (emacs-nerd-icons-wicon "nf-weather-stars" :v-adjust 0.0)
                (if known-dest? "installed" "downloaded")
                font-dest))))
 
