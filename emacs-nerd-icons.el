@@ -864,7 +864,7 @@ If SHOW-FAMILY is non-nil, displays the icons family in the candidate string."
 When PFX is non-nil, ignore the prompt and just install"
   (interactive "P")
   (when (or pfx (yes-or-no-p "This will download and install fonts, are you sure you want to do this?"))
-    (let* ((url-format "https://raw.githubusercontent.com/rainstormstudio/emacs-nerd-icons/master/fonts/%s")
+    (let* ((url-format "https://github.com/rainstormstudio/emacs-nerd-icons/raw/main/fonts/%s")
            (font-dest (cond
                        ;; Default Linux install directories
                        ((member system-type '(gnu gnu/linux gnu/kfreebsd))
