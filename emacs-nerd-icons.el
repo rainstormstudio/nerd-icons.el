@@ -861,6 +861,7 @@ If SHOW-FAMILY is non-nil, displays the icons family in the candidate string."
 ;;;###autoload
 (defun emacs-nerd-icons-install-fonts (&optional pfx)
   "Helper function to download and install the latests fonts based on OS.
+The provided Nerd Font is Symbols Nerd Font Mono.
 When PFX is non-nil, ignore the prompt and just install"
   (interactive "P")
   (when (or pfx (yes-or-no-p "This will download and install fonts, are you sure you want to do this?"))
