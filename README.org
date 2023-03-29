@@ -24,9 +24,13 @@ using ~straight~
                :repo "rainstormstudio/emacs-nerd-icons"
                :files (:defaults "data"))
     :custom
-    (emacs-nerd-icons-font-family "FiraCode Nerd Font") ;; The Nerd Font you want to use in GUI
+    ;; The Nerd Font you want to use in GUI
+    ;; "Symbols Nerd Font Mono" is the default and is recommended
+    ;; but you can use any other Nerd Font if you want
+    (emacs-nerd-icons-font-family "Symbols Nerd Font Mono")
     )
 #+END_SRC
+If you use ~emacs-nerd-icons-install-fonts~, it will install ~Symbols Nerd Fonts Mono~ for you.
 
 * Related Packages
 + [[https://github.com/rainstormstudio/emacs-nerd-icons-dired][emacs-nerd-icons-dired]]
