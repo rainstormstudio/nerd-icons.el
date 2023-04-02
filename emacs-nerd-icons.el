@@ -5,6 +5,9 @@
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
 ;; Version: 0.0.1
+;; Package-Requires: ((emacs "24.3"))
+;; URL: https://github.com/rainstormstudio/emacs-nerd-icons
+;; Keywords: convenient, lisp
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -23,6 +26,7 @@
 
 ;; This package was inspired by
 
+;; - `all-the-icons', found at https://github.com/Alexander-Miller/treemacs/blob/master/src/extra/treemacs-all-the-icons.el
 ;; - `vim-devicons' for Vim, found at https://github.com/ryanoasis/vim-devicons
 ;; - `nvim-web-devicons' for NeoVim, found at https://github.com/nvim-tree/nvim-web-devicons
 
@@ -80,10 +84,8 @@
   :type 'directory)
 
 (defvar emacs-nerd-icons-font-names
-  '(
-    "NFM.ttf"
-    ;; "NFM-Windows-Compatible.ttf"
-    )
+  '(;; "NFM-Windows-Compatible.ttf"
+    "NFM.ttf")
   "List of defined font file names.")
 
 (defvar emacs-nerd-icons-extension-icon-alist
@@ -382,8 +384,7 @@
     ("crt" emacs-nerd-icons-octicon "nf-oct-key" :face emacs-nerd-icons-lblue)
     ("pub" emacs-nerd-icons-octicon "nf-oct-key" :face emacs-nerd-icons-blue)
     ("gpg" emacs-nerd-icons-octicon "nf-oct-key" :face emacs-nerd-icons-lblue)
-    ("cache" emacs-nerd-icons-octicon "nf-oct-database" :face emacs-nerd-icons-green)
-    ))
+    ("cache" emacs-nerd-icons-octicon "nf-oct-database" :face emacs-nerd-icons-green)))
 
 (defvar emacs-nerd-icons-regexp-icon-alist
   '(
@@ -462,12 +463,10 @@
     ("^\\*scratch.*"    emacs-nerd-icons-faicon "nf-fa-sticky_note"              :face emacs-nerd-icons-yellow)
     ("^\\*new-tab\\*$"  emacs-nerd-icons-mdicon "nf-md-star"                   :face emacs-nerd-icons-cyan)
 
-    ("^\\."             emacs-nerd-icons-octicon "nf-oct-gear"                 )
-    ))
+    ("^\\."             emacs-nerd-icons-octicon "nf-oct-gear"                 )))
 
 (defvar emacs-nerd-icons-default-file-icon
-  '(emacs-nerd-icons-faicon "nf-fa-file_o")
-  )
+  '(emacs-nerd-icons-faicon "nf-fa-file_o"))
 
 (defvar emacs-nerd-icons-dir-icon-alist
   '(
@@ -486,8 +485,7 @@
     ("workspace"        emacs-nerd-icons-octicon "nf-oct-code")
     ;; ("test"             emacs-nerd-icons-devicon "test-dir")
     ("\\.git"           emacs-nerd-icons-devicon "nf-dev-git")
-    (".?"               emacs-nerd-icons-octicon "nf-oct-file_directory")
-    ))
+    (".?"               emacs-nerd-icons-octicon "nf-oct-file_directory")))
 
 (defvar emacs-nerd-icons-weather-icon-alist
   '(
@@ -520,8 +518,7 @@
     ("fair.*night"           emacs-nerd-icons-wicon "nf-weather-stars")
     ("fair.*day"             emacs-nerd-icons-wicon "nf-weather-horizon")
     ("hot"                   emacs-nerd-icons-wicon "nf-weather-hot")
-    ("not.*available"        emacs-nerd-icons-wicon "nf-weather-na")
-    ))
+    ("not.*available"        emacs-nerd-icons-wicon "nf-weather-na")))
 
 (defvar emacs-nerd-icons-mode-icon-alist
   '(
@@ -815,8 +812,7 @@
     ("forums?" emacs-nerd-icons-octicon "nf-oct-comment_discussion")
     ("\\.pdf$" emacs-nerd-icons-octicon "nf-oct-file_pdf" :face emacs-nerd-icons-dred)
     ("google" emacs-nerd-icons-faicon "nf-fa-google")
-    ("\\.rss" emacs-nerd-icons-faicon "nf-fa-rss")
-    ))
+    ("\\.rss" emacs-nerd-icons-faicon "nf-fa-rss")))
 
 (defun emacs-nerd-icons-auto-mode-match? (&optional file)
   "Whether or not FILE's `major-mode' match against its `auto-mode-alist'."
@@ -1043,8 +1039,7 @@ When F is provided, the info function is calculated with the format
 
   (defun emacs-nerd-icons--insert-function-name (name)
     "Get the symbol for an icon insert function for icon set NAME."
-    (intern (concat "emacs-nerd-icons-insert-" (downcase (symbol-name name)))))
-  )
+    (intern (concat "emacs-nerd-icons-insert-" (downcase (symbol-name name))))))
 
 (defun emacs-nerd-icons-insert-icons-for (family &optional height duration)
   "Insert all of the available icons associated with FAMILY.
@@ -1097,8 +1092,7 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
      (defun ,(emacs-nerd-icons--insert-function-name name) (&optional arg)
        ,(format "Insert a %s icon at point." family)
        (interactive "P")
-       (emacs-nerd-icons-insert arg (quote ,name))))
-  )
+       (emacs-nerd-icons-insert arg (quote ,name)))))
 
 (emacs-nerd-icons-define-icon ipsicon emacs-nerd-icons/ipsicon-alist emacs-nerd-icons-font-family)
 (emacs-nerd-icons-define-icon octicon emacs-nerd-icons/octicon-alist emacs-nerd-icons-font-family)
