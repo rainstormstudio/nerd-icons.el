@@ -73,6 +73,11 @@
   :group 'nerd-icons
   :type 'number)
 
+(defcustom nerd-icons--cache-limit 2048
+  "Maximum cache size for functions cached by `nerd-icons-cache'."
+  :group 'nerd-icons
+  :type 'integer)
+
 (defcustom nerd-icons-font-family "Symbols Nerd Font Mono"
   "The Nerd Font for display icons."
   :group 'nerd-icons
@@ -980,10 +985,6 @@ inserting functions."
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (apply (car icon) args)))
 
-(defcustom nerd-icons--cache-limit 2048
-  "Maximum cache size for functions cached by `nerd-icons-cache'."
-  :type 'integer)
-
 (defun nerd-icons-cache (func)
   "Set a cache for FUNC.  Does not work on interactive functions."
   (unless (get func 'nerd-icons--cached)
@@ -1062,7 +1063,7 @@ pause for DURATION seconds between printing each character."
   "Macro to generate functions for inserting icons for icon set NAME.
 
 NAME defines is the name of the iconset and will produce a
-function of the for `emacs-nerd-icon-NAME'.
+function of the for `nerd-icon-NAME'.
 
 ALIST is the alist containing maps between icon names and the
 UniCode for the character.  All of these can be found in the data
@@ -1080,7 +1081,7 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
              (v-adjust (* nerd-icons-scale-factor (or (plist-get args :v-adjust) nerd-icons-default-adjust)))
              (family ,family))
          (unless icon
-           (error (format "Unable to find icon with name `%s' in icon set `%s'" icon-name (quote ,name))))
+           (error "Unable to find icon with name `%s' in icon set `%s'" icon-name (quote ,name)))
          (let ((face (if other-face
                          `(:family ,family :height ,height :inherit ,other-face)
                        `(:family ,family :height ,height))))
