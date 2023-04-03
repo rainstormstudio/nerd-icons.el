@@ -6,7 +6,7 @@
 ;; Keywords: lisp
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "24.3"))
-;; URL: https://github.com/rainstormstudio/nerd-icons
+;; URL: https://github.com/rainstormstudio/nerd-icons.el
 ;; Keywords: convenient, lisp
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -871,7 +871,7 @@ The provided Nerd Font is Symbols Nerd Font Mono.
 When PFX is non-nil, ignore the prompt and just install"
   (interactive "P")
   (when (or pfx (yes-or-no-p "This will download and install fonts, are you sure you want to do this?"))
-    (let* ((url-format "https://raw.githubusercontent.com/rainstormstudio/nerd-icons/main/fonts/%s")
+    (let* ((url-format "https://raw.githubusercontent.com/rainstormstudio/nerd-icons.el/main/fonts/%s")
            (font-dest (cond
                        ;; Default Linux install directories
                        ((member system-type '(gnu gnu/linux gnu/kfreebsd))
