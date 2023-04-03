@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-iec-power-symbols.el --- Nerd Font IEC Power Symbols -*- lexical-binding: t -*-
+;;; nerd-icons-data-iec-power-symbols.el --- Nerd Font IEC Power Symbols -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/ipsicon-alist
+(defvar nerd-icons/ipsicon-alist
   '(
     ("nf-iec-power" . "\x23fb")
     ("nf-iec-power_off" . "\x2b58")
@@ -36,5 +36,5 @@
     ("nf-iec-toggle_power" . "\x23fc")
     ))
 
-(provide 'emacs-nerd-icons-data-iec-power-symbols)
-;;; emacs-nerd-icons-data-iec-power-symbols.el ends here
+(provide 'nerd-icons-data-iec-power-symbols)
+;;; nerd-icons-data-iec-power-symbols.el ends here

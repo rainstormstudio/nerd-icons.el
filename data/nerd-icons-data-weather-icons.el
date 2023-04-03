@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-weather-icons.el --- Nerd Font Weather icons -*- lexical-binding: t -*-
+;;; nerd-icons-data-weather-icons.el --- Nerd Font Weather icons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/wicon-alist
+(defvar nerd-icons/wicon-alist
   '(
     ("nf-weather-alien" . "\xe36e")
     ("nf-weather-aliens" . "\xe345")
@@ -258,5 +258,5 @@
     ("nf-weather-windy" . "\xe31e")
     ))
 
-(provide 'emacs-nerd-icons-data-weather-icons)
-;;; emacs-nerd-icons-data-weather-icons.el ends here
+(provide 'nerd-icons-data-weather-icons)
+;;; nerd-icons-data-weather-icons.el ends here

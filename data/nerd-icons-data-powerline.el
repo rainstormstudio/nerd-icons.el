@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-powerline.el --- Nerd Font Powerline icons -*- lexical-binding: t -*-
+;;; nerd-icons-data-powerline.el --- Nerd Font Powerline icons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -33,7 +33,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/powerline-alist
+(defvar nerd-icons/powerline-alist
   '(
     ("nf-ple-backslash_separator" . "\xe0b9")
     ("nf-ple-backslash_separator_redundant" . "\xe0bf")
@@ -69,5 +69,5 @@
     ("nf-ple-upper_right_triangle" . "\xe0be")
     ))
 
-(provide 'emacs-nerd-icons-data-powerline)
-;;; emacs-nerd-icons-data-powerline.el ends here
+(provide 'nerd-icons-data-powerline)
+;;; nerd-icons-data-powerline.el ends here

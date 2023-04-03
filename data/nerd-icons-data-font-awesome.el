@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-font-awesome.el --- Nerd Font Font Awesome icons -*- lexical-binding: t -*-
+;;; nerd-icons-data-font-awesome.el --- Nerd Font Font Awesome icons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -29,7 +29,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/faicon-alist
+(defvar nerd-icons/faicon-alist
   '(
     ;; Font Awesome
     ("nf-fa-500px" . "\xf26e")
@@ -992,5 +992,5 @@
     ("nf-fae-xbox" . "\xe29d")
     ))
 
-(provide 'emacs-nerd-icons-data-font-awesome)
-;;; emacs-nerd-icons-data-font-awesome.el ends here
+(provide 'nerd-icons-data-font-awesome)
+;;; nerd-icons-data-font-awesome.el ends here

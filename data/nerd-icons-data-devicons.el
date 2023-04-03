@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-devicons.el --- Nerd Font devicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-devicons.el --- Nerd Font devicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/devicon-alist
+(defvar nerd-icons/devicon-alist
   '(
     ("nf-dev-android" . "\xe70e")
     ("nf-dev-angular" . "\xe753")
@@ -221,5 +221,5 @@
     ("nf-dev-zend" . "\xe778")
     ))
 
-(provide 'emacs-nerd-icons-data-devicons)
-;;; emacs-nerd-icons-data-devicons.el ends here
+(provide 'nerd-icons-data-devicons)
+;;; nerd-icons-data-devicons.el ends here

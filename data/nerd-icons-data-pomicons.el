@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-pomicons.el --- Nerd Font Pomicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-pomicons.el --- Nerd Font Pomicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/pomicon-alist
+(defvar nerd-icons/pomicon-alist
   '(
     ("nf-pom-away" . "\xe007")
     ("nf-pom-clean_code" . "\xe000")
@@ -41,5 +41,5 @@
     ("nf-pom-short_pause" . "\xe005")
     ))
 
-(provide 'emacs-nerd-icons-data-pomicons)
-;;; emacs-nerd-icons-data-pomicons.el ends here
+(provide 'nerd-icons-data-pomicons)
+;;; nerd-icons-data-pomicons.el ends here

@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-devicons.el --- Nerd Font Codicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-devicons.el --- Nerd Font Codicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/codicon-alist
+(defvar nerd-icons/codicon-alist
   '(
     ("nf-cod-account" . "\xeb99")
     ("nf-cod-activate_breakpoints" . "\xea97")
@@ -417,5 +417,5 @@
     ("nf-cod-zoom_out" . "\xeb82")
     ))
 
-(provide 'emacs-nerd-icons-data-codicons)
-;;; emacs-nerd-icons-data-codicons.el ends here
+(provide 'nerd-icons-data-codicons)
+;;; nerd-icons-data-codicons.el ends here

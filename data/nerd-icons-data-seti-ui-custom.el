@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-seti-ui-custom.el --- Nerd Font Seti-UI + Custom -*- lexical-binding: t -*-
+;;; nerd-icons-data-seti-ui-custom.el --- Nerd Font Seti-UI + Custom -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/sucicon-alist
+(defvar nerd-icons/sucicon-alist
   '(
     ;; custom
     ("nf-custom-asm" . "\xe6ab")
@@ -227,5 +227,5 @@
     ("nf-seti-zip" . "\xe6aa")
     ))
 
-(provide 'emacs-nerd-icons-data-seti-ui-custom)
-;;; emacs-nerd-icons-data-seti-ui-custom.el ends here
+(provide 'nerd-icons-data-seti-ui-custom)
+;;; nerd-icons-data-seti-ui-custom.el ends here

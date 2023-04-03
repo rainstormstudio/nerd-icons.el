@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-primer-octicons.el --- Nerd Font Primer Octicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-primer-octicons.el --- Nerd Font Primer Octicons -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -29,7 +29,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/octicon-alist
+(defvar nerd-icons/octicon-alist
   '(
     ("nf-oct-alert" . "\xf421")
     ("nf-oct-arrow_down" . "\xf433")
@@ -205,5 +205,5 @@
     ("nf-oct-zap" . "\x26a1")
     ))
 
-  (provide 'emacs-nerd-icons-data-octicons)
-;;; emacs-nerd-icons-data-octicons.el ends here
+  (provide 'nerd-icons-data-octicons)
+;;; nerd-icons-data-octicons.el ends here

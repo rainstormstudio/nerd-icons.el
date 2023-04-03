@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-material-design.el --- Nerd Font Material Design -*- lexical-binding: t -*-
+;;; nerd-icons-data-material-design.el --- Nerd Font Material Design -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/mdicon-alist
+(defvar nerd-icons/mdicon-alist
   '(
     ("nf-mdi-access_point" . "\xf501")
     ("nf-mdi-access_point_network" . "\xf502")
@@ -9030,5 +9030,5 @@
     ("nf-md-zodiac_virgo" . "\xf0a88")
     ))
 
-(provide 'emacs-nerd-icons-data-material-design)
-;;; emacs-nerd-icons-data-material-design.el ends here
+(provide 'nerd-icons-data-material-design)
+;;; nerd-icons-data-material-design.el ends here

@@ -1,4 +1,4 @@
-;;; emacs-nerd-icons-data-font-logos.el --- Nerd Font Font Logos -*- lexical-binding: t -*-
+;;; nerd-icons-data-font-logos.el --- Nerd Font Font Logos -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(defvar emacs-nerd-icons/flicon-alist
+(defvar nerd-icons/flicon-alist
   '(
     ("nf-linux-almalinux" . "\xf31d")
     ("nf-linux-alpine" . "\xf300")
@@ -78,5 +78,5 @@
     ("nf-linux-zorin" . "\xf32f")
     ))
 
-(provide 'emacs-nerd-icons-data-font-logos)
-;;; emacs-nerd-icons-data-font-logos.el ends here
+(provide 'nerd-icons-data-font-logos)
+;;; nerd-icons-data-font-logos.el ends here
