@@ -1,8 +1,8 @@
-#+TITLE: emacs-nerd-icons - A Library for Nerd Font icons
+#+TITLE: nerd-icons.el - A Library for Nerd Font icons
 #+AUTHOR: Hongyu Ding
 #+LANGUAGE: en
 
-Emacs Nerd Icons is a library for easily using [[https://github.com/ryanoasis/nerd-fonts][Nerd Font]] icons inside Emacs, an alternative to [[https://github.com/domtronn/all-the-icons.el][all-the-icons]].
+Nerd-icons.el is a library for easily using [[https://github.com/ryanoasis/nerd-fonts][Nerd Font]] icons inside Emacs, an alternative to [[https://github.com/domtronn/all-the-icons.el][all-the-icons]].
 
 It works on both GUI and terminal! You only need a [[https://www.nerdfonts.com/#home][Nerd Font]] installed on your system.
 
@@ -17,20 +17,20 @@ in terminal:
 * Usage
 using ~straight~
 #+BEGIN_SRC emacs-lisp
-  (use-package emacs-nerd-icons
-    :straight (emacs-nerd-icons
+  (use-package nerd-icons
+    :straight (nerd-icons
                :type git
                :host github
-               :repo "rainstormstudio/emacs-nerd-icons"
+               :repo "rainstormstudio/nerd-icons.el"
                :files (:defaults "data"))
     :custom
     ;; The Nerd Font you want to use in GUI
     ;; "Symbols Nerd Font Mono" is the default and is recommended
     ;; but you can use any other Nerd Font if you want
-    (emacs-nerd-icons-font-family "Symbols Nerd Font Mono")
+    (nerd-icons-font-family "Symbols Nerd Font Mono")
     )
 #+END_SRC
-If you use ~emacs-nerd-icons-install-fonts~, it will install ~Symbols Nerd Fonts Mono~ for you.
+If you use ~nerd-icons-install-fonts~, it will install ~Symbols Nerd Fonts Mono~ for you.
 
 * Related Packages
 + [[https://github.com/rainstormstudio/emacs-nerd-icons-dired][emacs-nerd-icons-dired]]
