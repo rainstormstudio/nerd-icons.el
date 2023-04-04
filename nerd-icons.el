@@ -93,6 +93,8 @@
     "NFM.ttf")
   "List of defined font file names.")
 
+(defvar nerd-icons-glyph-sets '() "List of defined icon glyph sets.")
+
 (defvar nerd-icons-extension-icon-alist
   '(
     ("fish" nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lpink)
@@ -841,14 +843,14 @@
         (search-forward-regexp module-search (point-max) t)))))
 
 (defun nerd-icons--read-candidates ()
-  "Helper to build a list of candidates for all families."
-  (cl-reduce 'append (mapcar (lambda (it) (nerd-icons--read-candidates-for-family it t)) nerd-icons-font-family)))
+  "Helper to build a list of candidates for all glyph sets."
+  (cl-reduce 'append (mapcar (lambda (it) (nerd-icons--read-candidates-for-glyph-set it t)) nerd-icons-glyph-sets)))
 
-(defun nerd-icons--read-candidates-for-family (family &optional show-family)
-  "Helper to build read candidates for FAMILY.
-If SHOW-FAMILY is non-nil, displays the icons family in the candidate string."
-  (let ((data   (funcall (nerd-icons--data-name family)))
-        (icon-f (nerd-icons--function-name family)))
+(defun nerd-icons--read-candidates-for-glyph-set (glyph-set &optional show-glyph-set)
+  "Helper to build read candidates for GLYPH-SET.
+If SHOW-GLYPH-SET is non-nil, displays the icons glyph set in the candidate string."
+  (let ((data   (funcall (nerd-icons--data-name glyph-set)))
+        (icon-f (nerd-icons--function-name glyph-set)))
     (mapcar
      (lambda (it)
        (let* ((icon-name (car it))
@@ -856,10 +858,10 @@ If SHOW-FAMILY is non-nil, displays the icons family in the candidate string."
               (icon-name-tail (substring icon-name 1))
 
               (icon-display (propertize icon-name-head 'display (format "%s\t%s" (funcall icon-f icon-name) icon-name-head)))
-              (icon-family (if show-family (format "\t[%s]" family) ""))
+              (icon-glyph-set (if show-glyph-set (format "\t[%s]" glyph-set) ""))
 
-              (candidate-name (format "%s%s%s" icon-display icon-name-tail icon-family))
-              (candidate-icon (funcall (nerd-icons--function-name family) icon-name)))
+              (candidate-name (format "%s%s%s" icon-display icon-name-tail icon-glyph-set))
+              (candidate-icon (funcall (nerd-icons--function-name glyph-set) icon-name)))
 
          (cons candidate-name candidate-icon)))
      data)))
@@ -901,19 +903,18 @@ When PFX is non-nil, ignore the prompt and just install"
                font-dest))))
 
 ;;;###autoload
-(defun nerd-icons-insert (&optional arg family)
+(defun nerd-icons-insert (&optional arg glyph-set)
   "Interactive icon insertion function.
 When Prefix ARG is non-nil, insert the propertized icon.
-When FAMILY is non-nil, limit the candidates to the icon set matching it."
+When GLYPH-SET is non-nil, limit the candidates to the icon set matching it."
   (interactive "P")
   (let* ((standard-output (current-buffer))
-         (candidates (if family
-                         (nerd-icons--read-candidates-for-family family)
+         (candidates (if glyph-set
+                         (nerd-icons--read-candidates-for-glyph-set glyph-set)
                        (nerd-icons--read-candidates)))
-         (prompt     (if family
-                         (format "%s Icon: " (funcall (nerd-icons--family-name family)))
+         (prompt     (if glyph-set
+                         (format "%s Icon: " (funcall (nerd-icons--glyph-set-name glyph-set)))
                        "Icon : "))
-
          (selection (completing-read prompt candidates nil t))
          (result    (cdr (assoc selection candidates))))
 
@@ -1034,6 +1035,10 @@ When F is provided, the info function is calculated with the format
     "Get the symbol for an icon family function for icon set NAME."
     (intern (concat "nerd-icons-" (downcase (symbol-name name)) "-family")))
 
+  (defun nerd-icons--glyph-set-name (name)
+    "Get the symbol for an icon glyph set function for icon set NAME."
+    (intern (concat "nerd-icons-" (downcase (symbol-name name)) "-glyph-set")))
+
   (defun nerd-icons--data-name (name)
     "Get the symbol for an icon family function for icon set NAME."
     (intern (concat "nerd-icons-" (downcase (symbol-name name)) "-data")))
@@ -1059,7 +1064,7 @@ pause for DURATION seconds between printing each character."
        (when duration (sit-for duration 0)))
      data)))
 
-(defmacro nerd-icons-define-icon (name alist family)
+(defmacro nerd-icons-define-icon (name alist family glyph-set)
   "Macro to generate functions for inserting icons for icon set NAME.
 
 NAME defines is the name of the iconset and will produce a
@@ -1070,9 +1075,11 @@ UniCode for the character.  All of these can be found in the data
 directory of this package.
 
 FAMILY is the font family to use for the icons.
-FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
+GLYPH-SET is the glyph set of the icon."
   `(progn
+     (add-to-list 'nerd-icons-glyph-sets (quote ,name))
      (defun ,(nerd-icons--family-name name) () ,family)
+     (defun ,(nerd-icons--glyph-set-name name) () ,glyph-set)
      (defun ,(nerd-icons--data-name name) () ,alist)
      (defun ,(nerd-icons--function-name name) (icon-name &rest args)
        (let ((icon (cdr (assoc icon-name ,alist)))
@@ -1091,21 +1098,21 @@ FONT-NAME is the name of the .ttf file providing the font, defaults to FAMILY."
                        'display `(raise ,v-adjust)
                        'rear-nonsticky t))))
      (defun ,(nerd-icons--insert-function-name name) (&optional arg)
-       ,(format "Insert a %s icon at point." family)
+       ,(format "Insert a %s icon at point." glyph-set)
        (interactive "P")
        (nerd-icons-insert arg (quote ,name)))))
 
-(nerd-icons-define-icon ipsicon nerd-icons/ipsicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon octicon nerd-icons/octicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon pomicon nerd-icons/pomicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon powerline nerd-icons/powerline-alist nerd-icons-font-family)
-(nerd-icons-define-icon faicon nerd-icons/faicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon wicon nerd-icons/wicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon sucicon nerd-icons/sucicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon devicon nerd-icons/devicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon codicon nerd-icons/codicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon flicon nerd-icons/flicon-alist nerd-icons-font-family)
-(nerd-icons-define-icon mdicon nerd-icons/mdicon-alist nerd-icons-font-family)
+(nerd-icons-define-icon ipsicon nerd-icons/ipsicon-alist nerd-icons-font-family "IEC Power Symbols")
+(nerd-icons-define-icon octicon nerd-icons/octicon-alist nerd-icons-font-family "Octicons")
+(nerd-icons-define-icon pomicon nerd-icons/pomicon-alist nerd-icons-font-family "Pomicons")
+(nerd-icons-define-icon powerline nerd-icons/powerline-alist nerd-icons-font-family "Powerline Symbols")
+(nerd-icons-define-icon faicon nerd-icons/faicon-alist nerd-icons-font-family "Font Awesome")
+(nerd-icons-define-icon wicon nerd-icons/wicon-alist nerd-icons-font-family "Weather")
+(nerd-icons-define-icon sucicon nerd-icons/sucicon-alist nerd-icons-font-family "Seti-UI + Custom")
+(nerd-icons-define-icon devicon nerd-icons/devicon-alist nerd-icons-font-family "Devicons")
+(nerd-icons-define-icon codicon nerd-icons/codicon-alist nerd-icons-font-family "Codicons")
+(nerd-icons-define-icon flicon nerd-icons/flicon-alist nerd-icons-font-family "Font Logos")
+(nerd-icons-define-icon mdicon nerd-icons/mdicon-alist nerd-icons-font-family "Material Design Icons")
 
 (provide 'nerd-icons)
 ;;; nerd-icons.el ends here
