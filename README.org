@@ -33,7 +33,7 @@ using ~straight~
 If you use ~nerd-icons-install-fonts~, it will install ~Symbols Nerd Fonts Mono~ for you.
 
 * Related Packages
-+ [[https://github.com/rainstormstudio/emacs-nerd-icons-dired][emacs-nerd-icons-dired]]
++ [[https://github.com/rainstormstudio/nerd-icons-dired][nerd-icons-dired]]
 + [[https://github.com/rainstormstudio/treemacs-nerd-icons][treemacs-nerd-icons]]
 
     
