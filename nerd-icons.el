@@ -848,7 +848,9 @@
 
 (defun nerd-icons--read-candidates-for-glyph-set (glyph-set &optional show-glyph-set)
   "Helper to build read candidates for GLYPH-SET.
-If SHOW-GLYPH-SET is non-nil, displays the icons glyph set in the candidate string."
+
+If SHOW-GLYPH-SET is non-nil, displays the icons glyph set in the candidate
+string."
   (let ((data   (funcall (nerd-icons--data-name glyph-set)))
         (icon-f (nerd-icons--function-name glyph-set)))
     (mapcar
@@ -1061,7 +1063,7 @@ pause for DURATION seconds between printing each character."
     (mapc
      (lambda (it)
        (insert (format "%s - %s\n" (funcall insert-f (car it) :height height) (car it)))
-       (when duration (sit-for duration 0)))
+       (when duration (sit-for duration)))
      data)))
 
 (defmacro nerd-icons-define-icon (name alist family glyph-set)
