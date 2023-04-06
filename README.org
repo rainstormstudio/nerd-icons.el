@@ -14,8 +14,13 @@ in GUI:
 in terminal:
 [[file:screenshots/demo-terminal.png]]
 
+* Installing Fonts
+Please go to [[https://www.nerdfonts.com/][Nerd Fonts website]] and get a Nerd font. After installing the font on your machine, you need to set ~nerd-icons-font-family~ to match its font name so that the font can be properly used under GUI. If you want Nerd Fonts to work under a terminal, please change your terminal's font to a Nerd font.
+
+If the Nerd Font you installed does not display correctly (e.g. appear cut off), it is recommended to use =Symbols Nerd Fonts Mono= (Symbols Nerd Font). You can use ~M-x nerd-icons-install-fonts~ to install ~Symbols Nerd Fonts Mono~ for you. Note that for *Windows* you'll need to manually install the font after you used this function.
+
 * Usage
-using ~straight~
+using [[https://github.com/radian-software/straight.el][straight]]:
 #+BEGIN_SRC emacs-lisp
   (use-package nerd-icons
     :straight (nerd-icons
@@ -30,7 +35,68 @@ using ~straight~
     (nerd-icons-font-family "Symbols Nerd Font Mono")
     )
 #+END_SRC
-If you use ~nerd-icons-install-fonts~, it will install ~Symbols Nerd Fonts Mono~ for you.
+** insert icons
++ use icon based on category
+  - ~nerd-icons-icon-for-dir~
+  - ~nerd-icons-icon-for-file~
+  - ~nerd-icons-icon-for-mode~
+  - ~nerd-icons-icon-for-url~
+
+  example:
+  #+BEGIN_SRC emacs-lisp
+    (insert (nerd-icons-icon-for-file "init.el"))
+    ;; Inserts an icon for Emacs Lisp
+  #+END_SRC
++ use icon directly
+  - ~nerd-icons-ipsicon~
+  - ~nerd-icons-octicon~
+  - ~nerd-icons-pomicon~
+  - ~nerd-icons-powerline~
+  - ~nerd-icons-faicon~
+  - ~nerd-icons-wicon~
+  - ~nerd-icons-sucicon~
+  - ~nerd-icons-devicon~
+  - ~nerd-icons-codicon~
+  - ~nerd-icons-flicon~
+  - ~nerd-icons-mdicon~
+
+  example:
+  #+BEGIN_SRC emacs-lisp
+    (insert (nerd-icons-faicon "nf-fa-gitlab"))
+    ;; Inserts a Gitlab icon
+#+END_SRC
++ insert icon interactively (~M-x~ functions)
+  - ~nerd-icons-insert~
+  - ~nerd-icons-insert-ipsicon~
+  - ~nerd-icons-insert-octicon~
+  - ~nerd-icons-insert-pomicon~
+  - ~nerd-icons-insert-powerline~
+  - ~nerd-icons-insert-faicon~
+  - ~nerd-icons-insert-wicon~
+  - ~nerd-icons-insert-sucicon~
+  - ~nerd-icons-insert-devicon~
+  - ~nerd-icons-insert-codicon~
+  - ~nerd-icons-insert-flicon~
+  - ~nerd-icons-insert-mdicon~
+
+* Glyph Sets
+| Glyph Set               | prefix               | Point Range                          | insert function      |
+|-------------------------+----------------------+--------------------------------------+----------------------|
+| Seti-UI + Custom        | ~nf-seti-~, ~nf-custom-~ | ~e5fa~ - ~e631~                          | ~nerd-icons-sucicon~   |
+| Devicons                | ~nf-dev-~              | ~e700~ - ~e7c5~                          | ~nerd-icons-devicon~   |
+| Font Awesome            | ~nf-fa-~               | ~f000~ - ~f2e0~                          | ~nerd-icons-faicon~    |
+| Font Awesome Extension  | ~nf-fae-~              | ~e200~ - ~e2a9~                          | ~nerd-icons-faicon~    |
+| Material Design Icons   | ~nf-md-~               | ~f500~ - ~fd46~                          | ~nerd-icons-mdicon~    |
+| Weather                 | ~nf-weather-~          | ~e300~ - ~e3eb~                          | ~nerd-icons-wicon~     |
+| Octicons                | ~nf-oct-~              | ~f400~ - ~f4a9~, ~2665~, ~26A1~              | ~nerd-icons-octicon~   |
+| Powerline Symbols       | ~nf-pl-~               | ~e0a0~ - ~e0a2~, ~e0b0~ - ~e0b3~             | ~nerd-icons-powerline~ |
+| Powerline Extra Symbols | ~nf-ple-~              | ~e0a3~, ~e0b4~ - ~e0c8~, ~e0ca~, ~e0cc~ - ~e0d4~ | ~nerd-icons-powerline~ |
+| IEC Power Symbols       | ~nf-iec-~              | ~23fb~ - ~23fe~, ~2b58~                    | ~nerd-icons-ipsicon~   |
+| Font Logos              | ~nf-linux-~            | ~f300~ - ~f32d~                          | ~nerd-icons-flicon~    |
+| Pomicons                | ~nf-pom-~              | ~e000~ - ~e00a~                          | ~nerd-icons-pomicon~   |
+| Codicons                | ~nf-cod-~              | ~ea60~ - ~ebeb~                          | ~nerd-icons-codicon~   |
+
+Please check [[https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points][Nerd Fonts Glyph Sets and Code Points]] for more information.
 
 * Related Packages
 + [[https://github.com/rainstormstudio/nerd-icons-dired][nerd-icons-dired]]
