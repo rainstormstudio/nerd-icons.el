@@ -988,6 +988,16 @@ inserting functions."
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (apply (car icon) args)))
 
+;;;###autoload
+(defun nerd-icons-icon-for-buffer ()
+  "Get the formatted icon for the current buffer.
+
+This function prioritises the use of the buffers file extension to
+discern the icon when its `major-mode' matches its auto mode,
+otherwise it will use the buffers `major-mode' to decide its
+icon."
+  (nerd-icons--icon-info-for-buffer))
+
 (defun nerd-icons-cache (func)
   "Set a cache for FUNC.  Does not work on interactive functions."
   (unless (get func 'nerd-icons--cached)
