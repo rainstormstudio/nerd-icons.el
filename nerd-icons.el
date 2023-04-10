@@ -78,7 +78,9 @@
   :group 'nerd-icons
   :type 'integer)
 
-(defcustom nerd-icons-font-family "Symbols Nerd Font Mono"
+(defcustom nerd-icons-font-family (if (eq system-type 'windows-nt)
+                                      "Symbols NFM"
+                                    "Symbols Nerd Font Mono")
   "The Nerd Font for display icons."
   :group 'nerd-icons
   :type 'string)
