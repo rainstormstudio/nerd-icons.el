@@ -545,7 +545,7 @@
     (erc-mode                  nerd-icons-faicon "nf-fa-commenting_o"          )
     (inferior-emacs-lisp-mode  nerd-icons-sucicon "nf-custom-emacs"                :face nerd-icons-lblue)
     (dired-mode                nerd-icons-octicon "nf-oct-file_directory"      )
-    ;; (lisp-interaction-mode     nerd-icons-fileicon "lisp"                :face nerd-icons-orange)
+    (lisp-interaction-mode     nerd-icons-sucicon "nf-custom-emacs"                :face nerd-icons-orange)
     ;; (sly-mrepl-mode            nerd-icons-fileicon "clisp"                :face nerd-icons-orange)
     ;; (slime-repl-mode           nerd-icons-fileicon "clisp"                :face nerd-icons-orange)
     (org-mode                  nerd-icons-sucicon "nf-custom-orgmode"                 :face nerd-icons-lgreen)
