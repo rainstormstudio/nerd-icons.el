@@ -99,6 +99,8 @@ Please check [[https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-
 * Related Packages
 + [[https://github.com/rainstormstudio/nerd-icons-dired][nerd-icons-dired]]
 + [[https://github.com/rainstormstudio/treemacs-nerd-icons][treemacs-nerd-icons]]
++ [[https://github.com/seagle0128/nerd-icons-ivy-rich][nerd-icons-ivy-rich]]
++ [[https://github.com/seagle0128/nerd-icons-ibuffer][nerd-icons-ibuffer]]
 
 * Use nerd-icons with Corfu
 If you use [[https://github.com/minad/corfu][corfu]] and [[https://github.com/jdtsmith/kind-icon][kind-icon]], you can use the following setting for icon mapping:
