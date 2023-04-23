@@ -1021,7 +1021,7 @@ inserting functions."
   (let* ((icon (nerd-icons-match-to-alist url nerd-icons-url-alist))
          (args (cdr icon)))
     (unless icon
-      (setq icon '(nerd-icons-faicon "globe"))
+      (setq icon '(nerd-icons-faicon "nf-fa-globe"))
       (setq args (cdr icon)))
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (apply (car icon) args)))
