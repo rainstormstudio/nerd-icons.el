@@ -732,7 +732,7 @@
     ;; (odin-mode                          nerd-icons-fileicon "odin"              :face nerd-icons-lblue)
     (pdf-view-mode                      nerd-icons-octicon  "nf-oct-file_pdf"          :face nerd-icons-dred)
     (spacemacs-buffer-mode              nerd-icons-sucicon "nf-custom-emacs"              :face nerd-icons-purple)
-    (elfeed-search-mode                 nerd-icons-faicon   "nf-fa-rss-square"       :face nerd-icons-orange)
+    (elfeed-search-mode                 nerd-icons-faicon   "nf-fa-rss_square"       :face nerd-icons-orange)
 
     (emms-browser-mode                  nerd-icons-faicon   "nf-fa-music"            :face nerd-icons-silver)
     (emms-lyrics-mode                   nerd-icons-faicon   "nf-fa-music"            :face nerd-icons-silver)
