@@ -22,10 +22,15 @@ Please go to [[https://www.nerdfonts.com/][Nerd Fonts website]] and get a Nerd f
 If the Nerd Font you installed does not display correctly (e.g. appear cut off), it is recommended to use =Symbols Nerd Fonts Mono= (Symbols Nerd Font). You can use ~M-x nerd-icons-install-fonts~ to install ~Symbols Nerd Fonts Mono~ for you. Note that for *Windows* you'll need to manually install the font after you used this function.
 
 * Usage
-using [[https://github.com/radian-software/straight.el][straight]]:
+~nerd-icons~ is on [[https://melpa.org/#/nerd-icons-completion][Melpa]]. You can install it with built-in ~M-x package-install~
+#+begin_src emacs-lisp
+  (require 'nerd-icons)
+#+end_src
+
+or using ~use-package~
 #+BEGIN_SRC emacs-lisp
   (use-package nerd-icons
-    :custom
+    ;; :custom
     ;; The Nerd Font you want to use in GUI
     ;; "Symbols Nerd Font Mono" is the default and is recommended
     ;; but you can use any other Nerd Font if you want
