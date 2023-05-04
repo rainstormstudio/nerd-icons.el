@@ -379,6 +379,7 @@
     ("tex"          nerd-icons-sucicon "nf-seti-tex" :face nerd-icons-lred)
     ("ltx"          nerd-icons-sucicon "nf-seti-tex" :face nerd-icons-lred)
     ("dtx"          nerd-icons-sucicon "nf-seti-tex" :face nerd-icons-lred)
+    ("sty"          nerd-icons-sucicon "nf-seti-tex" :face nerd-icons-lred)
     ("md" nerd-icons-octicon "nf-oct-markdown" :face nerd-icons-lblue)
     ;; ("bib"          nerd-icons-fileicon "bib") TODO: bib
     ("org"          nerd-icons-sucicon "nf-custom-orgmode" :face nerd-icons-lgreen)
@@ -721,6 +722,7 @@
     (tex-mode                           nerd-icons-sucicon "nf-seti-tex"              :face nerd-icons-lred)
     (latex-mode                         nerd-icons-sucicon "nf-seti-tex"              :face nerd-icons-lred)
     (latex-ts-mode                      nerd-icons-sucicon "nf-seti-tex"              :face nerd-icons-lred)
+    (doctex-mode                        nerd-icons-sucicon "nf-seti-tex"              :face nerd-icons-lred)
     (dart-mode                          nerd-icons-devicon "nf-dev-dart"               :face nerd-icons-blue)
     (fsharp-mode                        nerd-icons-devicon "nf-dev-fsharp"             :face nerd-icons-blue)
     (asm-mode                           nerd-icons-sucicon "nf-seti-asm"           :face nerd-icons-blue)
