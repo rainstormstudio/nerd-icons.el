@@ -1125,7 +1125,7 @@ pause for DURATION seconds between printing each character."
                     (#xe700 . #xe7c5)  ;; Devicons
                     (#xf000 . #xf2e0)  ;; Font Awesome
                     (#xe200 . #xe2a9)  ;; Font Awesome Extension
-                    (#xf500 . #xfd46)  ;; Material Design Icons
+                    (#xf500 . #xfd46) (#xf0001 . #xf1af0) ;; Material Design Icons
                     (#xe300 . #xe3eb)  ;; Weather
                     (#xf400 . #xf4a9) #x2665 #x26A1  ;; Octicons
                     (#xe0a0 . #xe0a2) (#xe0b0 . #xe0b3)  ;; Powerline Symbols
