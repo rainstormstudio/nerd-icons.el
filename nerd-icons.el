@@ -1145,6 +1145,32 @@ pause for DURATION seconds between printing each character."
        (when duration (sit-for duration)))
      data)))
 
+(defun nerd-icons-set-font (&optional font-family frame)
+  "Modify nerd font charsets to use FONT-FAMILY for FRAME."
+  (let ((font-f (or font-family nerd-icons-font-family))
+        (charsets '((#xe5fa . #xe631)  ;; Seti-UI + Custom
+                    (#xe700 . #xe7c5)  ;; Devicons
+                    (#xf000 . #xf2e0)  ;; Font Awesome
+                    (#xe200 . #xe2a9)  ;; Font Awesome Extension
+                    (#xf500 . #xfd46) (#xf0001 . #xf1af0) ;; Material Design Icons
+                    (#xe300 . #xe3eb)  ;; Weather
+                    (#xf400 . #xf4a9) #x2665 #x26A1  ;; Octicons
+                    (#xe0a0 . #xe0a2) (#xe0b0 . #xe0b3)  ;; Powerline Symbols
+                    #xe0a3 (#xe0b4 . #xe0c8) #xe0ca (#xe0cc . #xe0d4)  ;; Powerline Extra Symbols
+                    (#x23fb . #x23fe) #x2b58  ;; IEC Power Symbols
+                    (#xf300 . #xf32d)  ;; Font Logos
+                    (#xe000 . #xe00a)  ;; Pomicons
+                    (#xea60 . #xebeb))))  ;; Codicons
+    (cl-loop for charset in charsets do
+             (set-fontset-font
+              (frame-parameter nil 'font)
+              charset
+              (font-spec :family font-f
+                         :weight nil
+                         :size   nil)
+              frame
+              'prepend))))
+
 (defmacro nerd-icons-define-icon (name alist family glyph-set)
   "Macro to generate functions for inserting icons for icon set NAME.
 
