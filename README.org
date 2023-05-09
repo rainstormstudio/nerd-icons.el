@@ -41,6 +41,7 @@ or using ~use-package~
 + use icon based on category
   - ~nerd-icons-icon-for-dir~
   - ~nerd-icons-icon-for-file~
+  - ~nerd-icons-icon-for-extension~
   - ~nerd-icons-icon-for-mode~
   - ~nerd-icons-icon-for-url~
   - ~nerd-icons-icon-for-buffer~

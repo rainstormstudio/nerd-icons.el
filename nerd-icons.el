@@ -994,6 +994,21 @@ inserting functions."
     (apply (car icon) args)))
 
 ;;;###autoload
+(defun nerd-icons-icon-for-extension (ext &rest arg-overrides)
+  "Get the formatted icon for EXT.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions."
+  (let* ((icon (or
+                (and ext
+                     (cdr (assoc (downcase ext)
+                                 nerd-icons-extension-icon-alist)))
+                nerd-icons-default-file-icon))
+         (args (cdr icon)))
+    (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
+    (apply (car icon) args)))
+
+;;;###autoload
 (defun nerd-icons-icon-for-mode (mode &rest arg-overrides)
   "Get the formatted icon for MODE.
 ARG-OVERRIDES should be a plist containining `:height',
@@ -1049,6 +1064,7 @@ icon."
 
 (nerd-icons-cache #'nerd-icons-icon-for-dir)
 (nerd-icons-cache #'nerd-icons-icon-for-file)
+(nerd-icons-cache #'nerd-icons-icon-for-extension)
 (nerd-icons-cache #'nerd-icons-icon-for-mode)
 (nerd-icons-cache #'nerd-icons-icon-for-url)
 
