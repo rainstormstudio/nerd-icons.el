@@ -1078,6 +1078,7 @@ When F is provided, the info function is calculated with the format
   "Get icon family for a `web-mode' buffer."
   (nerd-icons--web-mode t))
 
+(defvar web-mode-content-type)          ; external
 (defun nerd-icons--web-mode (&optional arg-overrides)
   "Return icon or FAMILY for `web-mode' based on `web-mode-content-type'.
 Providing ARG-OVERRIDES will modify the creation of the icon."
