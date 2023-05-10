@@ -888,15 +888,12 @@ string."
     (mapcar
      (lambda (it)
        (let* ((icon-name (car it))
-              (icon-name-head (substring icon-name 0 1))
-              (icon-name-tail (substring icon-name 1))
 
-              (icon-display (propertize icon-name-head 'display (format "%s\t%s" (funcall icon-f icon-name) icon-name-head)))
+              (icon-display (funcall icon-f icon-name))
               (icon-glyph-set (if show-glyph-set (format "\t[%s]" glyph-set) ""))
 
-              (candidate-name (format "%s%s%s" icon-display icon-name-tail icon-glyph-set))
+              (candidate-name (format "%s\t%s%s" icon-display icon-name icon-glyph-set))
               (candidate-icon (funcall (nerd-icons--function-name glyph-set) icon-name)))
-
          (cons candidate-name candidate-icon)))
      data)))
 
