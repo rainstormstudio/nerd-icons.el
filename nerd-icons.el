@@ -1014,8 +1014,9 @@ inserting functions."
 ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
 inserting functions."
-  (let* ((icon (cdr (or (assoc mode nerd-icons-mode-icon-alist)
-                        (assoc (get mode 'derived-mode-parent) nerd-icons-mode-icon-alist))))
+  (let* ((icon (or (cdr (or (assoc mode nerd-icons-mode-icon-alist)
+                            (assoc (get mode 'derived-mode-parent) nerd-icons-mode-icon-alist)))
+                   nerd-icons-default-file-icon))
          (args (cdr icon)))
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (if icon (apply (car icon) args) mode)))
