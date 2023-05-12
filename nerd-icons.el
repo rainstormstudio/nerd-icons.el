@@ -362,6 +362,7 @@
     ("tar"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
     ("rar"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
     ("tgz"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
+    ("jar"            nerd-icons-devicon "nf-dev-java"           :face nerd-icons-dpurple)
     ;; Doc
     ("pdf"            nerd-icons-codicon "nf-cod-file_pdf"       :face nerd-icons-dred)
     ("text"           nerd-icons-faicon "nf-fa-file_text"        :face nerd-icons-cyan)
