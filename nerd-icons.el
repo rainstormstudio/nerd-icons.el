@@ -116,6 +116,7 @@
     ("yaml"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dyellow)
     ("toml"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-orange)
     ("conf"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dorange)
+    ("editorconfig"   nerd-icons-sucicon "nf-seti-editorconfig"  :face nerd-icons-silver)
     ;; ?
     ("pkg"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("rpm"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
