@@ -106,6 +106,9 @@
     ("eslintignore"   nerd-icons-mdicon "nf-md-eslint"           :face nerd-icons-purple)
     ("eslint"         nerd-icons-mdicon "nf-md-eslint"           :face nerd-icons-lpurple)
     ("git"            nerd-icons-devicon "nf-dev-git"            :face nerd-icons-lred)
+    ("gitattributes"  nerd-icons-devicon "nf-dev-git"            :face nerd-icons-lred)
+    ("gitignore"      nerd-icons-devicon "nf-dev-git"            :face nerd-icons-lred)
+    ("gitmodules"     nerd-icons-devicon "nf-dev-git"            :face nerd-icons-lred)
     ("mk"             nerd-icons-devicon "nf-dev-gnu"            :face nerd-icons-dorange)
     ;;    ("cmake"    nerd-icons-devicon "cmake") TODO: cmake
     ("dockerignore"   nerd-icons-devicon "nf-dev-docker"         :face nerd-icons-dblue)
