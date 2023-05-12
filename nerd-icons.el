@@ -586,7 +586,7 @@
     (message-mode                      nerd-icons-octicon "nf-oct-pencil"              )
     (package-menu-mode                 nerd-icons-faicon "nf-fa-archive"              :face nerd-icons-silver)
     (paradox-menu-mode                 nerd-icons-faicon "nf-fa-archive"              :face nerd-icons-silver)
-    (Custom-mode                       nerd-icons-octicon "nf-oct-settings"            )
+    (Custom-mode                       nerd-icons-codicon "nf-cod-settings"            )
 
     ;; Special matcher for Web Mode based on the `web-mode-content-type' of the current buffer
     (web-mode                          nerd-icons--web-mode-icon)
