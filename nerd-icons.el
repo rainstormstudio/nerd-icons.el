@@ -78,9 +78,7 @@
   :group 'nerd-icons
   :type 'directory)
 
-(defvar nerd-icons-font-names
-  '(;; "NFM-Windows-Compatible.ttf"
-    "NFM.ttf")
+(defvar nerd-icons-font-names '("NFM.ttf")
   "List of defined font file names.")
 
 (defvar nerd-icons-glyph-sets '() "List of defined icon glyph sets.")
@@ -486,6 +484,7 @@
     ("trash"            nerd-icons-faicon "nf-fa-trash_o")
     ("dropbox"          nerd-icons-faicon "nf-fa-dropbox")
     ("google[ _-]drive" nerd-icons-mdicon "nf-md-folder_google_drive")
+    ("github"           nerd-icons-sucicon "nf-custom-folder_github")
     ("^atom$"           nerd-icons-devicon "nf-dev-atom")
     ("documents"        nerd-icons-mdicon "nf-md-folder_file")
     ("download"         nerd-icons-mdicon "nf-md-folder_download")
@@ -498,7 +497,8 @@
     ("workspace"        nerd-icons-octicon "nf-oct-code")
     ;; ("test"             nerd-icons-devicon "test-dir")
     ("\\.git"           nerd-icons-devicon "nf-dev-git")
-    (".?"               nerd-icons-octicon "nf-oct-file_directory")))
+    ("\\.config"        nerd-icons-sucicon "nf-custom-folder_config")
+    (".?"               nerd-icons-faicon "nf-fa-folder")))
 
 (defvar nerd-icons-weather-icon-alist
   '(
@@ -756,8 +756,7 @@
     (heex-ts-mode                      nerd-icons-sucicon "nf-seti-elixir"            :face nerd-icons-lorange)
     (julia-mode                        nerd-icons-sucicon "nf-seti-julia"             :face nerd-icons-purple)
     (julia-ts-mode                     nerd-icons-sucicon "nf-seti-julia"             :face nerd-icons-purple)
-    (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)
-    ))
+    (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)))
 
 (defvar                                                       nerd-icons-url-alist
   '(
@@ -961,8 +960,7 @@ When GLYPH-SET is non-nil, limit the candidates to the icon set matching it."
   "Get the formatted icon for DIR.
 ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-Note: You want chevron, please use `nerd-icons-icon-for-dir-with-chevron'."
+inserting functions."
   (let* ((dirname (file-name-base (directory-file-name dir)))
          (path (expand-file-name dir))
          (icon (nerd-icons-match-to-alist dirname nerd-icons-dir-icon-alist))
@@ -970,7 +968,7 @@ Note: You want chevron, please use `nerd-icons-icon-for-dir-with-chevron'."
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (cond
      ((file-remote-p path)
-      (apply #'nerd-icons-octicon "nf-oct-terminal" (cdr args)))
+      (apply #'nerd-icons-codicon "nf-cod-remote" (cdr args)))
      ((file-symlink-p path)
       (apply #'nerd-icons-codicon "nf-cod-file_symlink_directory" (cdr args)))
      ((nerd-icons-dir-is-submodule path)
@@ -1093,7 +1091,7 @@ When F is provided, the info function is calculated with the format
 (defun nerd-icons--web-mode-icon (&rest arg-overrides)
   "Get icon for a `web-mode' buffer with ARG-OVERRIDES."
   (nerd-icons--web-mode arg-overrides))
-(defun all-the-icons--web-mode-icon-family ()
+(defun nerd-icons--web-mode-icon-family ()
   "Get icon family for a `web-mode' buffer."
   (nerd-icons--web-mode t))
 
