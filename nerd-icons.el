@@ -193,10 +193,10 @@
     ("hpp"            nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
     ("hxx"            nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
     ;; Lisps
-    ;; ("cl"          nerd-icons-devicon "clisp") TODO: clisp
-    ;; ("l"           nerd-icons-devicon "lisp") TODO: lisp
-    ;; ("lisp"        nerd-icons-devicon "lisp") TODO: lisp
-    ;; ("hy"          nerd-icons-devicon "hy") TODO: hy
+    ("cl"             nerd-icons-mdicon "nf-md-yin_yang")
+    ("l"              nerd-icons-mdicon "nf-md-yin_yang")
+    ("lisp"           nerd-icons-mdicon "nf-md-yin_yang")
+    ("hy"             nerd-icons-mdicon "nf-md-yin_yang")
     ("el"             nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
     ("clj"            nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
