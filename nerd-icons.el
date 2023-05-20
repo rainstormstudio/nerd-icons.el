@@ -261,16 +261,16 @@
 
     ("asm"            nerd-icons-sucicon "nf-seti-asm"           :face nerd-icons-blue)
     ;; Verilog(-AMS) and SystemVerilog(-AMS     ;; Verilog(-AMS) and SystemVerilog(-AMS)
-    ;; ("v"           nerd-icons-devicon "verilog") TODO: verilog
-    ;; ("vams"        nerd-icons-devicon "verilog") TODO: verilog
-    ;; ("sv"          nerd-icons-devicon "verilog") TODO: verilog
-    ;; ("sva"         nerd-icons-devicon "verilog") TODO: verilog
-    ;; ("svh"         nerd-icons-devicon "verilog") TODO: verilog
-    ;; ("svams"       nerd-icons-devicon "verilog") TODO: verilog
+    ("v"              nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-silver)
+    ("vams"           nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-silver)
+    ("sv"             nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-silver)
+    ("sva"            nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-silver)
+    ("svh"            nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-silver)
+    ("svams"          nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-silver)
     ;; VHDL(-AMS     ;; VHDL(-AMS)
-    ("vhd"            nerd-icons-mdicon "nf-md-xml"              :face nerd-icons-blue)
-    ("vhdl"           nerd-icons-mdicon "nf-md-xml"              :face nerd-icons-blue)
-    ("vhms"           nerd-icons-mdicon "nf-md-xml"              :face nerd-icons-blue)
+    ("vhd"            nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-blue)
+    ("vhdl"           nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-blue)
+    ("vhms"           nerd-icons-faicon "nf-fa-microchip"        :face nerd-icons-blue)
     ;; Cabal
     ;; ("cabal"       nerd-icons-devicon "cabal") TODO: cabal
     ;; Kotlin
