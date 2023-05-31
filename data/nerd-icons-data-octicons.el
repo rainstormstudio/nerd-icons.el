@@ -148,6 +148,7 @@
     ("nf-oct-file_removed" . "\xf4d6")
     ("nf-oct-file_submodule" . "\xf414")
     ("nf-oct-file_symlink_file" . "\xf481")
+    ("nf-oct-file_symlink_directory" . "\xf482")
     ("nf-oct-file_zip" . "\xf410")
     ("nf-oct-filter" . "\xf4d7")
     ("nf-oct-fiscal_host" . "\xf4d8")
