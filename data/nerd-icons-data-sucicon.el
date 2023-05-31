@@ -1,10 +1,9 @@
-;;; nerd-icons-data-seti-ui-custom.el --- Nerd Font Seti-UI + Custom -*- lexical-binding: t -*-
+;;; nerd-icons-data-sucicon.el --- glyphset sucicon -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,14 +20,13 @@
 
 ;;; Commentary:
 
-;; Seti-UI + Custom
-;; e5fa - e631
+;; sucicon
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
 (defvar nerd-icons/sucicon-alist
   '(
-    ;; custom
     ("nf-custom-asm" . "\xe6ab")
     ("nf-custom-c" . "\xe61e")
     ("nf-custom-cpp" . "\xe61d")
@@ -39,26 +37,24 @@
     ("nf-custom-elm" . "\xe62c")
     ("nf-custom-emacs" . "\xe632")
     ("nf-custom-folder" . "\xe5ff")
+    ("nf-custom-folder_config" . "\xe5fc")
+    ("nf-custom-folder_git" . "\xe5fb")
+    ("nf-custom-folder_git_branch" . "\xe5fb")
+    ("nf-custom-folder_github" . "\xe5fd")
+    ("nf-custom-folder_npm" . "\xe5fa")
+    ("nf-custom-folder_oct" . "\xe6ad")
+    ("nf-custom-folder_open" . "\xe5fe")
     ("nf-custom-go" . "\xe626")
     ("nf-custom-home" . "\xe617")
     ("nf-custom-kotlin" . "\xe634")
     ("nf-custom-msdos" . "\xe629")
     ("nf-custom-orgmode" . "\xe633")
+    ("nf-custom-play_arrow" . "\xe602")
     ("nf-custom-puppet" . "\xe631")
     ("nf-custom-purescript" . "\xe630")
+    ("nf-custom-v_lang" . "\xe6ac")
     ("nf-custom-vim" . "\xe62b")
     ("nf-custom-windows" . "\xe62a")
-    ("nf-custom-folder_config" . "\xe5fc")
-    ("nf-custom-folder_git" . "\xe5fb")
-    ("nf-custom-folder_github" . "\xe5fd")
-    ("nf-custom-folder_npm" . "\xe5fa")
-    ("nf-custom-folder_oct" . "\xe6ad")
-    ("nf-custom-folder_open" . "\xe5fe")
-    ("nf-custom-play_arrow" . "\xe602")
-    ("nf-custom-v_lang" . "\xe6ac")
-    ("nf-custom-folder_git_branch" . "\xe5fb")
-
-    ;; Seti-UI
     ("nf-seti-apple" . "\xe635")
     ("nf-seti-argdown" . "\xe636")
     ("nf-seti-asm" . "\xe637")
@@ -228,5 +224,5 @@
     ("nf-seti-zip" . "\xe6aa")
     ))
 
-(provide 'nerd-icons-data-seti-ui-custom)
-;;; nerd-icons-data-seti-ui-custom.el ends here
+(provide 'nerd-icons-data-sucicon)
+;;; nerd-icons-data-sucicon.el ends here

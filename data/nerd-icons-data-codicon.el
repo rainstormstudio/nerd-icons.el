@@ -1,10 +1,9 @@
-;;; nerd-icons-data-devicons.el --- Nerd Font Codicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-codicon.el --- glyphset codicon -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,8 +20,8 @@
 
 ;;; Commentary:
 
-;; Codicons
-;; ea60 - ebeb
+;; codicon
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
@@ -417,5 +416,5 @@
     ("nf-cod-zoom_out" . "\xeb82")
     ))
 
-(provide 'nerd-icons-data-codicons)
-;;; nerd-icons-data-codicons.el ends here
+(provide 'nerd-icons-data-codicon)
+;;; nerd-icons-data-codicon.el ends here

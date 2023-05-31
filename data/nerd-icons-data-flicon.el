@@ -1,10 +1,9 @@
-;;; nerd-icons-data-font-logos.el --- Nerd Font Font Logos -*- lexical-binding: t -*-
+;;; nerd-icons-data-flicon.el --- glyphset flicon -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,8 +20,8 @@
 
 ;;; Commentary:
 
-;; Font Logos
-;; f300 - f32f
+;; flicon
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
@@ -78,5 +77,5 @@
     ("nf-linux-zorin" . "\xf32f")
     ))
 
-(provide 'nerd-icons-data-font-logos)
-;;; nerd-icons-data-font-logos.el ends here
+(provide 'nerd-icons-data-flicon)
+;;; nerd-icons-data-flicon.el ends here

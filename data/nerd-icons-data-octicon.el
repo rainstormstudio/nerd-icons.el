@@ -1,10 +1,9 @@
-;;; nerd-icons-data-primer-octicons.el --- Nerd Font Primer Octicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-octicon.el --- glyphset octicon -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,11 +20,8 @@
 
 ;;; Commentary:
 
-;; Octicons
-;; 2665
-;; 26a1
-;; f400 - f4a8
-;; f4a9
+;; octicon
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
@@ -56,7 +52,7 @@
     ("nf-oct-book" . "\xf405")
     ("nf-oct-bookmark" . "\xf461")
     ("nf-oct-bookmark_fill" . "\xf47a")
-    ("nf-oct-bookmark_slash" . "\xf482")
+    ("nf-oct-bookmark_slash" . "\xf533")
     ("nf-oct-bookmark_slash_fill" . "\xf493")
     ("nf-oct-briefcase" . "\xf491")
     ("nf-oct-broadcast" . "\xf43c")
@@ -147,8 +143,8 @@
     ("nf-oct-file_moved" . "\xf4d5")
     ("nf-oct-file_removed" . "\xf4d6")
     ("nf-oct-file_submodule" . "\xf414")
-    ("nf-oct-file_symlink_file" . "\xf481")
     ("nf-oct-file_symlink_directory" . "\xf482")
+    ("nf-oct-file_symlink_file" . "\xf481")
     ("nf-oct-file_zip" . "\xf410")
     ("nf-oct-filter" . "\xf4d7")
     ("nf-oct-fiscal_host" . "\xf4d8")
@@ -343,5 +339,5 @@
     ("nf-oct-zoom_out" . "\xf532")
     ))
 
-(provide 'nerd-icons-data-octicons)
-;;; nerd-icons-data-octicons.el ends here
+(provide 'nerd-icons-data-octicon)
+;;; nerd-icons-data-octicon.el ends here

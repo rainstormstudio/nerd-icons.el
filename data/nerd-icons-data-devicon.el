@@ -1,10 +1,9 @@
-;;; nerd-icons-data-devicons.el --- Nerd Font devicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-devicon.el --- glyphset devicon -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,8 +20,8 @@
 
 ;;; Commentary:
 
-;; Devicons
-;; e700 - e7c5
+;; devicon
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
@@ -221,5 +220,5 @@
     ("nf-dev-zend" . "\xe778")
     ))
 
-(provide 'nerd-icons-data-devicons)
-;;; nerd-icons-data-devicons.el ends here
+(provide 'nerd-icons-data-devicon)
+;;; nerd-icons-data-devicon.el ends here

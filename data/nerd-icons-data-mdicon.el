@@ -1,10 +1,9 @@
-;;; nerd-icons-data-material-design.el --- Nerd Font Material Design -*- lexical-binding: t -*-
+;;; nerd-icons-data-mdicon.el --- glyphset mdicon -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,8 +20,8 @@
 
 ;;; Commentary:
 
-;; Material Design
-;; f500 - fd46
+;; mdicon
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
@@ -6910,5 +6909,5 @@
     ("nf-md-zodiac_virgo" . "\xf0a88")
     ))
 
-(provide 'nerd-icons-data-material-design)
-;;; nerd-icons-data-material-design.el ends here
+(provide 'nerd-icons-data-mdicon)
+;;; nerd-icons-data-mdicon.el ends here

@@ -1,10 +1,9 @@
-;;; nerd-icons-data-pomicons.el --- Nerd Font Pomicons -*- lexical-binding: t -*-
+;;; nerd-icons-data-pomicon.el --- glyphset pomicon -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,8 +20,8 @@
 
 ;;; Commentary:
 
-;; Pomicons
-;; e000 - e00a
+;; pomicon
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
@@ -41,5 +40,5 @@
     ("nf-pom-short_pause" . "\xe005")
     ))
 
-(provide 'nerd-icons-data-pomicons)
-;;; nerd-icons-data-pomicons.el ends here
+(provide 'nerd-icons-data-pomicon)
+;;; nerd-icons-data-pomicon.el ends here

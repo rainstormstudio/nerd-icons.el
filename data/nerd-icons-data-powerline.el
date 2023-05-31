@@ -1,10 +1,9 @@
-;;; nerd-icons-data-powerline.el --- Nerd Font Powerline icons -*- lexical-binding: t -*-
+;;; nerd-icons-data-powerline.el --- glyphset powerline -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2023 Hongyu Ding <rainstormstudio@yahoo.com>
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,15 +20,8 @@
 
 ;;; Commentary:
 
-;; Powerline
-;; e0a0 - e0a2
-;; e0b0 - e0b3
-;;
-;; Powerline Extra
-;; e0a3
-;; e0b4 - e0c8
-;; e0ca
-;; e0cc - e0d4
+;; powerline
+;; from Nerd Font Version: 3.0.1
 
 ;;; Code:
 
@@ -44,7 +36,6 @@
     ("nf-pl-readonly" . "\xe0a2")
     ("nf-pl-right_hard_divider" . "\xe0b2")
     ("nf-pl-right_soft_divider" . "\xe0b3")
-    
     ("nf-ple-backslash_separator" . "\xe0b9")
     ("nf-ple-backslash_separator_redundant" . "\xe0bf")
     ("nf-ple-column_number" . "\xe0a3")
@@ -76,7 +67,40 @@
     ("nf-ple-trapezoid_top_bottom" . "\xe0d2")
     ("nf-ple-trapezoid_top_bottom_mirrored" . "\xe0d4")
     ("nf-ple-upper_left_triangle" . "\xe0bc")
-    ("nf-ple-upper_right_triangle" . "\xe0be")))
+    ("nf-ple-upper_right_triangle" . "\xe0be")
+    ("nf-ple-backslash_separator" . "\xe0b9")
+    ("nf-ple-backslash_separator_redundant" . "\xe0bf")
+    ("nf-ple-column_number" . "\xe0a3")
+    ("nf-ple-current_column" . "\xe0a3")
+    ("nf-ple-flame_thick" . "\xe0c0")
+    ("nf-ple-flame_thick_mirrored" . "\xe0c2")
+    ("nf-ple-flame_thin" . "\xe0c1")
+    ("nf-ple-flame_thin_mirrored" . "\xe0c3")
+    ("nf-ple-forwardslash_separator" . "\xe0bb")
+    ("nf-ple-forwardslash_separator_redundant" . "\xe0bd")
+    ("nf-ple-honeycomb" . "\xe0cc")
+    ("nf-ple-honeycomb_outline" . "\xe0cd")
+    ("nf-ple-ice_waveform" . "\xe0c8")
+    ("nf-ple-ice_waveform_mirrored" . "\xe0ca")
+    ("nf-ple-left_half_circle_thick" . "\xe0b6")
+    ("nf-ple-left_half_circle_thin" . "\xe0b7")
+    ("nf-ple-lego_block_facing" . "\xe0d0")
+    ("nf-ple-lego_block_sideways" . "\xe0d1")
+    ("nf-ple-lego_separator" . "\xe0ce")
+    ("nf-ple-lego_separator_thin" . "\xe0cf")
+    ("nf-ple-lower_left_triangle" . "\xe0b8")
+    ("nf-ple-lower_right_triangle" . "\xe0ba")
+    ("nf-ple-pixelated_squares_big" . "\xe0c6")
+    ("nf-ple-pixelated_squares_big_mirrored" . "\xe0c7")
+    ("nf-ple-pixelated_squares_small" . "\xe0c4")
+    ("nf-ple-pixelated_squares_small_mirrored" . "\xe0c5")
+    ("nf-ple-right_half_circle_thick" . "\xe0b4")
+    ("nf-ple-right_half_circle_thin" . "\xe0b5")
+    ("nf-ple-trapezoid_top_bottom" . "\xe0d2")
+    ("nf-ple-trapezoid_top_bottom_mirrored" . "\xe0d4")
+    ("nf-ple-upper_left_triangle" . "\xe0bc")
+    ("nf-ple-upper_right_triangle" . "\xe0be")
+    ))
 
 (provide 'nerd-icons-data-powerline)
 ;;; nerd-icons-data-powerline.el ends here

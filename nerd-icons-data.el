@@ -28,17 +28,17 @@
 
 ;;; Code:
 
-(require 'nerd-icons-data-iec-power-symbols "./data/nerd-icons-data-iec-power-symbols")
-(require 'nerd-icons-data-pomicons "./data/nerd-icons-data-pomicons")
-(require 'nerd-icons-data-octicons "./data/nerd-icons-data-octicons")
+(require 'nerd-icons-data-ipsicon   "./data/nerd-icons-data-ipsicon")
+(require 'nerd-icons-data-pomicon   "./data/nerd-icons-data-pomicon")
+(require 'nerd-icons-data-octicon   "./data/nerd-icons-data-octicon")
 (require 'nerd-icons-data-powerline "./data/nerd-icons-data-powerline")
-(require 'nerd-icons-data-font-awesome "./data/nerd-icons-data-font-awesome")
-(require 'nerd-icons-data-weather-icons "./data/nerd-icons-data-weather-icons")
-(require 'nerd-icons-data-seti-ui-custom "./data/nerd-icons-data-seti-ui-custom")
-(require 'nerd-icons-data-devicons "./data/nerd-icons-data-devicons")
-(require 'nerd-icons-data-codicons "./data/nerd-icons-data-codicons")
-(require 'nerd-icons-data-font-logos "./data/nerd-icons-data-font-logos")
-(require 'nerd-icons-data-material-design "./data/nerd-icons-data-material-design")
+(require 'nerd-icons-data-faicon    "./data/nerd-icons-data-faicon")
+(require 'nerd-icons-data-wicon     "./data/nerd-icons-data-wicon")
+(require 'nerd-icons-data-sucicon   "./data/nerd-icons-data-sucicon")
+(require 'nerd-icons-data-devicon   "./data/nerd-icons-data-devicon")
+(require 'nerd-icons-data-codicon   "./data/nerd-icons-data-codicon")
+(require 'nerd-icons-data-flicon    "./data/nerd-icons-data-flicon")
+(require 'nerd-icons-data-mdicon    "./data/nerd-icons-data-mdicon")
 
 (provide 'nerd-icons-data)
 ;;; nerd-icons-data.el ends here
