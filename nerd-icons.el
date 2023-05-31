@@ -496,9 +496,9 @@
     ("code"             nerd-icons-octicon "nf-oct-code")
     ("workspace"        nerd-icons-octicon "nf-oct-code")
     ;; ("test"             nerd-icons-devicon "test-dir")
-    ("\\.git"           nerd-icons-devicon "nf-dev-git")
+    ("\\.git"           nerd-icons-sucicon "nf-custom-folder_git")
     ("\\.config"        nerd-icons-sucicon "nf-custom-folder_config")
-    (".?"               nerd-icons-faicon "nf-fa-folder")))
+    (".?"               nerd-icons-sucicon "nf-custom-folder_oct")))
 
 (defvar nerd-icons-weather-icon-alist
   '(
