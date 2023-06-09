@@ -738,6 +738,7 @@
     (osm-mode                          nerd-icons-mdicon   "nf-md-map_search"         :face nerd-icons-lgreen)
     (spacemacs-buffer-mode             nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
     (elfeed-search-mode                nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-orange)
+    (elfeed-show-mode                  nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-yellow)
 
     (emms-browser-mode                 nerd-icons-faicon   "nf-fa-music"              :face nerd-icons-silver)
     (emms-lyrics-mode                  nerd-icons-faicon   "nf-fa-music"              :face nerd-icons-silver)
@@ -753,6 +754,9 @@
     (mingus-browse-mode                nerd-icons-faicon "nf-fa-music"                :face nerd-icons-silver)
     (mingus-burn-mode                  nerd-icons-faicon "nf-fa-music"                :face nerd-icons-silver)
     (simple-mpc-mode                   nerd-icons-faicon "nf-fa-music"                :face nerd-icons-silver)
+    (telega-root-mode                  nerd-icons-faicon "nf-fae-telegram"            :face nerd-icons-purple)
+    (telega-chat-mode                  nerd-icons-faicon "nf-fae-telegram"            :face nerd-icons-blue)
+    (mastodon-mode                     nerd-icons-mdicon "nf-md-mastodon"             :face nerd-icons-blue)
 
     (magik-session-mode                nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-blue)
     (magik-cb-mode                     nerd-icons-faicon "nf-fa-book"                 :face nerd-icons-blue)
