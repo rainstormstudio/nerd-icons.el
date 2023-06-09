@@ -730,6 +730,12 @@
     (zig-mode                          nerd-icons-sucicon "nf-seti-zig"               :face nerd-icons-orange)
     ;; (odin-mode                      nerd-icons-fileicon "odin"                     :face nerd-icons-lblue)
     (pdf-view-mode                     nerd-icons-codicon  "nf-cod-file_pdf"          :face nerd-icons-dred)
+    (doc-view-mode                     nerd-icons-mdicon   "nf-md-file_document"      :face nerd-icons-lred)
+    (calibre-library-mode              nerd-icons-codicon  "nf-cod-library"           :face nerd-icons-dblue)
+    (calibre-edit-mode                 nerd-icons-codicon  "nf-cod-library"           :face nerd-icons-lred)
+    (calibredb-search-mode             nerd-icons-codicon  "nf-cod-library"           :face nerd-icons-dblue)
+    (calibredb-show-mode               nerd-icons-codicon  "nf-cod-library"           :face nerd-icons-lblue)
+    (osm-mode                          nerd-icons-mdicon   "nf-md-map_search"         :face nerd-icons-lgreen)
     (spacemacs-buffer-mode             nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
     (elfeed-search-mode                nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-orange)
 
