@@ -143,6 +143,7 @@
     ("heex"           nerd-icons-sucicon "nf-seti-elixir"        :face nerd-icons-lorange)
     ("ex"             nerd-icons-sucicon "nf-seti-elixir"        :face nerd-icons-lpurple)
     ("exs"            nerd-icons-sucicon "nf-seti-elixir"        :face nerd-icons-lred)
+    ("livemd"         nerd-icons-sucicon "nf-seti-elixir"        :face nerd-icons-lblue)
     ("java"           nerd-icons-devicon "nf-dev-java"           :face nerd-icons-purple)
     ("gradle"         nerd-icons-sucicon "nf-seti-gradle"        :face nerd-icons-silver)
     ("ebuild"         nerd-icons-mdicon "nf-md-gentoo"           :face nerd-icons-cyan)
