@@ -759,6 +759,8 @@
     (telega-chat-mode                  nerd-icons-faicon "nf-fae-telegram"            :face nerd-icons-blue)
     (mastodon-mode                     nerd-icons-mdicon "nf-md-mastodon"             :face nerd-icons-blue)
 
+    (magik-mode                        nerd-icons-faicon "nf-fa-magic"                :face nerd-icons-blue)
+    (magik-ts-mode                     nerd-icons-faicon "nf-fa-magic"                :face nerd-icons-blue)
     (magik-session-mode                nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-blue)
     (magik-cb-mode                     nerd-icons-faicon "nf-fa-book"                 :face nerd-icons-blue)
     ;; (meson-mode                     nerd-icons-fileicon "meson"                    :face nerd-icons-purple)
