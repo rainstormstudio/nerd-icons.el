@@ -201,7 +201,7 @@
     ("el"             nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
     ("clj"            nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
-    ;; ("cljs"        nerd-icons-devicon "cljs") TODO: cljs
+    ("cljs"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-lyellow)
     ("coffee"         nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-maroon)
     ("iced"           nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-lmaroon)
     ("dart"           nerd-icons-devicon "nf-dev-dart"           :face nerd-icons-blue)
@@ -534,7 +534,7 @@
     ("hot"                   nerd-icons-wicon "nf-weather-hot")
     ("not.*available"        nerd-icons-wicon "nf-weather-na")))
 
-(defvar                                nerd-icons-mode-icon-alist
+(defvar nerd-icons-mode-icon-alist
   '(
     (emacs-lisp-mode                   nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
     (circe-server-mode                 nerd-icons-faicon "nf-fa-commenting_o")
@@ -670,7 +670,10 @@
     (clojure-mode                      nerd-icons-devicon "nf-dev-clojure_alt"        :face nerd-icons-blue)
     (clojure-ts-mode                   nerd-icons-devicon "nf-dev-clojure_alt"        :face nerd-icons-blue)
     (cider-repl-mode                   nerd-icons-devicon "nf-dev-clojure_alt"        :face nerd-icons-green)
-    (clojurescript-mode                nerd-icons-devicon "nf-dev-clojure"            :face nerd-icons-dblue)
+    (clojurec-mode                     nerd-icons-sucicon "nf-seti-clojure"           :face nerd-icons-blue)
+    (clojurec-ts-mode                  nerd-icons-sucicon "nf-seti-clojure"           :face nerd-icons-blue)
+    (clojurescript-mode                nerd-icons-devicon "nf-dev-clojure_alt"        :face nerd-icons-lyellow)
+    (clojurescript-ts-mode             nerd-icons-devicon "nf-dev-clojure_alt"        :face nerd-icons-lyellow)
     (coffee-mode                       nerd-icons-devicon "nf-dev-coffeescript"       :face nerd-icons-maroon)
     ;; (lisp-mode                      nerd-icons-fileicon "lisp"                     :face nerd-icons-orange)
     (css-mode                          nerd-icons-devicon "nf-dev-css3"               :face nerd-icons-yellow)
