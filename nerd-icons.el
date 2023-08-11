@@ -703,7 +703,6 @@
     (markdown-mode                     nerd-icons-octicon "nf-oct-markdown"           :face nerd-icons-lblue)
     (markdown-ts-mode                  nerd-icons-octicon "nf-oct-markdown"           :face nerd-icons-lblue)
     ;; (bibtex-mode                    nerd-icons-fileicon "bib"                      :face nerd-icons-maroon)
-    (org-mode                          nerd-icons-sucicon "nf-custom-orgmode"         :face nerd-icons-lgreen)
     (compilation-mode                  nerd-icons-faicon "nf-fa-cogs")
     (objc-mode                         nerd-icons-faicon "nf-fa-apple")
     (tuareg-mode                       nerd-icons-sucicon "nf-seti-ocaml")
