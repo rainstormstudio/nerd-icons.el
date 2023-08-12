@@ -208,6 +208,7 @@
     ("coffee"         nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-maroon)
     ("iced"           nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-lmaroon)
     ("dart"           nerd-icons-devicon "nf-dev-dart"           :face nerd-icons-blue)
+    ("ledger"         nerd-icons-mdicon "nf-md-file_table_box_multiple"       :face nerd-icons-green)
     ;; ("rkt"         nerd-icons-devicon "racket") TODO: racket
     ;; ("scrbl"       nerd-icons-devicon "racket") TODO: racket
     ;; Stylesheeting
@@ -551,6 +552,7 @@
     ;; (sly-mrepl-mode                 nerd-icons-fileicon "clisp"                    :face nerd-icons-orange)
     ;; (slime-repl-mode                nerd-icons-fileicon "clisp"                    :face nerd-icons-orange)
     (org-mode                          nerd-icons-sucicon "nf-custom-orgmode"         :face nerd-icons-lgreen)
+    (ledger-mode                       nerd-icons-mdicon "nf-md-file_table_box_multiple"   :face nerd-icons-green)
     (typescript-mode                   nerd-icons-mdicon "nf-md-language_typescript"  :face nerd-icons-blue-alt)
     (typescript-ts-mode                nerd-icons-mdicon "nf-md-language_typescript"  :face nerd-icons-blue-alt)
     (typescript-tsx-mode               nerd-icons-mdicon "nf-md-language_typescript"  :face nerd-icons-blue-alt)
