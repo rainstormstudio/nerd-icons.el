@@ -259,6 +259,7 @@
     ("swift"          nerd-icons-devicon "nf-dev-swift"          :face nerd-icons-green)
 
     ("tcl"            nerd-icons-mdicon "nf-md-feather"          :face nerd-icons-dred)
+    ("exp"            nerd-icons-mdicon "nf-md-feather"          :face nerd-icons-dred)
 
     ("tf"             nerd-icons-mdicon "nf-md-terraform"        :face nerd-icons-purple-alt)
     ("tfvars"         nerd-icons-mdicon "nf-md-terraform"        :face nerd-icons-purple-alt)
