@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; sucicon
-;; from Nerd Font Version: 3.0.1
+;; from Nerd Font Version: 3.0.2
 
 ;;; Code:
 
