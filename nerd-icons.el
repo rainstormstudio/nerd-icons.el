@@ -474,6 +474,9 @@
     ("^go.mod$"                nerd-icons-sucicon "nf-seti-config"           :face nerd-icons-blue-alt)
     ("^go.work$"               nerd-icons-sucicon "nf-seti-config"           :face nerd-icons-blue-alt)
 
+    ;; Groovy
+    ("Jenkinsfile\\'"          nerd-icons-devicon "nf-dev-groovy"            :face nerd-icons-cyan-alt)
+
     ;; Emacs
     ("bookmark"                nerd-icons-octicon "nf-oct-bookmark"          :face nerd-icons-lpink)
 
