@@ -383,6 +383,7 @@
     ("md"             nerd-icons-octicon "nf-oct-markdown"       :face nerd-icons-lblue)
     ("bib"            nerd-icons-mdicon "nf-md-book"             :face nerd-icons-lblue)
     ("org"            nerd-icons-sucicon "nf-custom-orgmode"     :face nerd-icons-lgreen)
+    ("org_archive"    nerd-icons-sucicon "nf-custom-orgmode"     :face nerd-icons-lgreen)
     ("pps"            nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
     ("ppt"            nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
     ("pptsx"          nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
