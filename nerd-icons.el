@@ -403,7 +403,11 @@
     ("crt"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-lblue)
     ("pub"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-blue)
     ("gpg"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-lblue)
-    ("cache"          nerd-icons-octicon "nf-oct-database"       :face nerd-icons-green)))
+    ("cache"          nerd-icons-octicon "nf-oct-database"       :face nerd-icons-green)
+    ;; backup
+    ("backup"         nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
+    ("old"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
+    ("bak"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)))
 
 (defvar                        nerd-icons-regexp-icon-alist
   '(
