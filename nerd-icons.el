@@ -592,7 +592,7 @@
     (help-mode                         nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-purple)
     (helpful-mode                      nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-purple)
     (Info-mode                         nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-blue)
-    (benchmark-init/tree-mode          nerd-icons-octicon "nf-oct-dashboard")
+    (benchmark-init/tree-mode          nerd-icons-faicon "nf-fa-dashboard")
     (jenkins-mode                      nerd-icons-devicon "nf-dev-jenkins"            :face nerd-icons-blue)
     (magit-popup-mode                  nerd-icons-sucicon "nf-seti-git"               :face nerd-icons-red)
     (magit-status-mode                 nerd-icons-sucicon "nf-seti-git"               :face nerd-icons-lred)
