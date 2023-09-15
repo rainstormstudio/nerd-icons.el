@@ -760,6 +760,7 @@
     (spacemacs-buffer-mode             nerd-icons-sucicon  "nf-custom-emacs"          :face nerd-icons-purple)
 
     (elfeed-search-mode                nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-orange)
+    (elfeed-summary-mode               nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-orange)
     (elfeed-show-mode                  nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-yellow)
     (newsticker-treeview-mode          nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-orange)
     (newsticker-treeview-list-mode     nerd-icons-faicon   "nf-fa-rss_square"         :face nerd-icons-lorange)
