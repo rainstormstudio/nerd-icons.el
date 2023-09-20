@@ -489,6 +489,7 @@
     ("^\\*scratch.*"           nerd-icons-faicon "nf-fa-sticky_note"         :face nerd-icons-yellow)
     ("^\\*new-tab\\*$"         nerd-icons-mdicon "nf-md-star"                :face nerd-icons-cyan)
     ("Cask\\'"                 nerd-icons-sucicon "nf-custom-emacs"          :face nerd-icons-blue)
+    ("Eask\\'"                 nerd-icons-sucicon "nf-custom-emacs"          :face nerd-icons-blue)
 
     ("^\\."                    nerd-icons-octicon "nf-oct-gear")))
 
@@ -616,6 +617,7 @@
     (fundamental-mode                  nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-dsilver)
     (special-mode                      nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-yellow)
     (cask-mode                         nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-blue)
+    (eask-mode                         nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-blue)
     (text-mode                         nerd-icons-faicon "nf-fa-file_text"            :face nerd-icons-cyan)
     (enh-ruby-mode                     nerd-icons-devicon "nf-dev-ruby"               :face nerd-icons-lred)
     (ruby-mode                         nerd-icons-devicon "nf-dev-ruby"               :face nerd-icons-lred)
