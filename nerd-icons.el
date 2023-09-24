@@ -746,6 +746,8 @@
     (dart-mode                         nerd-icons-devicon "nf-dev-dart"               :face nerd-icons-blue)
     (fsharp-mode                       nerd-icons-devicon "nf-dev-fsharp"             :face nerd-icons-blue)
     (asm-mode                          nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
+    (fasm-mode                         nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
+    (masm-mode                         nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
     (nasm-mode                         nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
     ;; (tcl-mode                       nerd-icons-fileicon "tcl"                      :face nerd-icons-dred)
     ;; (cuda-mode                      nerd-icons-fileicon "nvidia"                   :face nerd-icons-green)
