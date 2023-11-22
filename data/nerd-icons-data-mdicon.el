@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; mdicon
-;; from Nerd Font Version: 3.0.2
+;; from Nerd Font Version: 3.1.0
 
 ;;; Code:
 

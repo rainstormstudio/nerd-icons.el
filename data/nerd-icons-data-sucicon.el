@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; sucicon
-;; from Nerd Font Version: 3.0.2
+;; from Nerd Font Version: 3.1.0
 
 ;;; Code:
 
@@ -29,6 +29,7 @@
   '(
     ("nf-custom-asm" . "\xe6ab")
     ("nf-custom-c" . "\xe61e")
+    ("nf-custom-common_lisp" . "\xe6b0")
     ("nf-custom-cpp" . "\xe61d")
     ("nf-custom-crystal" . "\xe62f")
     ("nf-custom-default" . "\xe612")
@@ -36,6 +37,7 @@
     ("nf-custom-elixir" . "\xe62d")
     ("nf-custom-elm" . "\xe62c")
     ("nf-custom-emacs" . "\xe632")
+    ("nf-custom-fennel" . "\xe6af")
     ("nf-custom-folder" . "\xe5ff")
     ("nf-custom-folder_config" . "\xe5fc")
     ("nf-custom-folder_git" . "\xe5fb")
@@ -48,10 +50,12 @@
     ("nf-custom-home" . "\xe617")
     ("nf-custom-kotlin" . "\xe634")
     ("nf-custom-msdos" . "\xe629")
+    ("nf-custom-neovim" . "\xe6ae")
     ("nf-custom-orgmode" . "\xe633")
     ("nf-custom-play_arrow" . "\xe602")
     ("nf-custom-puppet" . "\xe631")
     ("nf-custom-purescript" . "\xe630")
+    ("nf-custom-scheme" . "\xe6b1")
     ("nf-custom-v_lang" . "\xe6ac")
     ("nf-custom-vim" . "\xe62b")
     ("nf-custom-windows" . "\xe62a")
