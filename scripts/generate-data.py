@@ -1,8 +1,19 @@
+"""
+This script generates nerd-icon data elisp code files
+under /data folder. It grabs contents from nerd-fonts
+https://github.com/ryanoasis/nerd-fonts.
+
+How to use:
+cd script
+python ./generate-data.py
+"""
+
 import requests
 import os
 import shutil
 import re
 
+# constants and variables
 nerd_fonts_generated_css_file = "nerd-fonts-generated.css"
 nerd_fonts_generated_css_url = "https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/css/" + nerd_fonts_generated_css_file
 nerd_fonts_generated_css_download_folder = "../tmp"
@@ -40,16 +51,18 @@ data_header = """;;; nerd-icons-data-{}.el --- glyphset {} -*- lexical-binding: 
 data_footer = """;;; nerd-icons-data-{}.el ends here"""
 
 def download_nerd_fonts_generated_css_file():
+    """Downloads css files from Nerd Fonts repo."""
     if not os.path.exists(nerd_fonts_generated_css_download_folder):
         print("creating folder {}".format(nerd_fonts_generated_css_download_folder))
         os.makedirs(nerd_fonts_generated_css_download_folder)
 
     print("downloading {} to {}".format(nerd_fonts_generated_css_file, nerd_fonts_generated_css_download_folder))
-    r = requests.get(nerd_fonts_generated_css_url, allow_redirects=True, verify=False)
+    r = requests.get(nerd_fonts_generated_css_url, allow_redirects=True, verify=True)
     open(nerd_fonts_generated_css_download_folder + "/" +
          nerd_fonts_generated_css_file, 'wb').write(r.content)
 
 def get_version():
+    """change version to Nerd Fonts version."""
     global nerd_fonts_version
     input = open(nerd_fonts_generated_css_download_folder + "/" +
               nerd_fonts_generated_css_file, 'r')
@@ -57,6 +70,7 @@ def get_version():
     nerd_fonts_version = re.search('Version: .*', content).group(0)
 
 def matches_from_prefix(prefix):
+    """find matches from prefix."""
     with open(nerd_fonts_generated_css_download_folder + "/" +
               nerd_fonts_generated_css_file, 'r') as input:
         content = input.read()
@@ -65,6 +79,7 @@ def matches_from_prefix(prefix):
         return matches
 
 def generate(folder, glyphset, prefixes):
+    """generates elisp data for glyphset with prefixes in the folder."""
     output = open(folder + '/nerd-icons-data-' + glyphset + '.el', 'w')
     output.write(data_header.format(glyphset, glyphset, glyphset, nerd_fonts_version))
     output.write('(defvar nerd-icons/' + glyphset + '-alist\n  \'(\n')
