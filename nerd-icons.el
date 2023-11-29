@@ -200,7 +200,7 @@
     ;; Lisps
     ("cl"             nerd-icons-sucicon "nf-custom-common_lisp" :face nerd-icons-lorange)
     ("l"              nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-orange)
-    ("lisp"           nerd-icons-mdicon  "nf-custom-scheme"      :face nerd-icons-orange)
+    ("lisp"           nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-orange)
     ;; ("hy"             nerd-icons-sucicon "nf-custom-hy"          :face nerd-icons-blue)
     ("el"             nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
     ("clj"            nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
