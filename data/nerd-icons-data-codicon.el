@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; codicon
-;; from Nerd Font Version: 3.1.0
+;; from Nerd Font Version: 3.1.1
 
 ;;; Code:
 

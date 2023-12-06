@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; sucicon
-;; from Nerd Font Version: 3.1.0
+;; from Nerd Font Version: 3.1.1
 
 ;;; Code:
 
@@ -56,6 +56,7 @@
     ("nf-custom-puppet" . "\xe631")
     ("nf-custom-purescript" . "\xe630")
     ("nf-custom-scheme" . "\xe6b1")
+    ("nf-custom-toml" . "\xe6b2")
     ("nf-custom-v_lang" . "\xe6ac")
     ("nf-custom-vim" . "\xe62b")
     ("nf-custom-windows" . "\xe62a")
