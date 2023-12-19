@@ -74,7 +74,7 @@ def matches_from_prefix(prefix):
     with open(nerd_fonts_generated_css_download_folder + "/" +
               nerd_fonts_generated_css_file, 'r') as input:
         content = input.read()
-        content_new = re.sub('\.' + prefix + '(.*):before {\n.*content: "\\\\(.*)";\n}', '("' + prefix + r'\1" . "\\x\2")', content, flags = re.M)
+        content_new = re.sub('\.' + prefix + '(.*):before {\n.*content: "\\\\(.*)";\n}', '("' + prefix + r'\1" . "\2")', content, flags = re.M)
         matches = re.findall('\("' + prefix + '.*\)', content_new)
         return matches
 

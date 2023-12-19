@@ -27,11 +27,11 @@
 
 (defvar nerd-icons/ipsicon-alist
   '(
-    ("nf-iec-power" . "\x23fb")
-    ("nf-iec-power_off" . "\x2b58")
-    ("nf-iec-power_on" . "\x23fd")
-    ("nf-iec-sleep_mode" . "\x23fe")
-    ("nf-iec-toggle_power" . "\x23fc")
+    ("nf-iec-power" . "23fb")
+    ("nf-iec-power_off" . "2b58")
+    ("nf-iec-power_on" . "23fd")
+    ("nf-iec-sleep_mode" . "23fe")
+    ("nf-iec-toggle_power" . "23fc")
     ))
 
 (provide 'nerd-icons-data-ipsicon)

@@ -27,17 +27,17 @@
 
 (defvar nerd-icons/pomicon-alist
   '(
-    ("nf-pom-away" . "\xe007")
-    ("nf-pom-clean_code" . "\xe000")
-    ("nf-pom-external_interruption" . "\xe00a")
-    ("nf-pom-internal_interruption" . "\xe009")
-    ("nf-pom-long_pause" . "\xe006")
-    ("nf-pom-pair_programming" . "\xe008")
-    ("nf-pom-pomodoro_done" . "\xe001")
-    ("nf-pom-pomodoro_estimated" . "\xe002")
-    ("nf-pom-pomodoro_squashed" . "\xe004")
-    ("nf-pom-pomodoro_ticking" . "\xe003")
-    ("nf-pom-short_pause" . "\xe005")
+    ("nf-pom-away" . "e007")
+    ("nf-pom-clean_code" . "e000")
+    ("nf-pom-external_interruption" . "e00a")
+    ("nf-pom-internal_interruption" . "e009")
+    ("nf-pom-long_pause" . "e006")
+    ("nf-pom-pair_programming" . "e008")
+    ("nf-pom-pomodoro_done" . "e001")
+    ("nf-pom-pomodoro_estimated" . "e002")
+    ("nf-pom-pomodoro_squashed" . "e004")
+    ("nf-pom-pomodoro_ticking" . "e003")
+    ("nf-pom-short_pause" . "e005")
     ))
 
 (provide 'nerd-icons-data-pomicon)

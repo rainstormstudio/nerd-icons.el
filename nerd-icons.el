@@ -37,6 +37,7 @@
 ;;; Code:
 
 (require 'cl-lib)
+(require 'svg)
 
 (require 'nerd-icons-data)
 
@@ -50,6 +51,11 @@
 
 (defcustom nerd-icons-color-icons t
   "Whether or not to include a foreground color when formatting the icon."
+  :group 'nerd-icons
+  :type 'boolean)
+
+(defcustom nerd-icons-use-svg t
+  "Whether or not to use svg version of the icon."
   :group 'nerd-icons
   :type 'boolean)
 
@@ -80,6 +86,9 @@
 
 (defvar nerd-icons-font-names '("NFM.ttf")
   "List of defined font file names.")
+
+(defconst nerd-icons--lib-dir
+  (file-name-directory (locate-library "nerd-icons")))
 
 (defvar nerd-icons-glyph-sets '() "List of defined icon glyph sets.")
 
@@ -1227,6 +1236,21 @@ pause for DURATION seconds between printing each character."
               frame
               'prepend))))
 
+(defun nerd-icons--load-svg (path)
+  "Load the SVG file at PATH."
+  (svg-image
+   (with-temp-buffer
+     (insert-file-contents path)
+     ;; (if (libxml-available-p)
+     ;;     (libxml-parse-xml-region (point-min) (point-max))
+     (car (xml-parse-region (point-min) (point-max))))))
+
+(defun nerd-icons--parse-number (s)
+  "Parse a number from the string S and convert it to a number."
+  (save-match-data
+    (string-match "[+-]?[0-9]*\\(\\.[0-9]+\\)?" s)
+    (string-to-number (match-string 0 s))))
+
 (defmacro nerd-icons-define-icon (name alist family glyph-set)
   "Macro to generate functions for inserting icons for icon set NAME.
 
@@ -1245,7 +1269,11 @@ GLYPH-SET is the glyph set of the icon."
      (defun ,(nerd-icons--glyph-set-name name) () ,glyph-set)
      (defun ,(nerd-icons--data-name name) () ,alist)
      (defun ,(nerd-icons--function-name name) (icon-name &rest args)
-       (let ((icon (cdr (assoc icon-name ,alist)))
+       (let ((icon
+              (if nerd-icons-use-svg
+                  (let ((svg-path (concat nerd-icons--lib-dir "svg/" (cdr (assoc icon-name ,alist)) ".svg")))
+                     (nerd-icons--load-svg svg-path))
+                (format "%c" (string-to-number (cdr (assoc icon-name ,alist)) 16))))
              (other-face (when nerd-icons-color-icons (plist-get args :face)))
              (height (* nerd-icons-scale-factor (or (plist-get args :height) 1.0)))
              (v-adjust (* nerd-icons-scale-factor (or (plist-get args :v-adjust) nerd-icons-default-adjust)))
@@ -1255,11 +1283,23 @@ GLYPH-SET is the glyph set of the icon."
          (let ((face (if other-face
                          `(:family ,family :height ,height :inherit ,other-face)
                        `(:family ,family :height ,height))))
-           (propertize icon
-                       'face face
-                       'font-lock-face face
-                       'display `(raise ,v-adjust)
-                       'rear-nonsticky t))))
+           (if nerd-icons-use-svg
+               (progn
+                 (setf (image-property icon :width) (- (window-default-font-height) 2))
+                 (setf (image-property icon :height) (- (window-default-font-height) 2))
+                 (setf (image-property icon :ascent) 'center)
+                 (propertize "!"
+                             'face (or face 'default)
+                             'font-lock-face (or face 'default)
+                             'fontified t
+                             'display icon
+                             'front-sticky nil
+                             'rear-nonsticky t))
+             (propertize icon
+                         'face face
+                         'font-lock-face face
+                         'display `(raise ,v-adjust)
+                         'rear-nonsticky t)))))
      (defun ,(nerd-icons--insert-function-name name) (&optional arg)
        ,(format "Insert a %s icon at point." glyph-set)
        (interactive "P")
