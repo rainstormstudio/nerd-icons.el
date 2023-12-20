@@ -749,6 +749,7 @@
     (fasm-mode                         nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
     (masm-mode                         nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
     (nasm-mode                         nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
+    (gas-mode                          nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
     ;; (tcl-mode                       nerd-icons-fileicon "tcl"                      :face nerd-icons-dred)
     ;; (cuda-mode                      nerd-icons-fileicon "nvidia"                   :face nerd-icons-green)
     (f90-mode                          nerd-icons-mdicon "nf-md-language_fortran"     :face nerd-icons-purple)
