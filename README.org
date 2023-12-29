@@ -83,6 +83,14 @@ or using ~use-package~
   - ~nerd-icons-insert-flicon~
   - ~nerd-icons-insert-mdicon~
 
+** customize icons
+You can customize the icons via ~nerd-icons-extension-icon-alist~, ~nerd-icons-regexp-icon-alist~ and ~nerd-icons-mode-icon-alist~, etc.
+
+For example,
+#+begin_src emacs-lisp
+(add-to-list 'nerd-icons-extension-icon-alist '("epub" ners-icons-faicon "nf-fa-book" :face nerd-icons-green))
+#+end_src
+
 * Glyph Sets
 | Glyph Set               | prefix               | Point Range                          | insert function      |
 |-------------------------+----------------------+--------------------------------------+----------------------|
