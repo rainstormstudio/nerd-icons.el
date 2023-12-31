@@ -364,7 +364,7 @@
     ("woff"           nerd-icons-faicon "nf-fa-font"             :face nerd-icons-cyan)
     ("woff2"          nerd-icons-faicon "nf-fa-font"             :face nerd-icons-cyan)
     ;; Archives
-    ("iso"            nerd-icons-mdicon "nf-mdi-disk"            :face nerd-icons-orange)
+    ("iso"            nerd-icons-mdicon "nf-md-disc"            :face nerd-icons-orange)
     ("tar"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
     ("rar"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
     ("tgz"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
