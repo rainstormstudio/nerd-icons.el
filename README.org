@@ -88,7 +88,7 @@ You can customize the icons via ~nerd-icons-extension-icon-alist~, ~nerd-icons-r
 
 For example,
 #+begin_src emacs-lisp
-(add-to-list 'nerd-icons-extension-icon-alist '("epub" ners-icons-faicon "nf-fa-book" :face nerd-icons-green))
+(add-to-list 'nerd-icons-extension-icon-alist '("epub" nerd-icons-faicon "nf-fa-book" :face nerd-icons-green))
 #+end_src
 
 * Glyph Sets
