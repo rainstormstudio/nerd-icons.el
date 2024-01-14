@@ -129,6 +129,7 @@
     ("gz"             nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-lmaroon)
     ("zip"            nerd-icons-octicon "nf-oct-file_zip"       :face nerd-icons-lmaroon)
     ("7z"             nerd-icons-octicon "nf-oct-file_zip"       :face nerd-icons-lmaroon)
+    ("zst"            nerd-icons-octicon "nf-oct-file_zip"       :face nerd-icons-lmaroon)
     ("dat"            nerd-icons-faicon "nf-fa-bar_chart"        :face nerd-icons-cyan)
     ("dmg"            nerd-icons-octicon "nf-oct-tools"          :face nerd-icons-lsilver)
     ("dll"            nerd-icons-faicon "nf-fa-cogs"             :face nerd-icons-silver)
