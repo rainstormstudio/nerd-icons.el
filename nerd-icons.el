@@ -1035,8 +1035,9 @@ inserting functions."
 ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
 inserting functions."
-  (let* ((ext (file-name-extension file))
-         (icon (or (nerd-icons-match-to-alist file nerd-icons-regexp-icon-alist)
+  (let* ((name (file-name-nondirectory file))
+         (ext (file-name-extension name))
+         (icon (or (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
                    (and ext
                         (cdr (assoc (downcase ext)
                                     nerd-icons-extension-icon-alist)))
