@@ -1220,7 +1220,7 @@ pause for DURATION seconds between printing each character."
 (defun nerd-icons-set-font (&optional font-family frame)
   "Modify nerd font charsets to use FONT-FAMILY for FRAME."
   (let ((font-f (or font-family nerd-icons-font-family))
-        (charsets '((#xe5fa . #xe631)  ;; Seti-UI + Custom
+        (charsets '((#xe5fa . #xe6b3)  ;; Seti-UI + Custom
                     (#xe700 . #xe7c5)  ;; Devicons
                     (#xf000 . #xf2e0)  ;; Font Awesome
                     (#xe200 . #xe2a9)  ;; Font Awesome Extension
