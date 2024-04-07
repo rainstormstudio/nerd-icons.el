@@ -137,6 +137,12 @@
     ("exe"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
     ("msg"            nerd-icons-octicon "nf-oct-mail"           :face nerd-icons-dsilver)
     ;; Source Codes
+    ("ada"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-blue)
+    ("adb"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-blue)
+    ("adc"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-blue)
+    ("ads"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-blue)
+    ("gpr"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-green)
+    ("cgpr"           nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-green)
     ("scpt"           nerd-icons-devicon "nf-dev-apple"          :face nerd-icons-pink)
     ;; ("aup"         nerd-icons-fileicon "audacity") TODO: audacity
     ("elm"            nerd-icons-sucicon "nf-seti-elm"           :face nerd-icons-blue)
@@ -684,6 +690,10 @@
     ;; (scheme-mode                    nerd-icons-fileicon   "scheme"                 :face nerd-icons-red)
     (swift-mode                        nerd-icons-devicon "nf-dev-swift"              :face nerd-icons-green)
     (svelte-mode                       nerd-icons-sucicon "nf-seti-svelte"            :face nerd-icons-red)
+    (ada-mode                          nerd-icons-sucicon "nf-custom-ada"             :face nerd-icons-blue)
+    (ada-ts-mode                       nerd-icons-sucicon "nf-custom-ada"             :face nerd-icons-blue)
+    (gpr-mode                          nerd-icons-sucicon "nf-custom-ada"             :face nerd-icons-green)
+    (gpr-ts-mode                       nerd-icons-sucicon "nf-custom-ada"             :face nerd-icons-green)
     (c-mode                            nerd-icons-sucicon "nf-custom-c"               :face nerd-icons-blue)
     (c-ts-mode                         nerd-icons-sucicon "nf-custom-c"               :face nerd-icons-blue)
     (c++-mode                          nerd-icons-sucicon "nf-custom-cpp"             :face nerd-icons-blue)
