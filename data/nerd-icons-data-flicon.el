@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; flicon
-;; from Nerd Font Version: 3.1.1
+;; from Nerd Font Version: 3.2.0
 
 ;;; Code:
 
@@ -79,6 +79,7 @@
     ("nf-linux-inkscape" . "\xf33b")
     ("nf-linux-jwm" . "\xf35b")
     ("nf-linux-kali_linux" . "\xf327")
+    ("nf-linux-kde" . "\xf373")
     ("nf-linux-kde_neon" . "\xf331")
     ("nf-linux-kde_plasma" . "\xf332")
     ("nf-linux-kdenlive" . "\xf33c")
@@ -110,8 +111,10 @@
     ("nf-linux-parabola" . "\xf340")
     ("nf-linux-parrot" . "\xf329")
     ("nf-linux-pop_os" . "\xf32a")
+    ("nf-linux-postmarketos" . "\xf374")
     ("nf-linux-prusaslicer" . "\xf351")
     ("nf-linux-puppy" . "\xf341")
+    ("nf-linux-qt" . "\xf375")
     ("nf-linux-qtile" . "\xf35c")
     ("nf-linux-qubesos" . "\xf342")
     ("nf-linux-raspberry_pi" . "\xf315")
