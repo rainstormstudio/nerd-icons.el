@@ -21,13 +21,15 @@
 ;;; Commentary:
 
 ;; sucicon
-;; from Nerd Font Version: 3.1.1
+;; from Nerd Font Version: 3.2.0
 
 ;;; Code:
 
 (defvar nerd-icons/sucicon-alist
   '(
+    ("nf-custom-ada" . "\xe6b5")
     ("nf-custom-asm" . "\xe6ab")
+    ("nf-custom-astro" . "\xe6b3")
     ("nf-custom-c" . "\xe61e")
     ("nf-custom-common_lisp" . "\xe6b0")
     ("nf-custom-cpp" . "\xe61d")
@@ -53,6 +55,7 @@
     ("nf-custom-neovim" . "\xe6ae")
     ("nf-custom-orgmode" . "\xe633")
     ("nf-custom-play_arrow" . "\xe602")
+    ("nf-custom-prettier" . "\xe6b4")
     ("nf-custom-puppet" . "\xe631")
     ("nf-custom-purescript" . "\xe630")
     ("nf-custom-scheme" . "\xe6b1")
@@ -207,7 +210,7 @@
     ("nf-seti-swift" . "\xe699")
     ("nf-seti-terraform" . "\xe69a")
     ("nf-seti-tex" . "\xe69b")
-    ("nf-seti-text" . "\xe612")
+    ("nf-seti-text" . "\xe64e")
     ("nf-seti-time_cop" . "\xe641")
     ("nf-seti-todo" . "\xe69c")
     ("nf-seti-tsconfig" . "\xe69d")

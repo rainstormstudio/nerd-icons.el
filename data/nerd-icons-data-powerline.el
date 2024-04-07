@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; powerline
-;; from Nerd Font Version: 3.1.1
+;; from Nerd Font Version: 3.2.0
 
 ;;; Code:
 
@@ -31,10 +31,12 @@
     ("nf-pl-current_line" . "\xe0a1")
     ("nf-pl-hostname" . "\xe0a2")
     ("nf-pl-left_hard_divider" . "\xe0b0")
+    ("nf-pl-left_hard_divider_inverse" . "\xe0d7")
     ("nf-pl-left_soft_divider" . "\xe0b1")
     ("nf-pl-line_number" . "\xe0a1")
     ("nf-pl-readonly" . "\xe0a2")
     ("nf-pl-right_hard_divider" . "\xe0b2")
+    ("nf-pl-right_hard_divider_inverse" . "\xe0d6")
     ("nf-pl-right_soft_divider" . "\xe0b3")
     ("nf-ple-backslash_separator" . "\xe0b9")
     ("nf-ple-backslash_separator_redundant" . "\xe0bf")
