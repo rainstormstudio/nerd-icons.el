@@ -39,8 +39,9 @@
 (require 'cl-lib)
 
 (require 'nerd-icons-data)
-
 (require 'nerd-icons-faces)
+
+(declare-function set-fontset-font "src/fontset.c")
 
 (defgroup nerd-icons nil
   "Manage how Nerd Fonts formats icons."
