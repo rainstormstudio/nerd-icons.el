@@ -1,2 +1,7 @@
 /tmp/
 *autoloads.el
+
+*.elc
+
+/.eask
+/dist
