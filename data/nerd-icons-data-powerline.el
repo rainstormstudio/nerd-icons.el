@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; powerline
-;; from Nerd Font Version: 3.2.0
+;; from Nerd Font Version: 3.2.1
 
 ;;; Code:
 
@@ -31,12 +31,10 @@
     ("nf-pl-current_line" . "\xe0a1")
     ("nf-pl-hostname" . "\xe0a2")
     ("nf-pl-left_hard_divider" . "\xe0b0")
-    ("nf-pl-left_hard_divider_inverse" . "\xe0d7")
     ("nf-pl-left_soft_divider" . "\xe0b1")
     ("nf-pl-line_number" . "\xe0a1")
     ("nf-pl-readonly" . "\xe0a2")
     ("nf-pl-right_hard_divider" . "\xe0b2")
-    ("nf-pl-right_hard_divider_inverse" . "\xe0d6")
     ("nf-pl-right_soft_divider" . "\xe0b3")
     ("nf-ple-backslash_separator" . "\xe0b9")
     ("nf-ple-backslash_separator_redundant" . "\xe0bf")
@@ -54,6 +52,7 @@
     ("nf-ple-ice_waveform_mirrored" . "\xe0ca")
     ("nf-ple-left_half_circle_thick" . "\xe0b6")
     ("nf-ple-left_half_circle_thin" . "\xe0b7")
+    ("nf-ple-left_hard_divider_inverse" . "\xe0d7")
     ("nf-ple-lego_block_facing" . "\xe0d0")
     ("nf-ple-lego_block_sideways" . "\xe0d1")
     ("nf-ple-lego_separator" . "\xe0ce")
@@ -66,6 +65,7 @@
     ("nf-ple-pixelated_squares_small_mirrored" . "\xe0c5")
     ("nf-ple-right_half_circle_thick" . "\xe0b4")
     ("nf-ple-right_half_circle_thin" . "\xe0b5")
+    ("nf-ple-right_hard_divider_inverse" . "\xe0d6")
     ("nf-ple-trapezoid_top_bottom" . "\xe0d2")
     ("nf-ple-trapezoid_top_bottom_mirrored" . "\xe0d4")
     ("nf-ple-upper_left_triangle" . "\xe0bc")

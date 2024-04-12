@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; devicon
-;; from Nerd Font Version: 3.2.0
+;; from Nerd Font Version: 3.2.1
 
 ;;; Code:
 
