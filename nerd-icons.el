@@ -333,6 +333,10 @@
     ("fsi"            nerd-icons-devicon "nf-dev-fsharp"         :face nerd-icons-blue-alt)
     ("fsx"            nerd-icons-devicon "nf-dev-fsharp"         :face nerd-icons-blue-alt)
     ("fsscript"       nerd-icons-devicon "nf-dev-fsharp"         :face nerd-icons-blue-alt)
+    ;; Godot / GDScript
+    ("gd"             nerd-icons-sucicon "nf-seti-godot"         :face nerd-icons-blue)
+    ("tscn"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-orange)
+    ("tres"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-orange)
     ;; zig
     ("zig"            nerd-icons-sucicon "nf-seti-zig"           :face nerd-icons-orange)
     ;; odin
@@ -717,6 +721,8 @@
     (less-css-mode                     nerd-icons-devicon "nf-dev-less"               :face nerd-icons-dyellow)
     (stylus-mode                       nerd-icons-devicon "nf-dev-stylus"             :face nerd-icons-lgreen)
     (csv-mode                          nerd-icons-octicon "nf-oct-graph"              :face nerd-icons-dblue)
+    (gdscript-mode                     nerd-icons-sucicon "nf-seti-godot"             :face nerd-icons-blue)
+    (gdscript-ts-mode                  nerd-icons-sucicon "nf-seti-godot"             :face nerd-icons-blue)
     (haskell-mode                      nerd-icons-devicon "nf-dev-haskell"            :face nerd-icons-red)
     (haskell-c2hs-mode                 nerd-icons-devicon "nf-dev-haskell"            :face nerd-icons-red)
     (literate-haskell-mode             nerd-icons-devicon "nf-dev-haskell"            :face nerd-icons-red)
@@ -831,7 +837,7 @@
     (julia-ts-mode                     nerd-icons-sucicon "nf-seti-julia"             :face nerd-icons-purple)
     (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)))
 
-(defvar                                                       nerd-icons-url-alist
+(defvar nerd-icons-url-alist
   '(
     ;; Social media and communities
     ("^\\(https?://\\)?\\(www\\.\\)?del\\.icio\\.us"          nerd-icons-faicon "nf-fa-delicious")
