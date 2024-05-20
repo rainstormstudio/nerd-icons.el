@@ -683,6 +683,7 @@
     (perl-mode                         nerd-icons-devicon "nf-dev-perl"               :face nerd-icons-lorange)
     (cperl-mode                        nerd-icons-devicon "nf-dev-perl"               :face nerd-icons-lorange)
     (php-mode                          nerd-icons-devicon "nf-dev-php"                :face nerd-icons-lsilver)
+    (php-ts-mode                       nerd-icons-devicon "nf-dev-php"                :face nerd-icons-lsilver)
     (prolog-mode                       nerd-icons-devicon "nf-dev-prolog"             :face nerd-icons-lmaroon)
     (python-mode                       nerd-icons-devicon "nf-dev-python"             :face nerd-icons-dblue)
     (python-ts-mode                    nerd-icons-devicon "nf-dev-python"             :face nerd-icons-dblue)
