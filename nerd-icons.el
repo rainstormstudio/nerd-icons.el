@@ -399,6 +399,7 @@
     ("org_archive"    nerd-icons-sucicon "nf-custom-orgmode"     :face nerd-icons-lgreen)
     ("pps"            nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
     ("ppt"            nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
+    ("pptx"           nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
     ("pptsx"          nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
     ("ppttx"          nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-orange)
     ("knt"            nerd-icons-mdicon "nf-md-file_powerpoint"  :face nerd-icons-cyan)
