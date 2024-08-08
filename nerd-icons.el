@@ -478,7 +478,7 @@
     ("^COMMIT_EDITMSG"         nerd-icons-octicon "nf-oct-git_commit"        :face nerd-icons-red)
 
     ;; Stylesheeting
-    ("stylelint"               nerd-icons-sucicon "nf-seti-stylelint"        :face nerd-icons-lyellow)
+    ("^stylelint"               nerd-icons-sucicon "nf-seti-stylelint"        :face nerd-icons-lyellow)
 
     ;; JavaScript
     ("^package.json$"          nerd-icons-devicon "nf-dev-npm"               :face nerd-icons-red)
@@ -498,7 +498,7 @@
     ("Jenkinsfile\\'"          nerd-icons-devicon "nf-dev-groovy"            :face nerd-icons-cyan-alt)
 
     ;; Emacs
-    ("bookmark"                nerd-icons-octicon "nf-oct-bookmark"          :face nerd-icons-lpink)
+    ("^bookmark"                nerd-icons-octicon "nf-oct-bookmark"          :face nerd-icons-lpink)
 
     ("^\\*scratch\\*$"         nerd-icons-faicon "nf-fa-sticky_note"         :face nerd-icons-lyellow)
     ("^\\*scratch.*"           nerd-icons-faicon "nf-fa-sticky_note"         :face nerd-icons-yellow)
