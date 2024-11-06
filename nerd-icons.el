@@ -213,6 +213,7 @@
     ("el"             nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
     ("clj"            nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
+    ("cljd"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-orange)
     ("cljs"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-lyellow)
     ("coffee"         nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-maroon)
     ("iced"           nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-lmaroon)
