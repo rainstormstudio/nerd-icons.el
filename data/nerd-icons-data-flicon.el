@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; flicon
-;; from Nerd Font Version: 3.2.1
+;; from Nerd Font Version: 3.3.0
 
 ;;; Code:
 
@@ -87,6 +87,14 @@
     ("nf-linux-krita" . "\xf33d")
     ("nf-linux-kubuntu" . "\xf333")
     ("nf-linux-kubuntu_inverse" . "\xf334")
+    ("nf-linux-leap" . "\xf37e")
+    ("nf-linux-libreoffice" . "\xf376")
+    ("nf-linux-libreofficebase" . "\xf377")
+    ("nf-linux-libreofficecalc" . "\xf378")
+    ("nf-linux-libreofficedraw" . "\xf379")
+    ("nf-linux-libreofficeimpress" . "\xf37a")
+    ("nf-linux-libreofficemath" . "\xf37b")
+    ("nf-linux-libreofficewriter" . "\xf37c")
     ("nf-linux-linuxmint" . "\xf30e")
     ("nf-linux-linuxmint_inverse" . "\xf30f")
     ("nf-linux-locos" . "\xf349")
@@ -101,6 +109,7 @@
     ("nf-linux-mxlinux" . "\xf33f")
     ("nf-linux-neovim" . "\xf36f")
     ("nf-linux-nixos" . "\xf313")
+    ("nf-linux-nobara" . "\xf380")
     ("nf-linux-octoprint" . "\xf34d")
     ("nf-linux-openbsd" . "\xf328")
     ("nf-linux-openscad" . "\xf34e")
@@ -121,6 +130,7 @@
     ("nf-linux-redhat" . "\xf316")
     ("nf-linux-reprap" . "\xf352")
     ("nf-linux-riscv" . "\xf353")
+    ("nf-linux-river" . "\xf381")
     ("nf-linux-rocky_linux" . "\xf32b")
     ("nf-linux-sabayon" . "\xf317")
     ("nf-linux-slackware" . "\xf318")
@@ -132,7 +142,9 @@
     ("nf-linux-thunderbird" . "\xf370")
     ("nf-linux-tor" . "\xf371")
     ("nf-linux-trisquel" . "\xf344")
+    ("nf-linux-tumbleweed" . "\xf37d")
     ("nf-linux-tux" . "\xf31a")
+    ("nf-linux-typst" . "\xf37f")
     ("nf-linux-ubuntu" . "\xf31b")
     ("nf-linux-ubuntu_inverse" . "\xf31c")
     ("nf-linux-vanilla" . "\xf366")
