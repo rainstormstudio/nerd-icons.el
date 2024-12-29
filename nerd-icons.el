@@ -783,6 +783,7 @@
     (japanese-plain-TeX-mode           nerd-icons-sucicon "nf-seti-tex"               :face nerd-icons-lred)
     (japanese-LaTeX-mode               nerd-icons-sucicon "nf-seti-tex"               :face nerd-icons-lred)
     (dart-mode                         nerd-icons-devicon "nf-dev-dart"               :face nerd-icons-blue)
+    (dart-ts-mode                      nerd-icons-devicon "nf-dev-dart"               :face nerd-icons-blue)
     (fsharp-mode                       nerd-icons-devicon "nf-dev-fsharp"             :face nerd-icons-blue)
     (asm-mode                          nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
     (fasm-mode                         nerd-icons-sucicon "nf-seti-asm"               :face nerd-icons-blue)
