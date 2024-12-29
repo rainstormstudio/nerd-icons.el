@@ -232,6 +232,7 @@
     ("csv"            nerd-icons-octicon "nf-oct-graph"          :face nerd-icons-dblue)
     ;; haskell
     ("hs"             nerd-icons-devicon "nf-dev-haskell"        :face nerd-icons-red)
+    ("hx"             nerd-icons-sucicon "nf-seti-haxe"          :face nerd-icons-orange)
     ("chs"            nerd-icons-devicon "nf-dev-haskell"        :face nerd-icons-red)
     ("lhs"            nerd-icons-devicon "nf-dev-haskell"        :face nerd-icons-red)
     ("hsc"            nerd-icons-devicon "nf-dev-haskell"        :face nerd-icons-red)
