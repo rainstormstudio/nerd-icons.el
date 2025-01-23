@@ -112,6 +112,7 @@
     ("mk"             nerd-icons-devicon "nf-dev-gnu"            :face nerd-icons-dorange)
     ;; ("cmake"    nerd-icons-devicon "cmake") TODO: cmake
     ("dockerignore"   nerd-icons-devicon "nf-dev-docker"         :face nerd-icons-dblue)
+    ("plist"          nerd-icons-faicon "nf-fa-file_code"        :face nerd-icons-dsilver)
     ("xml"            nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lorange)
     ("json"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
     ("jsonl"          nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
@@ -121,6 +122,7 @@
     ("toml"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-orange)
     ("conf"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dorange)
     ("editorconfig"   nerd-icons-sucicon "nf-seti-editorconfig"  :face nerd-icons-silver)
+    ("idekeybindings" nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lblue)
     ;; ?
     ("pkg"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("rpm"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
@@ -137,6 +139,9 @@
     ("ds_store"       nerd-icons-faicon "nf-fa-cogs"             :face nerd-icons-silver)
     ("exe"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
     ("msg"            nerd-icons-octicon "nf-oct-mail"           :face nerd-icons-dsilver)
+    ;; Interface Builder
+    ("nib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
+    ("xib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
     ;; Source Codes
     ("ada"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-blue)
     ("adb"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-blue)
@@ -267,7 +272,7 @@
     ("sbt"            nerd-icons-sucicon "nf-seti-sbt"           :face nerd-icons-red)
     ("scala"          nerd-icons-devicon "nf-dev-scala"          :face nerd-icons-red)
     ("scm"            nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-red)
-    ("swift"          nerd-icons-devicon "nf-dev-swift"          :face nerd-icons-green)
+    ("swift"          nerd-icons-devicon "nf-dev-swift"          :face nerd-icons-lred)
 
     ("tcl"            nerd-icons-mdicon "nf-md-feather"          :face nerd-icons-dred)
     ("exp"            nerd-icons-mdicon "nf-md-feather"          :face nerd-icons-dred)
@@ -467,6 +472,13 @@
     ("_?test_helper\\.rb$"     nerd-icons-octicon "nf-oct-ruby"              :face nerd-icons-dred)
     ("_?spec\\.rb$"            nerd-icons-octicon "nf-oct-ruby"              :face nerd-icons-red)
     ("_?spec_helper\\.rb$"     nerd-icons-octicon "nf-oct-ruby"              :face nerd-icons-dred)
+    ;;; Cocoapods
+    ("^Podfile\\(\\.lock\\)?$" nerd-icons-octicon "nf-oct-ruby"              :face nerd-icons-red)
+    ;;; Danger
+    ("^Dangerfile\\(\\.lock\\)?$" nerd-icons-octicon "nf-oct-ruby"            :face nerd-icons-red)
+    ;;; Fastlane
+    ("^Appfile\\(\\.lock\\)?$" nerd-icons-octicon "nf-oct-ruby"              :face nerd-icons-red)
+    ("^Matchfile\\(\\.lock\\)?$" nerd-icons-octicon "nf-oct-ruby"            :face nerd-icons-red)
 
     ("-?spec\\.ts$"            nerd-icons-mdicon "nf-md-language_typescript" :face nerd-icons-blue)
     ("-?test\\.ts$"            nerd-icons-mdicon "nf-md-language_typescript" :face nerd-icons-blue)
@@ -702,7 +714,8 @@
     (rust-ts-mode                      nerd-icons-devicon "nf-dev-rust"               :face nerd-icons-maroon)
     (scala-mode                        nerd-icons-devicon "nf-dev-scala"              :face nerd-icons-red)
     ;; (scheme-mode                    nerd-icons-fileicon   "scheme"                 :face nerd-icons-red)
-    (swift-mode                        nerd-icons-devicon "nf-dev-swift"              :face nerd-icons-green)
+    (swift-mode                        nerd-icons-devicon "nf-dev-swift"              :face nerd-icons-lred)
+    (swift-ts-mode                     nerd-icons-devicon "nf-dev-swift"              :face nerd-icons-lred)
     (svelte-mode                       nerd-icons-sucicon "nf-seti-svelte"            :face nerd-icons-red)
     (ada-mode                          nerd-icons-sucicon "nf-custom-ada"             :face nerd-icons-blue)
     (ada-ts-mode                       nerd-icons-sucicon "nf-custom-ada"             :face nerd-icons-blue)
