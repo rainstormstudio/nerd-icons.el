@@ -471,6 +471,8 @@
     ("^ONEWS.*$"               nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-lgreen)
     ;; (info "(standards) Change Logs")
     ("^ChangeLog.*$"           nerd-icons-mdicon "nf-md-file_document_multiple" :face nerd-icons-cyan)
+    ;; (info "(standards) Releases")
+    ("^INSTALL.*$"             nerd-icons-faicon "nf-fa-file_arrow_down"     :face nerd-icons-green)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
