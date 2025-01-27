@@ -463,8 +463,14 @@
     ("^TAGS$"                  nerd-icons-octicon "nf-oct-tag"               :face nerd-icons-blue)
     ("^TODO$"                  nerd-icons-octicon "nf-oct-checklist"         :face nerd-icons-lyellow)
     ("^LICENSE\\(?:-\\|$\\)"   nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
-    ("^COPYING$"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
+    ;; (info "(standards) Releases")
+    ("^COPYING.*$"             nerd-icons-mdicon  "nf-md-copyright"          :face nerd-icons-blue)
     ("^readme"                 nerd-icons-octicon "nf-oct-book"              :face nerd-icons-lcyan)
+    ;; (info "(standards) NEWS File")
+    ("^NEWS.*$"                nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-green)
+    ("^ONEWS.*$"               nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-lgreen)
+    ;; (info "(standards) Change Logs")
+    ("^ChangeLog.*$"           nerd-icons-mdicon "nf-md-file_document_multiple" :face nerd-icons-cyan)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
