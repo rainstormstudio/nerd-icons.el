@@ -660,6 +660,8 @@
   '(
     (emacs-lisp-mode                   nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
     (lisp-data-mode                    nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
+    (m4-mode                           nerd-icons-faicon "nf-fa-cog"                  :face nerd-icons-lsilver)
+    (autoconf-mode                     nerd-icons-faicon "nf-fa-cog"                  :face nerd-icons-lsilver)
     (circe-server-mode                 nerd-icons-faicon "nf-fa-commenting_o")
     (circe-channel-mode                nerd-icons-faicon "nf-fa-commenting_o")
     (circe-query-mode                  nerd-icons-faicon "nf-fa-commenting_o")
