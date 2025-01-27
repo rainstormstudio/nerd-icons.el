@@ -96,6 +96,8 @@
     ("tags"           nerd-icons-octicon "nf-oct-tag"            :face nerd-icons-blue)
     ("log"            nerd-icons-octicon "nf-oct-log"            :face nerd-icons-maroon)
     ("changes"        nerd-icons-mdicon  "nf-md-script_text"     :face nerd-icons-cyan)
+    ("diff"           nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-dgreen)
+    ("patch"          nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-lgreen)
     ;; Config
     ("node"           nerd-icons-devicon "nf-dev-nodejs_small"   :face nerd-icons-green)
     ("babelrc"        nerd-icons-mdicon "nf-md-babel"            :face nerd-icons-yellow)
