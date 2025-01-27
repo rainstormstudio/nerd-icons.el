@@ -220,6 +220,7 @@
     ("hh"             nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
     ("hpp"            nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
     ("hxx"            nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
+    ("o"              nerd-icons-codicon "nf-cod-file_binary"    :face nerd-icons-dsilver)
     ;; Lisps
     ("cl"             nerd-icons-sucicon "nf-custom-common_lisp" :face nerd-icons-lorange)
     ("l"              nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-orange)
