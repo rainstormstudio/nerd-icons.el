@@ -114,7 +114,7 @@
     ("gitignore"      nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
     ("gitmodules"     nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
     ("mk"             nerd-icons-devicon "nf-dev-gnu"            :face nerd-icons-dorange)
-    ;; ("cmake"    nerd-icons-devicon "cmake") TODO: cmake
+    ("cmake"          nerd-icons-devicon "nf-dev-cmake"          :face nerd-icons-lgreen)
     ("dockerignore"   nerd-icons-devicon "nf-dev-docker"         :face nerd-icons-dblue)
     ("plist"          nerd-icons-faicon "nf-fa-file_code"        :face nerd-icons-dsilver)
     ("xml"            nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lorange)
@@ -499,10 +499,10 @@
 
     ;; C
     ("^\\(GNU\\|\\)Makefile.*" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
-    ("^CMakeLists.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-red)
-    ("^CMakeCache.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-blue)
-    ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple)
-    ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple)
+    ("^CMakeLists.txt$"        nerd-icons-devicon "nf-dev-cmake"               :face nerd-icons-red)
+    ("^CMakeCache.txt$"        nerd-icons-devicon "nf-dev-cmake"               :face nerd-icons-blue)
+    ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
+    ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
 
     ;; Docker
     ("^\\.?Dockerfile"         nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
@@ -745,8 +745,8 @@
     (apache-mode                       nerd-icons-devicon "nf-dev-apache"             :face nerd-icons-dgreen)
     (makefile-mode                     nerd-icons-sucicon "nf-seti-makefile"          :face nerd-icons-dorange)
     (makefile-ts-mode                  nerd-icons-sucicon "nf-seti-makefile"          :face nerd-icons-dorange)
-    ;; (cmake-mode                     nerd-icons-fileicon "cmake"                    :face nerd-icons-red)
-    ;; (cmake-ts-mode                  nerd-icons-fileicon "cmake"                    :face nerd-icons-red)
+    (cmake-mode                        nerd-icons-devicon "nf-dev-cmake"              :face nerd-icons-red)
+    (cmake-ts-mode                     nerd-icons-devicon "nf-dev-cmake"              :face nerd-icons-red)
     (dockerfile-mode                   nerd-icons-sucicon "nf-seti-docker"            :face nerd-icons-blue)
     (dockerfile-ts-mode                nerd-icons-sucicon "nf-seti-docker"            :face nerd-icons-blue)
     (docker-compose-mode               nerd-icons-sucicon "nf-seti-docker"            :face nerd-icons-lblue)
