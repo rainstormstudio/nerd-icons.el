@@ -95,6 +95,7 @@
     ;; Meta
     ("tags"           nerd-icons-octicon "nf-oct-tag"            :face nerd-icons-blue)
     ("log"            nerd-icons-octicon "nf-oct-log"            :face nerd-icons-maroon)
+    ("changes"        nerd-icons-mdicon  "nf-md-script_text"     :face nerd-icons-cyan)
     ;; Config
     ("node"           nerd-icons-devicon "nf-dev-nodejs_small"   :face nerd-icons-green)
     ("babelrc"        nerd-icons-mdicon "nf-md-babel"            :face nerd-icons-yellow)
@@ -128,6 +129,7 @@
     ;; ?
     ("pkg"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("rpm"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
+    ("spec"           nerd-icons-mdicon "nf-md-file_document_plus"  :face nerd-icons-red)
     ("pkgbuild"       nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("elc"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
     ("eln"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
