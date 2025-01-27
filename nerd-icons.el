@@ -231,6 +231,10 @@
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljd"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-green)
     ("cljs"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-lyellow)
+    ;; autotools and related
+    ("m4"             nerd-icons-mdicon "nf-md-file_cog"         :face nerd-icons-lsilver)
+    ("am"             nerd-icons-sucicon "nf-seti-makefile"      :face nerd-icons-lsilver)
+    ;;
     ("coffee"         nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-maroon)
     ("iced"           nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-lmaroon)
     ("dart"           nerd-icons-devicon "nf-dev-dart"           :face nerd-icons-blue)
@@ -479,6 +483,15 @@
     ("^ChangeLog.*$"           nerd-icons-mdicon "nf-md-file_document_multiple" :face nerd-icons-cyan)
     ;; (info "(standards) Releases")
     ("^INSTALL.*$"             nerd-icons-faicon "nf-fa-file_arrow_down"     :face nerd-icons-green)
+
+    ;; autotools related
+    ("^Makefile.\\(am\\|in\\)$" nerd-icons-sucicon "nf-seti-makefile"        :face nerd-icons-lsilver)
+    ("^configure.\\(in\\|ac\\)" nerd-icons-mdicon  "nf-md-file_cog"           :face nerd-icons-lsilver)
+    ("^configure$"             nerd-icons-devicon "nf-dev-terminal"          :face nerd-icons-lsilver)
+    ("^config.\\(guess\\|rpath\\|status\\|sub\\)$" nerd-icons-devicon "nf-dev-terminal"
+     :face nerd-icons-lsilver)
+    ("^\\(ar-lib\\|depmond\\|install-sh\\|missing\\|mkdep\\|mkinstalldirs\\|move-if-change\\|symlink-tree\\|test-driver\\|ylwrap\\)$"
+     nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lsilver)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
