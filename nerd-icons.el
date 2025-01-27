@@ -485,7 +485,7 @@
     ("apache$"                 nerd-icons-devicon "nf-dev-apache"            :face nerd-icons-dgreen)
 
     ;; C
-    ("^Makefile$"              nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
+    ("^\\(GNU\\|\\)Makefile.*" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
     ("^CMakeLists.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-red)
     ("^CMakeCache.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-blue)
     ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple)
