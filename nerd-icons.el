@@ -477,6 +477,10 @@
     ;; (info "(standards) Releases")
     ("^COPYING.*$"             nerd-icons-mdicon  "nf-md-copyright"          :face nerd-icons-blue)
     ("^readme.*"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-lcyan)
+    ;; misc GNU documentation files
+    ("^\\(MAINTAINERS\\|CONTRIBUTE\\|BUGS\\).*$"  nerd-icons-mdicon
+     "nf-md-book" :face nerd-icons-blue)
+
     ;; (info "(standards) NEWS File")
     ("^NEWS.*$"                nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-green)
     ("^ONEWS.*$"               nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-lgreen)
