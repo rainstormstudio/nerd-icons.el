@@ -685,6 +685,7 @@
     (go-dot-mod-mode                   nerd-icons-sucicon "nf-seti-config"            :face nerd-icons-blue-alt)
     (go-mod-ts-mode                    nerd-icons-sucicon "nf-seti-config"            :face nerd-icons-blue-alt)
     (go-dot-work-mode                  nerd-icons-sucicon "nf-seti-config"            :face nerd-icons-blue-alt)
+    (go-work-ts-mode                   nerd-icons-sucicon "nf-seti-config"            :face nerd-icons-blue-alt)
     (graphql-mode                      nerd-icons-sucicon "nf-seti-graphql"           :face nerd-icons-dpink)
     ;; (matlab-mode                    nerd-icons-fileicon "matlab"                   :face nerd-icons-orange)
     (nix-mode                          nerd-icons-mdicon "nf-md-nix"                  :face nerd-icons-blue)
