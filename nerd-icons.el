@@ -424,6 +424,7 @@
     ("gpg"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-lblue)
     ("kdbx"           nerd-icons-octicon "nf-oct-key"            :face nerd-icons-green)
     ("cache"          nerd-icons-octicon "nf-oct-database"       :face nerd-icons-green)
+    ("db"             nerd-icons-octicon "nf-oct-database"       :face nerd-icons-dblue)
     ;; backup
     ("backup"         nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
     ("old"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
