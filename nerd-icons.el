@@ -230,6 +230,7 @@
     ;; ("sss"         nerd-icons-devicon "postcss") TODO: postcss
     ("styl"           nerd-icons-devicon "nf-dev-stylus"         :face nerd-icons-lgreen)
     ("csv"            nerd-icons-octicon "nf-oct-graph"          :face nerd-icons-dblue)
+    ("tsv"            nerd-icons-octicon "nf-oct-graph"          :face nerd-icons-dblue)
     ;; haskell
     ("hs"             nerd-icons-devicon "nf-dev-haskell"        :face nerd-icons-red)
     ("hx"             nerd-icons-sucicon "nf-seti-haxe"          :face nerd-icons-orange)
