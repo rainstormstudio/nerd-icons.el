@@ -873,7 +873,8 @@
     (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)
     (exwm-mode                         nerd-icons-flicon "nf-linux-xorg"              :face nerd-icons-dsilver)
     (proced-mode                       nerd-icons-codicon "nf-cod-dashboard"          :face nerd-icons-green)
-    (bluetooth-mode                    nerd-icons-faicon "nf-fa-bluetooth"            :face nerd-icons-blue)))
+    (bluetooth-mode                    nerd-icons-faicon "nf-fa-bluetooth"            :face nerd-icons-blue)
+    (disk-usage                        nerd-icons-faicon "nf-fa-pie_chart"            :face nerd-icons-lred)))
 
 (defvar nerd-icons-url-alist
   '(
