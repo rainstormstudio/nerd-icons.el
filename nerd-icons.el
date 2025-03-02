@@ -868,7 +868,8 @@
     (heex-ts-mode                      nerd-icons-sucicon "nf-seti-elixir"            :face nerd-icons-lorange)
     (julia-mode                        nerd-icons-sucicon "nf-seti-julia"             :face nerd-icons-purple)
     (julia-ts-mode                     nerd-icons-sucicon "nf-seti-julia"             :face nerd-icons-purple)
-    (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)))
+    (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)
+    (exwm-mode                         nerd-icons-flicon "nf-linux-xorg"              :face nerd-icons-dsilver)))
 
 (defvar nerd-icons-url-alist
   '(
