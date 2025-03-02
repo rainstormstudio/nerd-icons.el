@@ -450,7 +450,7 @@
     ;;
     ("^TAGS$"                  nerd-icons-octicon "nf-oct-tag"               :face nerd-icons-blue)
     ("^TODO$"                  nerd-icons-octicon "nf-oct-checklist"         :face nerd-icons-lyellow)
-    ("^LICENSE$"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
+    ("^LICENSE\\(?:-\\|$\\)"   nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
     ("^COPYING$"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
     ("^readme"                 nerd-icons-octicon "nf-oct-book"              :face nerd-icons-lcyan)
 
