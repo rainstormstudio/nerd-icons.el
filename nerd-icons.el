@@ -216,6 +216,7 @@
     ("lisp"           nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-orange)
     ;; ("hy"             nerd-icons-sucicon "nf-custom-hy"          :face nerd-icons-blue)
     ("el"             nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
+    ("eld"            nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
     ("clj"            nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljd"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-green)
@@ -591,6 +592,7 @@
 (defvar nerd-icons-mode-icon-alist
   '(
     (emacs-lisp-mode                   nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
+    (lisp-data-mode                    nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
     (circe-server-mode                 nerd-icons-faicon "nf-fa-commenting_o")
     (circe-channel-mode                nerd-icons-faicon "nf-fa-commenting_o")
     (circe-query-mode                  nerd-icons-faicon "nf-fa-commenting_o")
