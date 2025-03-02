@@ -150,6 +150,7 @@
     ("gpr"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-green)
     ("cgpr"           nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-green)
     ("scpt"           nerd-icons-devicon "nf-dev-apple"          :face nerd-icons-pink)
+    ("awk"            nerd-icons-devicon "nf-dev-awk"            :face nerd-icons-yellow)
     ;; ("aup"         nerd-icons-fileicon "audacity") TODO: audacity
     ("elm"            nerd-icons-sucicon "nf-seti-elm"           :face nerd-icons-blue)
     ("erl"            nerd-icons-devicon "nf-dev-erlang"         :face nerd-icons-red)
@@ -874,7 +875,8 @@
     (exwm-mode                         nerd-icons-flicon "nf-linux-xorg"              :face nerd-icons-dsilver)
     (proced-mode                       nerd-icons-codicon "nf-cod-dashboard"          :face nerd-icons-green)
     (bluetooth-mode                    nerd-icons-faicon "nf-fa-bluetooth"            :face nerd-icons-blue)
-    (disk-usage                        nerd-icons-faicon "nf-fa-pie_chart"            :face nerd-icons-lred)))
+    (disk-usage                        nerd-icons-faicon "nf-fa-pie_chart"            :face nerd-icons-lred)
+    (awk-mode                          nerd-icons-devicon "nf-dev-awk"                :face nerd-icons-yellow)))
 
 (defvar nerd-icons-url-alist
   '(
