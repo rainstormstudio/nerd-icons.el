@@ -535,6 +535,10 @@
     ("Cask\\'"                 nerd-icons-sucicon "nf-custom-emacs"          :face nerd-icons-blue)
     ("Eask\\'"                 nerd-icons-sucicon "nf-custom-emacs"          :face nerd-icons-blue)
 
+    ;; Rust
+    ("^Cargo.toml$"            nerd-icons-devicon "nf-dev-rust"              :face nerd-icons-yellow)
+    ("^Cargo.lock$"            nerd-icons-devicon "nf-dev-rust"              :face nerd-icons-dyellow)
+
     ("^\\."                    nerd-icons-octicon "nf-oct-gear")))
 
 (defvar nerd-icons-default-file-icon
