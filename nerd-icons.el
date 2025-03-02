@@ -876,7 +876,13 @@
     (proced-mode                       nerd-icons-codicon "nf-cod-dashboard"          :face nerd-icons-green)
     (bluetooth-mode                    nerd-icons-faicon "nf-fa-bluetooth"            :face nerd-icons-blue)
     (disk-usage                        nerd-icons-faicon "nf-fa-pie_chart"            :face nerd-icons-lred)
-    (awk-mode                          nerd-icons-devicon "nf-dev-awk"                :face nerd-icons-yellow)))
+    (awk-mode                          nerd-icons-devicon "nf-dev-awk"                :face nerd-icons-yellow)
+    (ement-directory-mode              nerd-icons-faicon "nf-fa-search"               :face nerd-icons-dpurple)
+    (ement-describe-room-mode          nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-dpurple)
+    (ement-room-list-mode              nerd-icons-faicon "nf-fa-list"                 :face nerd-icons-dpurple)
+    (ement-tabulated-room-list-mode    nerd-icons-faicon "nf-fa-table"                :face nerd-icons-dpurple)
+    (ement-room-mode                   nerd-icons-faicon "nf-fa-comments_o"           :face nerd-icons-dpurple)
+    (ement-notifications-mode          nerd-icons-faicon "nf-fa-inbox"                :face nerd-icons-dpurple)))
 
 (defvar nerd-icons-url-alist
   '(
