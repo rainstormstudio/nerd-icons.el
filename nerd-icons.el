@@ -139,6 +139,9 @@
     ("ds_store"       nerd-icons-faicon "nf-fa-cogs"             :face nerd-icons-silver)
     ("exe"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
     ("msg"            nerd-icons-octicon "nf-oct-mail"           :face nerd-icons-dsilver)
+    ;; Diff
+    ("diff"           nerd-icons-devicon "nf-dev-git_compare"    :face nerd-icons-lred)
+    ("patch"          nerd-icons-devicon "nf-dev-git_compare"    :face nerd-icons-lred)
     ;; Interface Builder
     ("nib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
     ("xib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
