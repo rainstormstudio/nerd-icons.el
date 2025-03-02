@@ -357,6 +357,11 @@
     ("jpg"            nerd-icons-mdicon "nf-md-file_jpg_box"     :face nerd-icons-dblue)
     ("webp"           nerd-icons-octicon "nf-oct-file_media"     :face nerd-icons-dblue)
     ("xpm"            nerd-icons-octicon "nf-oct-file_media"     :face nerd-icons-dgreen)
+    ("cb7"            nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
+    ("cba"            nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
+    ("cbr"            nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
+    ("cbt"            nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
+    ("cbz"            nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
     ;; Audio
     ("mp3"            nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
     ("wav"            nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
