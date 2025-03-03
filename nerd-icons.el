@@ -168,7 +168,7 @@
     ("go"             nerd-icons-devicon "nf-dev-go"             :face nerd-icons-blue)
     ("jl"             nerd-icons-sucicon "nf-seti-julia"         :face nerd-icons-purple)
     ("magik"          nerd-icons-faicon "nf-fa-magic"            :face nerd-icons-blue)
-    ;; ("matlab"      nerd-icons-devicon "matlab") TODO: matlab
+    ("matlab"         nerd-icons-devicon "matlab"                :face nerd-icons-orange)
     ("nix"            nerd-icons-mdicon "nf-md-nix"              :face nerd-icons-blue)
     ("pl"             nerd-icons-sucicon "nf-seti-perl"          :face nerd-icons-lorange)
     ("pm"             nerd-icons-sucicon "nf-seti-perl"          :face nerd-icons-lorange)
@@ -182,7 +182,7 @@
     ("proog"          nerd-icons-sucicon "nf-seti-prolog"        :face nerd-icons-lmaroon)
     ("py"             nerd-icons-devicon "nf-dev-python"         :face nerd-icons-dblue)
     ;; ("idr"         nerd-icons-devicon "idris") TODO: idris
-    ;; ("ipynb"       nerd-icons-devicon "jupyter") TODO: jupyter
+    ("ipynb"          nerd-icons-devicon "jupyter"               :face nerd-icons-orange)
     ("gem"            nerd-icons-devicon "nf-dev-ruby"           :face nerd-icons-red)
     ;; ("raku"        nerd-icons-devicon "raku") TODO: raku
     ;; ("rakumod"     nerd-icons-devicon "raku") TODO: raku
@@ -256,7 +256,7 @@
     ("jade"           nerd-icons-sucicon "nf-seti-jade"          :face nerd-icons-red)
     ("pug"            nerd-icons-sucicon "nf-seti-pug"           :face nerd-icons-red)
     ;; Javascript
-    ;; ("d3js"        nerd-icons-devicon "d3") TODO: d3
+    ("d3js"           nerd-icons-devicon "d3js"                  :face nerd-icons-orange)
     ("re"             nerd-icons-sucicon "nf-seti-reasonml"      :face nerd-icons-red-alt)
     ("rei"            nerd-icons-sucicon "nf-seti-reasonml"      :face nerd-icons-dred)
     ("ml"             nerd-icons-sucicon "nf-seti-ocaml"         :face nerd-icons-lpink)
@@ -450,14 +450,14 @@
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
-    ;; ("apache$"              nerd-icons-alltheicon "apache") TODO: apache
+    ("apache$"                 nerd-icons-devicon "apache"                   :face nerd-icons-dgreen)
 
     ;; C
     ("^Makefile$"              nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
-    ("^CMakeLists.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-red) ;; TODO: cmake
-    ("^CMakeCache.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-blue) ;; TODO: cmakecache
-    ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
-    ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
+    ("^CMakeLists.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-red)
+    ("^CMakeCache.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-blue)
+    ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple)
+    ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple)
 
     ;; Docker
     ("^\\.?Dockerfile"         nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
@@ -675,7 +675,7 @@
     (fish-mode                         nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-lpink)
     (bat-mode                          nerd-icons-codicon "nf-cod-terminal_cmd"       :face nerd-icons-lsilver)
     (nginx-mode                        nerd-icons-devicon "nf-dev-nginx"              :face nerd-icons-dgreen)
-    ;; (apache-mode                    nerd-icons-alltheicon "apache"                 :face nerd-icons-dgreen)
+    (apache-mode                       nerd-icons-devicon "apache"                    :face nerd-icons-dgreen)
     (makefile-mode                     nerd-icons-devicon "nf-dev-gnu"                :face nerd-icons-dorange)
     (makefile-ts-mode                  nerd-icons-devicon "nf-dev-gnu"                :face nerd-icons-dorange)
     ;; (cmake-mode                     nerd-icons-fileicon "cmake"                    :face nerd-icons-red)
@@ -708,8 +708,8 @@
     (go-dot-work-mode                  nerd-icons-sucicon "nf-seti-config"            :face nerd-icons-blue-alt)
     (go-work-ts-mode                   nerd-icons-sucicon "nf-seti-config"            :face nerd-icons-blue-alt)
     (graphql-mode                      nerd-icons-sucicon "nf-seti-graphql"           :face nerd-icons-dpink)
-    ;; (matlab-mode                    nerd-icons-fileicon "matlab"                   :face nerd-icons-orange)
-    (nix-mode                          nerd-icons-mdicon "nf-md-nix"                  :face nerd-icons-blue)
+    (matlab-mode                       nerd-icons-devicon "matlab"                    :face nerd-icons-orange)
+    (nix-mode                          nerd-icons-mdicon  "nf-md-nix"                 :face nerd-icons-blue)
     (perl-mode                         nerd-icons-devicon "nf-dev-perl"               :face nerd-icons-lorange)
     (cperl-mode                        nerd-icons-devicon "nf-dev-perl"               :face nerd-icons-lorange)
     (php-mode                          nerd-icons-devicon "nf-dev-php"                :face nerd-icons-lsilver)
