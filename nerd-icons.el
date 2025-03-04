@@ -140,8 +140,8 @@
     ("exe"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
     ("msg"            nerd-icons-octicon "nf-oct-mail"           :face nerd-icons-dsilver)
     ;; Diff
-    ("diff"           nerd-icons-devicon "nf-dev-git_compare"    :face nerd-icons-lred)
-    ("patch"          nerd-icons-devicon "nf-dev-git_compare"    :face nerd-icons-lred)
+    ("diff"           nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-lred)
+    ("patch"          nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-lred)
     ;; Interface Builder
     ("nib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
     ("xib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
@@ -632,7 +632,7 @@
     (magit-process-mode                nerd-icons-octicon "nf-oct-mark_github")
     (magit-diff-mode                   nerd-icons-devicon "nf-dev-git_compare"        :face nerd-icons-lblue)
     (ediff-mode                        nerd-icons-devicon "nf-dev-git_compare"        :face nerd-icons-red)
-    (diff-mode                         nerd-icons-devicon "nf-dev-git_compare"        :face nerd-icons-lred)
+    (diff-mode                         nerd-icons-octicon "nf-oct-file_diff"          :face nerd-icons-lred)
     (comint-mode                       nerd-icons-faicon "nf-fa-terminal"             :face nerd-icons-lblue)
     (eww-mode                          nerd-icons-faicon "nf-fa-firefox"              :face nerd-icons-red)
     (xwidget-webkit-mode               nerd-icons-faicon "nf-fa-chrome"               :face nerd-icons-blue)
