@@ -139,6 +139,9 @@
     ("ds_store"       nerd-icons-faicon "nf-fa-cogs"             :face nerd-icons-silver)
     ("exe"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
     ("msg"            nerd-icons-octicon "nf-oct-mail"           :face nerd-icons-dsilver)
+    ;; Diff
+    ("diff"           nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-lred)
+    ("patch"          nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-lred)
     ;; Interface Builder
     ("nib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
     ("xib"            nerd-icons-mdicon "nf-md-fountain_pen_tip" :face nerd-icons-lsilver)
@@ -150,6 +153,7 @@
     ("gpr"            nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-green)
     ("cgpr"           nerd-icons-sucicon "nf-custom-ada"         :face nerd-icons-green)
     ("scpt"           nerd-icons-devicon "nf-dev-apple"          :face nerd-icons-pink)
+    ("awk"            nerd-icons-devicon "nf-dev-awk"            :face nerd-icons-yellow)
     ;; ("aup"         nerd-icons-fileicon "audacity") TODO: audacity
     ("elm"            nerd-icons-sucicon "nf-seti-elm"           :face nerd-icons-blue)
     ("erl"            nerd-icons-devicon "nf-dev-erlang"         :face nerd-icons-red)
@@ -216,6 +220,7 @@
     ("lisp"           nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-orange)
     ;; ("hy"             nerd-icons-sucicon "nf-custom-hy"          :face nerd-icons-blue)
     ("el"             nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
+    ("eld"            nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
     ("clj"            nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljd"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-green)
@@ -445,7 +450,8 @@
     ;;
     ("^TAGS$"                  nerd-icons-octicon "nf-oct-tag"               :face nerd-icons-blue)
     ("^TODO$"                  nerd-icons-octicon "nf-oct-checklist"         :face nerd-icons-lyellow)
-    ("^LICENSE$"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
+    ("^LICENSE\\(?:-\\|$\\)"   nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
+    ("^COPYING$"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
     ("^readme"                 nerd-icons-octicon "nf-oct-book"              :face nerd-icons-lcyan)
 
     ;; Config
@@ -529,6 +535,10 @@
     ("Cask\\'"                 nerd-icons-sucicon "nf-custom-emacs"          :face nerd-icons-blue)
     ("Eask\\'"                 nerd-icons-sucicon "nf-custom-emacs"          :face nerd-icons-blue)
 
+    ;; Rust
+    ("^Cargo.toml$"            nerd-icons-devicon "nf-dev-rust"              :face nerd-icons-yellow)
+    ("^Cargo.lock$"            nerd-icons-devicon "nf-dev-rust"              :face nerd-icons-dyellow)
+
     ("^\\."                    nerd-icons-octicon "nf-oct-gear")))
 
 (defvar nerd-icons-default-file-icon
@@ -591,6 +601,7 @@
 (defvar nerd-icons-mode-icon-alist
   '(
     (emacs-lisp-mode                   nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
+    (lisp-data-mode                    nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
     (circe-server-mode                 nerd-icons-faicon "nf-fa-commenting_o")
     (circe-channel-mode                nerd-icons-faicon "nf-fa-commenting_o")
     (circe-query-mode                  nerd-icons-faicon "nf-fa-commenting_o")
@@ -621,7 +632,7 @@
     (magit-process-mode                nerd-icons-octicon "nf-oct-mark_github")
     (magit-diff-mode                   nerd-icons-devicon "nf-dev-git_compare"        :face nerd-icons-lblue)
     (ediff-mode                        nerd-icons-devicon "nf-dev-git_compare"        :face nerd-icons-red)
-    (diff-mode                         nerd-icons-devicon "nf-dev-git_compare"        :face nerd-icons-lred)
+    (diff-mode                         nerd-icons-octicon "nf-oct-file_diff"          :face nerd-icons-lred)
     (comint-mode                       nerd-icons-faicon "nf-fa-terminal"             :face nerd-icons-lblue)
     (eww-mode                          nerd-icons-faicon "nf-fa-firefox"              :face nerd-icons-red)
     (xwidget-webkit-mode               nerd-icons-faicon "nf-fa-chrome"               :face nerd-icons-blue)
@@ -868,7 +879,18 @@
     (heex-ts-mode                      nerd-icons-sucicon "nf-seti-elixir"            :face nerd-icons-lorange)
     (julia-mode                        nerd-icons-sucicon "nf-seti-julia"             :face nerd-icons-purple)
     (julia-ts-mode                     nerd-icons-sucicon "nf-seti-julia"             :face nerd-icons-purple)
-    (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)))
+    (flycheck-error-list               nerd-icons-faicon "nf-fa-list_alt"             :face nerd-icons-lred)
+    (exwm-mode                         nerd-icons-flicon "nf-linux-xorg"              :face nerd-icons-dsilver)
+    (proced-mode                       nerd-icons-codicon "nf-cod-dashboard"          :face nerd-icons-green)
+    (bluetooth-mode                    nerd-icons-faicon "nf-fa-bluetooth"            :face nerd-icons-blue)
+    (disk-usage                        nerd-icons-faicon "nf-fa-pie_chart"            :face nerd-icons-lred)
+    (awk-mode                          nerd-icons-devicon "nf-dev-awk"                :face nerd-icons-yellow)
+    (ement-directory-mode              nerd-icons-faicon "nf-fa-search"               :face nerd-icons-dpurple)
+    (ement-describe-room-mode          nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-dpurple)
+    (ement-room-list-mode              nerd-icons-faicon "nf-fa-list"                 :face nerd-icons-dpurple)
+    (ement-tabulated-room-list-mode    nerd-icons-faicon "nf-fa-table"                :face nerd-icons-dpurple)
+    (ement-room-mode                   nerd-icons-faicon "nf-fa-comments_o"           :face nerd-icons-dpurple)
+    (ement-notifications-mode          nerd-icons-faicon "nf-fa-inbox"                :face nerd-icons-dpurple)))
 
 (defvar nerd-icons-url-alist
   '(
