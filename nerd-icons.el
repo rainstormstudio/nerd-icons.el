@@ -472,6 +472,10 @@
     ;; Homebrew
     ("^Brewfile$"              nerd-icons-faicon "nf-fa-beer"                :face nerd-icons-lsilver)
 
+    ;; Arch
+    ("^PKGBUILD$"              nerd-icons-flicon "nf-linux-archlinux"        :face nerd-icons-cyan)
+    ("^\\.SRCINFO$"            nerd-icons-flicon "nf-linux-archlinux"        :face nerd-icons-red)
+
     ;; ;; AWS
     ("^stack.*.json$"          nerd-icons-devicon "nf-dev-aws"               :face nerd-icons-orange)
     ("^serverless\\.yml$"      nerd-icons-faicon "nf-fa-bolt"                :face nerd-icons-yellow)
