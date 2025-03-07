@@ -437,6 +437,7 @@
     ("crt"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-lblue)
     ("pub"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-blue)
     ("gpg"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-lblue)
+    ("kdb"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-green)
     ("kdbx"           nerd-icons-octicon "nf-oct-key"            :face nerd-icons-green)
     ("cache"          nerd-icons-octicon "nf-oct-database"       :face nerd-icons-green)
     ("db"             nerd-icons-octicon "nf-oct-database"       :face nerd-icons-dblue)
