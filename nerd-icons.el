@@ -286,6 +286,7 @@
     ("tf"             nerd-icons-mdicon "nf-md-terraform"        :face nerd-icons-purple-alt)
     ("tfvars"         nerd-icons-mdicon "nf-md-terraform"        :face nerd-icons-purple-alt)
     ("tfstate"        nerd-icons-mdicon "nf-md-terraform"        :face nerd-icons-purple-alt)
+    ("tfbackend"      nerd-icons-mdicon "nf-md-terraform"        :face nerd-icons-purple-alt)
 
     ("asm"            nerd-icons-sucicon "nf-seti-asm"           :face nerd-icons-blue)
     ;; Verilog(-AMS) and SystemVerilog(-AMS     ;; Verilog(-AMS) and SystemVerilog(-AMS)
