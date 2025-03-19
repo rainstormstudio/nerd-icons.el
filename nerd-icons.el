@@ -1126,10 +1126,10 @@ ARG-OVERRIDES should be a plist containining `:height',
 inserting functions."
   (let* ((name (file-name-nondirectory file))
          (ext (file-name-extension name))
-         (icon (or (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
-                   (and ext
+         (icon (or (and ext
                         (cdr (assoc (downcase ext)
                                     nerd-icons-extension-icon-alist)))
+                   (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)                   
                    nerd-icons-default-file-icon))
          (args (cdr icon)))
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
