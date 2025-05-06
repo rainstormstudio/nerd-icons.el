@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; ipsicon
-;; from Nerd Font Version: 3.3.0
+;; from Nerd Font Version: 3.4.0
 
 ;;; Code:
 

@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; sucicon
-;; from Nerd Font Version: 3.3.0
+;; from Nerd Font Version: 3.4.0
 
 ;;; Code:
 
@@ -36,6 +36,7 @@
     ("nf-custom-common_lisp" . "\xe6b0")
     ("nf-custom-cpp" . "\xe61d")
     ("nf-custom-crystal" . "\xe62f")
+    ("nf-custom-css" . "\xe6b8")
     ("nf-custom-default" . "\xe612")
     ("nf-custom-electron" . "\xe62e")
     ("nf-custom-elixir" . "\xe62d")
