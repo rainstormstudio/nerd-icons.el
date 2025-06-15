@@ -645,7 +645,7 @@
     (org-agenda-mode                   nerd-icons-octicon "nf-oct-checklist"          :face nerd-icons-lgreen)
     (cfw:calendar-mode                 nerd-icons-octicon "nf-oct-calendar")
     (ibuffer-mode                      nerd-icons-faicon "nf-fa-files_o"              :face nerd-icons-dsilver)
-    (messages-buffer-mode              nerd-icons-faicon "nf-fa-file_o"               :face nerd-icons-dsilver)
+    (messages-buffer-mode              nerd-icons-octicon "nf-oct-log"                :face nerd-icons-yellow)
     (help-mode                         nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-purple)
     (helpful-mode                      nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-purple)
     (Info-mode                         nerd-icons-faicon "nf-fa-info"                 :face nerd-icons-blue)
