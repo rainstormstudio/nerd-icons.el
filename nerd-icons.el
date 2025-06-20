@@ -930,6 +930,7 @@
     ("^\\(https?://\\)?\\(www\\.\\)?jsfiddle\\.net"           nerd-icons-faicon "nf-fa-jsfiddle")
     ("^\\(https?://\\)?\\(www\\.\\)?maxcdn\\.com"             nerd-icons-faicon "nf-fa-maxcdn")
     ("^\\(https?://\\)?\\(www\\.\\)?stackoverflow\\.com"      nerd-icons-faicon "nf-fa-stack_overflow")
+    ("^\\(https?://\\)?\\(www\\.\\)?codeberg\\.org"           nerd-icons-flicon "nf-linux-codeberg")
     ;; Video
     ("^\\(https?://\\)?\\(www\\.\\)?twitch\\.tv"              nerd-icons-faicon "nf-fa-twitch")
     ("^\\(https?://\\)?\\(www\\.\\)?vimeo\\.com"              nerd-icons-faicon "nf-fa-vimeo")
