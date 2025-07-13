@@ -119,6 +119,7 @@ Please check [[https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-
 + [[https://github.com/LuigiPiucco/nerd-icons-corfu][nerd-icons-corfu]]
 + [[https://github.com/alexluigit/dirvish][dirvish]]
 + [[https://github.com/seagle0128/doom-modeline][doom-modeline]]
++ [[https://github.com/grolongo/nerd-icons-mode-line][nerd-icons-mode-line]]
 
 ** use nerd-icons with dirvish
 sample configuration:
