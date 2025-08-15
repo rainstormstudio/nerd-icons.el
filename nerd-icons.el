@@ -89,6 +89,7 @@
     ("fish"           nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-lpink)
     ("zsh"            nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-lcyan)
     ("sh"             nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-purple)
+    ("nu"             nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-green)
     ("bat"            nerd-icons-codicon "nf-cod-terminal_cmd"   :face nerd-icons-lsilver)
     ("cmd"            nerd-icons-codicon "nf-cod-terminal_cmd"   :face nerd-icons-lsilver)
     ;; Meta
@@ -105,10 +106,10 @@
     ("properties"     nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
     ("eslintignore"   nerd-icons-mdicon "nf-md-eslint"           :face nerd-icons-purple)
     ("eslint"         nerd-icons-mdicon "nf-md-eslint"           :face nerd-icons-lpurple)
-    ("git"            nerd-icons-sucicon "nf-seti-git"            :face nerd-icons-lred)
-    ("gitattributes"  nerd-icons-sucicon "nf-seti-git"            :face nerd-icons-lred)
-    ("gitignore"      nerd-icons-sucicon "nf-seti-git"            :face nerd-icons-lred)
-    ("gitmodules"     nerd-icons-sucicon "nf-seti-git"            :face nerd-icons-lred)
+    ("git"            nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
+    ("gitattributes"  nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
+    ("gitignore"      nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
+    ("gitmodules"     nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
     ("mk"             nerd-icons-devicon "nf-dev-gnu"            :face nerd-icons-dorange)
     ;; ("cmake"    nerd-icons-devicon "cmake") TODO: cmake
     ("dockerignore"   nerd-icons-devicon "nf-dev-docker"         :face nerd-icons-dblue)
@@ -170,7 +171,7 @@
     ("gradle"         nerd-icons-sucicon "nf-seti-gradle"        :face nerd-icons-silver)
     ("ebuild"         nerd-icons-mdicon "nf-md-gentoo"           :face nerd-icons-cyan)
     ("eclass"         nerd-icons-mdicon "nf-md-gentoo"           :face nerd-icons-blue)
-    ("go"             nerd-icons-sucicon "nf-seti-go2"             :face nerd-icons-blue)
+    ("go"             nerd-icons-sucicon "nf-seti-go2"           :face nerd-icons-blue)
     ("jl"             nerd-icons-sucicon "nf-seti-julia"         :face nerd-icons-purple)
     ("magik"          nerd-icons-faicon "nf-fa-magic"            :face nerd-icons-blue)
     ("matlab"         nerd-icons-devicon "nf-dev-matlab"         :face nerd-icons-orange)
@@ -230,8 +231,8 @@
     ("iced"           nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-lmaroon)
     ("dart"           nerd-icons-devicon "nf-dev-dart"           :face nerd-icons-blue)
     ("ledger"         nerd-icons-mdicon  "nf-md-file_table_box_multiple" :face nerd-icons-green)
-    ("rkt"            nerd-icons-sucicon "nf-custom-scheme"       :face nerd-icons-red)
-    ("scrbl"          nerd-icons-sucicon "nf-custom-scheme"       :face nerd-icons-blue)
+    ("rkt"            nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-red)
+    ("scrbl"          nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-blue)
     ;; Stylesheeting
     ("css"            nerd-icons-devicon "nf-dev-css3"           :face nerd-icons-yellow)
     ("scss"           nerd-icons-mdicon "nf-md-sass"             :face nerd-icons-pink)
@@ -534,7 +535,7 @@
     ("Jenkinsfile\\'"          nerd-icons-devicon "nf-dev-groovy"            :face nerd-icons-cyan-alt)
 
     ;; Emacs
-    ("^bookmark"                nerd-icons-octicon "nf-oct-bookmark"          :face nerd-icons-lpink)
+    ("^bookmark"                nerd-icons-octicon "nf-oct-bookmark"         :face nerd-icons-lpink)
 
     ("^\\*scratch\\*$"         nerd-icons-faicon "nf-fa-sticky_note"         :face nerd-icons-lyellow)
     ("^\\*scratch.*"           nerd-icons-faicon "nf-fa-sticky_note"         :face nerd-icons-yellow)
@@ -702,6 +703,8 @@
     (bash-ts-mode                      nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-purple)
     (shell-mode                        nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-purple)
     (fish-mode                         nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-lpink)
+    (nushell-mode                      nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-green)
+    (nushell-ts-mode                   nerd-icons-devicon "nf-dev-terminal"           :face nerd-icons-green)
     (bat-mode                          nerd-icons-codicon "nf-cod-terminal_cmd"       :face nerd-icons-lsilver)
     (nginx-mode                        nerd-icons-devicon "nf-dev-nginx"              :face nerd-icons-dgreen)
     (apache-mode                       nerd-icons-devicon "nf-dev-apache"             :face nerd-icons-dgreen)
