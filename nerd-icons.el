@@ -924,7 +924,8 @@
     (ement-notifications-mode          nerd-icons-faicon "nf-fa-inbox"                :face nerd-icons-dpurple)
     (authinfo-mode                     nerd-icons-octicon "nf-oct-key"                :face nerd-icons-lblue)
     (show-font-mode                    nerd-icons-faicon "nf-fa-font"                 :face nerd-icons-dred)
-    (show-font-tabulated-mode          nerd-icons-faicon "nf-fa-font"                 :face nerd-icons-dred)))
+    (show-font-tabulated-mode          nerd-icons-faicon "nf-fa-font"                 :face nerd-icons-dred)
+    (journalctl-mode                   nerd-icons-octicon "nf-oct-log"                :face nerd-icons-dgreen)))
 
 (defvar nerd-icons-url-alist
   '(
