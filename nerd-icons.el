@@ -358,9 +358,16 @@
     ;; odin
     ;; ("odin"        nerd-icons-fileicon "odin") TODO: odin
     ;; File Types
+    ("avci"           nerd-icons-mdicon "nf-md-image"            :face nerd-icons-dred)
+    ("avcs"           nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
+    ("avif"           nerd-icons-mdicon "nf-md-image"            :face nerd-icons-dred)
     ("ico"            nerd-icons-octicon "nf-oct-file_media"     :face nerd-icons-blue)
     ("png"            nerd-icons-mdicon "nf-md-file_png_box"     :face nerd-icons-orange)
     ("gif"            nerd-icons-mdicon "nf-md-file_gif_box"     :face nerd-icons-green)
+    ("heic"           nerd-icons-mdicon "nf-md-image"            :face nerd-icons-dred)
+    ("heics"          nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
+    ("heif"           nerd-icons-mdicon "nf-md-image"            :face nerd-icons-dred)
+    ("heifs"          nerd-icons-mdicon "nf-md-image_album"      :face nerd-icons-lmaroon)
     ("jpeg"           nerd-icons-mdicon "nf-md-file_jpg_box"     :face nerd-icons-dblue)
     ("jpg"            nerd-icons-mdicon "nf-md-file_jpg_box"     :face nerd-icons-dblue)
     ("webp"           nerd-icons-octicon "nf-oct-file_media"     :face nerd-icons-dblue)
