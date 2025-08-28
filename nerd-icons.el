@@ -922,7 +922,9 @@
     (ement-tabulated-room-list-mode    nerd-icons-faicon "nf-fa-table"                :face nerd-icons-dpurple)
     (ement-room-mode                   nerd-icons-faicon "nf-fa-comments_o"           :face nerd-icons-dpurple)
     (ement-notifications-mode          nerd-icons-faicon "nf-fa-inbox"                :face nerd-icons-dpurple)
-    (authinfo-mode                     nerd-icons-octicon "nf-oct-key"                :face nerd-icons-lblue)))
+    (authinfo-mode                     nerd-icons-octicon "nf-oct-key"                :face nerd-icons-lblue)
+    (show-font-mode                    nerd-icons-faicon "nf-fa-font"                 :face nerd-icons-dred)
+    (show-font-tabulated-mode          nerd-icons-faicon "nf-fa-font"                 :face nerd-icons-dred)))
 
 (defvar nerd-icons-url-alist
   '(
