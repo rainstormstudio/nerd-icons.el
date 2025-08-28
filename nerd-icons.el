@@ -374,6 +374,7 @@
     ("mp3"            nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
     ("wav"            nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
     ("m4a"            nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
+    ("m4b"            nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-green)
     ("ogg"            nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
     ("flac"           nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
     ("opus"           nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
