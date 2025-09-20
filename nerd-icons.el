@@ -586,7 +586,7 @@
     ("vlc"              nerd-icons-mdicon "nf-md-vlc")
     ("discord"          nerd-icons-faicon "nf-fa-discord")
     ("JetBrains"        nerd-icons-devicon "nf-dev-jetbrains")
-    ("go"               nerd-icons-devicon "nf-dev-go")
+    ("^go$"             nerd-icons-devicon "nf-dev-go")
     ("mpv"              nerd-icons-flicon "nf-linux-mpv")
     ("electron"         nerd-icons-devicon "nf-dev-electron")
     (".?"               nerd-icons-sucicon "nf-custom-folder_oct")))
