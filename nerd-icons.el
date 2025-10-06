@@ -95,6 +95,9 @@
     ;; Meta
     ("tags"           nerd-icons-octicon "nf-oct-tag"            :face nerd-icons-blue)
     ("log"            nerd-icons-octicon "nf-oct-log"            :face nerd-icons-maroon)
+    ("changes"        nerd-icons-mdicon  "nf-md-script_text"     :face nerd-icons-cyan)
+    ("diff"           nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-dgreen)
+    ("patch"          nerd-icons-octicon "nf-oct-file_diff"      :face nerd-icons-lgreen)
     ;; Config
     ("node"           nerd-icons-devicon "nf-dev-nodejs_small"   :face nerd-icons-green)
     ("babelrc"        nerd-icons-mdicon "nf-md-babel"            :face nerd-icons-yellow)
@@ -111,7 +114,7 @@
     ("gitignore"      nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
     ("gitmodules"     nerd-icons-sucicon "nf-seti-git"           :face nerd-icons-lred)
     ("mk"             nerd-icons-devicon "nf-dev-gnu"            :face nerd-icons-dorange)
-    ;; ("cmake"    nerd-icons-devicon "cmake") TODO: cmake
+    ("cmake"          nerd-icons-devicon "nf-dev-cmake"          :face nerd-icons-lgreen)
     ("dockerignore"   nerd-icons-devicon "nf-dev-docker"         :face nerd-icons-dblue)
     ("plist"          nerd-icons-faicon "nf-fa-file_code"        :face nerd-icons-dsilver)
     ("xml"            nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lorange)
@@ -128,6 +131,7 @@
     ;; ?
     ("pkg"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("rpm"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
+    ("spec"           nerd-icons-mdicon "nf-md-file_document_plus"  :face nerd-icons-red)
     ("pkgbuild"       nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("elc"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
     ("eln"            nerd-icons-octicon "nf-oct-file_binary"    :face nerd-icons-dsilver)
@@ -216,6 +220,7 @@
     ("hh"             nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
     ("hpp"            nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
     ("hxx"            nerd-icons-sucicon "nf-custom-cpp"         :face nerd-icons-purple)
+    ("o"              nerd-icons-codicon "nf-cod-file_binary"    :face nerd-icons-dsilver)
     ;; Lisps
     ("cl"             nerd-icons-sucicon "nf-custom-common_lisp" :face nerd-icons-lorange)
     ("l"              nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-orange)
@@ -227,6 +232,10 @@
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljd"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-green)
     ("cljs"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-lyellow)
+    ;; autotools and related
+    ("m4"             nerd-icons-mdicon "nf-md-file_cog"         :face nerd-icons-lsilver)
+    ("am"             nerd-icons-sucicon "nf-seti-makefile"      :face nerd-icons-lsilver)
+    ;;
     ("coffee"         nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-maroon)
     ("iced"           nerd-icons-devicon "nf-dev-coffeescript"   :face nerd-icons-lmaroon)
     ("dart"           nerd-icons-devicon "nf-dev-dart"           :face nerd-icons-blue)
@@ -412,6 +421,8 @@
     ("rar"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
     ("tgz"            nerd-icons-mdicon "nf-md-zip_box"          :face nerd-icons-orange)
     ("jar"            nerd-icons-devicon "nf-dev-java"           :face nerd-icons-dpurple)
+    ("cpio"           nerd-icons-sucicon "nf-seti-zip"           :face nerd-icons-orange)
+    ("obscpio"        nerd-icons-sucicon "nf-seti-zip"           :face nerd-icons-orange)
     ;; Doc
     ("pdf"            nerd-icons-codicon "nf-cod-file_pdf"       :face nerd-icons-dred)
     ("text"           nerd-icons-faicon "nf-fa-file_text"        :face nerd-icons-cyan)
@@ -462,20 +473,41 @@
     ;;
     ("^TAGS$"                  nerd-icons-octicon "nf-oct-tag"               :face nerd-icons-blue)
     ("^TODO$"                  nerd-icons-octicon "nf-oct-checklist"         :face nerd-icons-lyellow)
-    ("^LICENSE\\(?:-\\|$\\)"   nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
-    ("^COPYING$"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-blue)
-    ("^readme"                 nerd-icons-octicon "nf-oct-book"              :face nerd-icons-lcyan)
+    ("^LICENSE.*$"             nerd-icons-octicon "nf-oct-file_badge"        :face nerd-icons-blue)
+    ;; (info "(standards) Releases")
+    ("^COPYING.*$"             nerd-icons-mdicon  "nf-md-copyright"          :face nerd-icons-blue)
+    ("^readme.*"               nerd-icons-octicon "nf-oct-book"              :face nerd-icons-lcyan)
+    ;; misc GNU documentation files
+    ("^\\(MAINTAINERS\\|CONTRIBUTE\\|BUGS\\).*$"  nerd-icons-mdicon
+     "nf-md-book" :face nerd-icons-blue)
+
+    ;; (info "(standards) NEWS File")
+    ("^NEWS.*$"                nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-green)
+    ("^ONEWS.*$"               nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-lgreen)
+    ;; (info "(standards) Change Logs")
+    ("^ChangeLog.*$"           nerd-icons-mdicon "nf-md-file_document_multiple" :face nerd-icons-cyan)
+    ;; (info "(standards) Releases")
+    ("^INSTALL.*$"             nerd-icons-faicon "nf-fa-file_arrow_down"     :face nerd-icons-green)
+
+    ;; autotools related
+    ("^Makefile.\\(am\\|in\\)$" nerd-icons-sucicon "nf-seti-makefile"        :face nerd-icons-lsilver)
+    ("^configure.\\(in\\|ac\\)" nerd-icons-mdicon  "nf-md-file_cog"           :face nerd-icons-lsilver)
+    ("^configure$"             nerd-icons-devicon "nf-dev-terminal"          :face nerd-icons-lsilver)
+    ("^config.\\(guess\\|rpath\\|status\\|sub\\)$" nerd-icons-devicon "nf-dev-terminal"
+     :face nerd-icons-lsilver)
+    ("^\\(ar-lib\\|depmond\\|install-sh\\|missing\\|mkdep\\|mkinstalldirs\\|move-if-change\\|symlink-tree\\|test-driver\\|ylwrap\\)$"
+     nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lsilver)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
     ("apache$"                 nerd-icons-devicon "nf-dev-apache"            :face nerd-icons-dgreen)
 
     ;; C
-    ("^Makefile$"              nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
-    ("^CMakeLists.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-red)
-    ("^CMakeCache.txt$"        nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-blue)
-    ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple)
-    ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple)
+    ("^\\(GNU\\|\\)Makefile.*" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
+    ("^CMakeLists.txt$"        nerd-icons-devicon "nf-dev-cmake"               :face nerd-icons-red)
+    ("^CMakeCache.txt$"        nerd-icons-devicon "nf-dev-cmake"               :face nerd-icons-blue)
+    ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
+    ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
 
     ;; Docker
     ("^\\.?Dockerfile"         nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
@@ -628,6 +660,8 @@
   '(
     (emacs-lisp-mode                   nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
     (lisp-data-mode                    nerd-icons-sucicon "nf-custom-emacs"           :face nerd-icons-purple)
+    (m4-mode                           nerd-icons-faicon "nf-fa-cog"                  :face nerd-icons-lsilver)
+    (autoconf-mode                     nerd-icons-faicon "nf-fa-cog"                  :face nerd-icons-lsilver)
     (circe-server-mode                 nerd-icons-faicon "nf-fa-commenting_o")
     (circe-channel-mode                nerd-icons-faicon "nf-fa-commenting_o")
     (circe-query-mode                  nerd-icons-faicon "nf-fa-commenting_o")
@@ -718,8 +752,8 @@
     (apache-mode                       nerd-icons-devicon "nf-dev-apache"             :face nerd-icons-dgreen)
     (makefile-mode                     nerd-icons-sucicon "nf-seti-makefile"          :face nerd-icons-dorange)
     (makefile-ts-mode                  nerd-icons-sucicon "nf-seti-makefile"          :face nerd-icons-dorange)
-    ;; (cmake-mode                     nerd-icons-fileicon "cmake"                    :face nerd-icons-red)
-    ;; (cmake-ts-mode                  nerd-icons-fileicon "cmake"                    :face nerd-icons-red)
+    (cmake-mode                        nerd-icons-devicon "nf-dev-cmake"              :face nerd-icons-red)
+    (cmake-ts-mode                     nerd-icons-devicon "nf-dev-cmake"              :face nerd-icons-red)
     (dockerfile-mode                   nerd-icons-sucicon "nf-seti-docker"            :face nerd-icons-blue)
     (dockerfile-ts-mode                nerd-icons-sucicon "nf-seti-docker"            :face nerd-icons-blue)
     (docker-compose-mode               nerd-icons-sucicon "nf-seti-docker"            :face nerd-icons-lblue)
