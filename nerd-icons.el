@@ -683,7 +683,7 @@
     (js-jsx-mode                       nerd-icons-devicon "nf-dev-react"              :face nerd-icons-lblue)
     (js2-mode                          nerd-icons-devicon "nf-dev-javascript"         :face nerd-icons-yellow)
     (js3-mode                          nerd-icons-devicon "nf-dev-javascript"         :face nerd-icons-yellow)
-    (rjsx-mode                         nerd-icons-devicon "nf-dev-javascript"         :face nerd-icons-cyan-alt)
+    (rjsx-mode                         nerd-icons-devicon "nf-dev-react"              :face nerd-icons-lblue)
     (vue-mode                          nerd-icons-sucicon "nf-seti-vue"               :face nerd-icons-lgreen)
     (term-mode                         nerd-icons-devicon "nf-dev-terminal")
     (vterm-mode                        nerd-icons-devicon "nf-dev-terminal")
