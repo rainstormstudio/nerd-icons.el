@@ -1249,14 +1249,21 @@ inserting functions."
     (apply (car icon) args)))
 
 ;;;###autoload
-(defun nerd-icons-icon-for-buffer ()
+(defun nerd-icons-icon-for-buffer (&rest arg-overrides)
   "Get the formatted icon for the current buffer.
+
+ARG-OVERRIDES should be a plist containing `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
 
 This function prioritises the use of the buffers file extension to
 discern the icon when its `major-mode' matches its auto mode,
 otherwise it will use the buffers `major-mode' to decide its
 icon."
-  (nerd-icons--icon-info-for-buffer))
+  (if (and (buffer-file-name)
+           (nerd-icons-auto-mode-match?))
+      (apply #'nerd-icons-icon-for-file (file-name-nondirectory (buffer-file-name)) arg-overrides)
+    (apply #'nerd-icons-icon-for-mode major-mode arg-overrides)))
 
 (defun nerd-icons-cache (func)
   "Set a cache for FUNC.  Does not work on interactive functions."
@@ -1280,18 +1287,6 @@ icon."
 (nerd-icons-cache #'nerd-icons-icon-for-extension)
 (nerd-icons-cache #'nerd-icons-icon-for-mode)
 (nerd-icons-cache #'nerd-icons-icon-for-url)
-
-(defun nerd-icons--icon-info-for-buffer (&optional f)
-  "Get icon info for the current buffer.
-When F is provided, the info function is calculated with the format
-`nerd-icons-icon-%s-for-file' or `nerd-icons-icon-%s-for-mode'."
-  (let* ((base-f (concat "nerd-icons-icon" (when f (format "-%s" f))))
-         (file-f (intern (concat base-f "-for-file")))
-         (mode-f (intern (concat base-f "-for-mode"))))
-    (if (and (buffer-file-name)
-             (nerd-icons-auto-mode-match?))
-        (funcall file-f (file-name-nondirectory (buffer-file-name)))
-      (funcall mode-f major-mode))))
 
 ;; Weather icons
 (defun nerd-icons-icon-for-weather (weather)
