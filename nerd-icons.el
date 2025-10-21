@@ -959,7 +959,8 @@
     (authinfo-mode                     nerd-icons-octicon "nf-oct-key"                :face nerd-icons-lblue)
     (show-font-mode                    nerd-icons-faicon "nf-fa-font"                 :face nerd-icons-dred)
     (show-font-tabulated-mode          nerd-icons-faicon "nf-fa-font"                 :face nerd-icons-dred)
-    (journalctl-mode                   nerd-icons-octicon "nf-oct-log"                :face nerd-icons-dgreen)))
+    (journalctl-mode                   nerd-icons-octicon "nf-oct-log"                :face nerd-icons-dgreen)
+    (pinentry-prompt-mode              nerd-icons-mdicon "nf-md-form_textbox_password" :face nerd-icons-dred)))
 
 (defvar nerd-icons-url-alist
   '(
