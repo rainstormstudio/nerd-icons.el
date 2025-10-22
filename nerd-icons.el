@@ -5,7 +5,7 @@
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>, Vincent Zhang <seagle0128@gmail.com>
 ;; Keywords: lisp
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/rainstormstudio/nerd-icons.el
 ;; Keywords: convenient, lisp
 
@@ -1250,7 +1250,7 @@ inserting functions."
     (apply (car icon) args)))
 
 ;;;###autoload
-(defun nerd-icons-icon-for-buffer (&rest arg-overrides)
+(cl-defgeneric nerd-icons-icon-for-buffer (&rest arg-overrides)
   "Get the formatted icon for the current buffer.
 
 ARG-OVERRIDES should be a plist containing `:height',
