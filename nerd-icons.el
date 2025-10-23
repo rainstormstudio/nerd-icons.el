@@ -1227,12 +1227,12 @@ inserting functions."
 ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
 inserting functions."
-  (let* ((icon (or (cdr (or (assoc mode nerd-icons-mode-icon-alist)
-                            (assoc (get mode 'derived-mode-parent) nerd-icons-mode-icon-alist)))
-                   nerd-icons-default-file-icon))
-         (args (cdr icon)))
-    (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
-    (if icon (apply (car icon) args) mode)))
+  (when-let* ((icon (or (cdr (or (assq mode nerd-icons-mode-icon-alist)
+                                 (assq (get mode 'derived-mode-parent) nerd-icons-mode-icon-alist)))
+                        nerd-icons-default-file-icon)))
+    (if arg-overrides
+        (apply (car icon) (cadr icon) (append arg-overrides (cddr icon)))
+      (apply (car icon) (cdr icon)))))
 
 ;;;###autoload
 (defun nerd-icons-icon-for-url (url &rest arg-overrides)
@@ -1292,8 +1292,8 @@ icon."
 ;; Weather icons
 (defun nerd-icons-icon-for-weather (weather)
   "Get an icon for a WEATHER status."
-  (let ((icon (nerd-icons-match-to-alist weather nerd-icons-weather-icon-alist)))
-    (if icon (apply (car icon) (cdr icon)) weather)))
+  (when-let* ((icon (nerd-icons-match-to-alist weather nerd-icons-weather-icon-alist)))
+    (apply (car icon) (cdr icon))))
 
 ;; For `web-mode'
 (defun nerd-icons--web-mode-icon (&rest arg-overrides)
