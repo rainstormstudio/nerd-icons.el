@@ -5,7 +5,7 @@
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>, Vincent Zhang <seagle0128@gmail.com>
 ;; Keywords: lisp
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "25.1"))
+;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/rainstormstudio/nerd-icons.el
 ;; Keywords: convenient, lisp
 
@@ -1063,14 +1063,21 @@
     ("google"                                                 nerd-icons-faicon "nf-fa-google")
     ("\\.rss"                                                 nerd-icons-faicon "nf-fa-rss")))
 
-(defun nerd-icons-auto-mode-match? (&optional file)
-  "Whether or not FILE's `major-mode' match against its `auto-mode-alist'."
-  (let* ((file (or file (buffer-file-name) (buffer-name)))
-         (auto-mode (nerd-icons-match-to-alist file auto-mode-alist)))
-    (eq major-mode auto-mode)))
+(defun nerd-icons-auto-mode-match? ()
+  "Whether or not the buffer's `major-mode' matches its entry in `auto-mode-alist'."
+  (when-let* ((fname (buffer-file-name)))
+    (eq major-mode
+        ;; When set-auto-mode sets the mode and the resulting `major-mode' variable doesn't
+        ;; match the entry in `auto-mode-alist', it records the actual mode set in
+        ;; `set-auto-mode--last' (on Emacs >= 29).
+        (if-let* ((last-auto-mode (bound-and-true-p set-auto-mode--last)))
+            (cdr last-auto-mode)
+          (nerd-icons--auto-mode-lookup (file-name-nondirectory fname))))))
 
-(defvar nerd-icons--file-cache (make-hash-table :test 'equal)
-  "Cache for file extension to mode mapping.")
+(defun nerd-icons--auto-mode-lookup (file)
+  "Return the mode-setting function associated with FILE via `auto-mode-alist'.
+NOTE: The mode-setting function may not be the same as the mode itself."
+  (nerd-icons-match-to-alist file auto-mode-alist))
 
 (defun nerd-icons-match-to-alist (file alist)
   "Match FILE against an entry in ALIST using `string-match'."
@@ -1267,8 +1274,7 @@ This function prioritises the use of the buffers file extension to
 discern the icon when its `major-mode' matches its auto mode,
 otherwise it will use the buffers `major-mode' to decide its
 icon."
-  (if (and (buffer-file-name)
-           (nerd-icons-auto-mode-match?))
+  (if (nerd-icons-auto-mode-match?)
       (apply #'nerd-icons-icon-for-file (file-name-nondirectory (buffer-file-name)) arg-overrides)
     (apply #'nerd-icons-icon-for-mode major-mode arg-overrides)))
 
@@ -1295,6 +1301,7 @@ icon."
 (nerd-icons-cache #'nerd-icons-icon-for-extension)
 (nerd-icons-cache #'nerd-icons-icon-for-mode)
 (nerd-icons-cache #'nerd-icons-icon-for-url)
+(nerd-icons-cache #'nerd-icons--auto-mode-lookup)
 
 ;; Weather icons
 (defun nerd-icons-icon-for-weather (weather)
