@@ -1298,6 +1298,8 @@ icon."
   (when-let* ((icon (nerd-icons-match-to-alist weather nerd-icons-weather-icon-alist)))
     (apply (car icon) (cdr icon))))
 
+(nerd-icons-cache #'nerd-icons-icon-for-weather)
+
 (eval-and-compile
   (defun nerd-icons--function-name (name)
     "Get the symbol for an icon function name for icon set NAME."
