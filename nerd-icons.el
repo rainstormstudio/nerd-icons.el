@@ -726,8 +726,7 @@
     (paradox-menu-mode                 nerd-icons-faicon "nf-fa-archive"                 :face nerd-icons-silver)
     (Custom-mode                       nerd-icons-codicon "nf-cod-settings")
 
-    ;; Special matcher for Web Mode based on the `web-mode-content-type' of the current buffer
-    (web-mode                          nerd-icons--web-mode-icon)
+    (web-mode                          nerd-icons-devicon "nf-dev-html5")
 
     (fundamental-mode                  nerd-icons-sucicon "nf-custom-emacs"              :face nerd-icons-dsilver)
     (special-mode                      nerd-icons-sucicon "nf-custom-emacs"              :face nerd-icons-yellow)
@@ -1294,34 +1293,6 @@ icon."
   "Get an icon for a WEATHER status."
   (when-let* ((icon (nerd-icons-match-to-alist weather nerd-icons-weather-icon-alist)))
     (apply (car icon) (cdr icon))))
-
-;; For `web-mode'
-(defun nerd-icons--web-mode-icon (&rest arg-overrides)
-  "Get icon for a `web-mode' buffer with ARG-OVERRIDES."
-  (nerd-icons--web-mode arg-overrides))
-(defun nerd-icons--web-mode-icon-family ()
-  "Get icon family for a `web-mode' buffer."
-  (nerd-icons--web-mode t))
-
-(defvar web-mode-content-type)          ; external
-(defun nerd-icons--web-mode (&optional arg-overrides)
-  "Return icon or FAMILY for `web-mode' based on `web-mode-content-type'.
-Providing ARG-OVERRIDES will modify the creation of the icon."
-  (let ((non-nil-args (cl-reduce (lambda (acc it) (if it (append acc (list it)) acc))
-                                 arg-overrides :initial-value '())))
-    (cond
-     ((equal web-mode-content-type "jsx")
-      (apply 'nerd-icons-devicon (append '("javascript") non-nil-args)))
-     ((equal web-mode-content-type "javascript")
-      (apply 'nerd-icons-devicon (append '("javascript") non-nil-args)))
-     ((equal web-mode-content-type "json")
-      (apply 'nerd-icons-devicon (append '("nf-dev-less") non-nil-args)))
-     ((equal web-mode-content-type "xml")
-      (apply 'nerd-icons-faicon (append '("nf-fa-file_code_o") non-nil-args)))
-     ((equal web-mode-content-type "css")
-      (apply 'nerd-icons-devicon (append '("nf-dev-css3") non-nil-args)))
-     (t
-      (apply 'nerd-icons-devicon (append '("nf-dev-html5") non-nil-args))))))
 
 (eval-and-compile
   (defun nerd-icons--function-name (name)
