@@ -1220,18 +1220,26 @@ inserting functions."
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
     (apply (car icon) args)))
 
+(defalias 'nerd-icons--mode-parents
+  (if (< emacs-major-version 30)
+      (lambda (mode)
+        "Return all parents for the given MODE, starting with MODE."
+        (when mode
+          (cons mode (nerd-icons--mode-parents
+                      (get mode 'derived-mode-parent)))))
+    'derived-mode-all-parents))
+
 ;;;###autoload
 (defun nerd-icons-icon-for-mode (mode &rest arg-overrides)
   "Get the formatted icon for MODE.
 ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
 inserting functions."
-  (when-let* ((icon (or (cdr (or (assq mode nerd-icons-mode-icon-alist)
-                                 (assq (get mode 'derived-mode-parent) nerd-icons-mode-icon-alist)))
-                        nerd-icons-default-file-icon)))
-    (if arg-overrides
-        (apply (car icon) (cadr icon) (append arg-overrides (cddr icon)))
-      (apply (car icon) (cdr icon)))))
+  (let ((modes (nerd-icons--mode-parents mode)))
+    (when-let* ((icon (cdr (cl-some (lambda (m) (assq m nerd-icons-mode-icon-alist)) modes))))
+      (if arg-overrides
+          (apply (car icon) (cadr icon) (append arg-overrides (cddr icon)))
+        (apply (car icon) (cdr icon))))))
 
 ;;;###autoload
 (defun nerd-icons-icon-for-url (url &rest arg-overrides)
