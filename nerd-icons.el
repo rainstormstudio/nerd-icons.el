@@ -1074,10 +1074,7 @@
 
 (defun nerd-icons-match-to-alist (file alist)
   "Match FILE against an entry in ALIST using `string-match'."
-  (or (gethash file nerd-icons--file-cache)
-      (puthash file
-               (cdr (cl-find-if (lambda (it) (string-match (car it) file)) alist))
-               nerd-icons--file-cache)))
+  (cdr (assoc file alist #'string-match)))
 
 (defun nerd-icons-dir-is-submodule (dir)
   "Checker whether or not DIR is a git submodule."
