@@ -1072,12 +1072,7 @@
         ;; `set-auto-mode--last' (on Emacs >= 29).
         (if-let* ((last-auto-mode (bound-and-true-p set-auto-mode--last)))
             (cdr last-auto-mode)
-          (nerd-icons--auto-mode-lookup (file-name-nondirectory fname))))))
-
-(defun nerd-icons--auto-mode-lookup (file)
-  "Return the mode-setting function associated with FILE via `auto-mode-alist'.
-NOTE: The mode-setting function may not be the same as the mode itself."
-  (nerd-icons-match-to-alist file auto-mode-alist))
+          (nerd-icons-match-to-alist (file-name-nondirectory fname) auto-mode-alist)))))
 
 (defun nerd-icons-match-to-alist (file alist)
   "Match FILE against an entry in ALIST using `string-match'."
@@ -1301,7 +1296,6 @@ icon."
 (nerd-icons-cache #'nerd-icons-icon-for-extension)
 (nerd-icons-cache #'nerd-icons-icon-for-mode)
 (nerd-icons-cache #'nerd-icons-icon-for-url)
-(nerd-icons-cache #'nerd-icons--auto-mode-lookup)
 
 ;; Weather icons
 (defun nerd-icons-icon-for-weather (weather)
