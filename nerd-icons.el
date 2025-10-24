@@ -1069,15 +1069,9 @@
          (auto-mode (nerd-icons-match-to-alist file auto-mode-alist)))
     (eq major-mode auto-mode)))
 
-(defvar nerd-icons--file-cache (make-hash-table :test 'equal)
-  "Cache for file extension to mode mapping.")
-
-(defun nerd-icons-match-to-alist (file alist)
-  "Match FILE against an entry in ALIST using `string-match'."
-  (or (gethash file nerd-icons--file-cache)
-      (puthash file
-               (cdr (cl-find-if (lambda (it) (string-match (car it) file)) alist))
-               nerd-icons--file-cache)))
+(defun nerd-icons-match-to-alist (string alist)
+  "Match STRING against an entry in ALIST using `string-match'."
+  (cdr (assoc string alist #'string-match)))
 
 (defun nerd-icons-dir-is-submodule (dir)
   "Checker whether or not DIR is a git submodule."
