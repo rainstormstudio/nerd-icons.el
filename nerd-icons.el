@@ -128,6 +128,7 @@
     ("conf"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dorange)
     ("editorconfig"   nerd-icons-sucicon "nf-seti-editorconfig"  :face nerd-icons-silver)
     ("idekeybindings" nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lblue)
+    ("cfg"            nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dorange)
     ;; ?
     ("pkg"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("rpm"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
@@ -196,6 +197,7 @@
     ("gem"            nerd-icons-codicon "nf-cod-ruby"           :face nerd-icons-red)
     ;; ("raku"        nerd-icons-devicon "raku") TODO: raku
     ;; ("rakumod"     nerd-icons-devicon "raku") TODO: raku
+    ("qml"            nerd-icons-devicon "nf-dev-qt"             :face nerd-icons-yellow)
     ("rb"             nerd-icons-codicon "nf-cod-ruby"           :face nerd-icons-lred)
     ("rs"             nerd-icons-devicon "nf-dev-rust"           :face nerd-icons-maroon)
     ("rlib"           nerd-icons-devicon "nf-dev-rust"           :face nerd-icons-dmaroon)
