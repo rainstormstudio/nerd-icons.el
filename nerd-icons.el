@@ -1065,14 +1065,16 @@
 
 (defun nerd-icons-auto-mode-match? ()
   "Whether or not the buffer's `major-mode' matches its entry in `auto-mode-alist'."
-  (when-let* ((fname (buffer-file-name)))
+  (when-let* ((fname (buffer-file-name))
+              (modefn (nerd-icons-match-to-alist (file-name-nondirectory fname) auto-mode-alist)))
     (eq major-mode
         ;; When set-auto-mode sets the mode and the resulting `major-mode' variable doesn't
         ;; match the entry in `auto-mode-alist', it records the actual mode set in
         ;; `set-auto-mode--last' (on Emacs >= 29).
-        (if-let* ((last-auto-mode (bound-and-true-p set-auto-mode--last)))
+        (if-let* ((last-auto-mode (bound-and-true-p set-auto-mode--last))
+                  ((eq modefn (car last-auto-mode))))
             (cdr last-auto-mode)
-          (nerd-icons-match-to-alist (file-name-nondirectory fname) auto-mode-alist)))))
+          modefn))))
 
 (defun nerd-icons-match-to-alist (file alist)
   "Match FILE against an entry in ALIST using `string-match'."
