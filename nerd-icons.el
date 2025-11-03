@@ -1237,8 +1237,9 @@ inserting functions."
 ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
 inserting functions."
-  (let ((modes (nerd-icons--mode-parents mode)))
-    (when-let* ((icon (cdr (cl-some (lambda (m) (assq m nerd-icons-mode-icon-alist)) modes))))
+  (let* ((modes (nerd-icons--mode-parents mode))
+         (icon (cdr (cl-some (lambda (m) (assq m nerd-icons-mode-icon-alist)) modes))))
+    (when icon
       (if arg-overrides
           (apply (car icon) (cadr icon) (append arg-overrides (cddr icon)))
         (apply (car icon) (cdr icon))))))
@@ -1301,8 +1302,9 @@ icon."
 ;; Weather icons
 (defun nerd-icons-icon-for-weather (weather)
   "Get an icon for a WEATHER status."
-  (when-let* ((icon (nerd-icons-match-to-alist weather nerd-icons-weather-icon-alist)))
-    (apply (car icon) (cdr icon))))
+  (let ((icon (nerd-icons-match-to-alist weather nerd-icons-weather-icon-alist)))
+    (when icon
+      (apply (car icon) (cdr icon)))))
 
 (eval-and-compile
   (defun nerd-icons--function-name (name)
