@@ -1238,7 +1238,8 @@ ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
 inserting functions."
   (let* ((modes (nerd-icons--mode-parents mode))
-         (icon (cdr (cl-some (lambda (m) (assq m nerd-icons-mode-icon-alist)) modes))))
+         (icon (cdr (or (cl-some (lambda (m) (assq m nerd-icons-mode-icon-alist)) modes)
+                        (assq 'fundamental-mode nerd-icons-mode-icon-alist)))))
     (when icon
       (if arg-overrides
           (apply (car icon) (cadr icon) (append arg-overrides (cddr icon)))
