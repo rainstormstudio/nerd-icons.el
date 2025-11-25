@@ -1068,18 +1068,17 @@
 (defun nerd-icons-auto-mode-match? (&optional file)
   "Whether or not FILE's `major-mode' match against its `auto-mode-alist'."
   (let* ((file (or file (buffer-file-name) (buffer-name)))
-         (auto-mode (nerd-icons-match-to-alist file auto-mode-alist)))
+         (auto-mode (nerd-icons--auto-mode-lookup (file-name-nondirectory file))))
     (eq major-mode auto-mode)))
 
-(defvar nerd-icons--file-cache (make-hash-table :test 'equal)
-  "Cache for file extension to mode mapping.")
+(defun nerd-icons--auto-mode-lookup (file)
+  "Return the mode-setting function associated with FILE via `auto-mode-alist'.
+NOTE: The mode-setting function may not be the same as the mode itself."
+  (nerd-icons-match-to-alist file auto-mode-alist))
 
-(defun nerd-icons-match-to-alist (file alist)
-  "Match FILE against an entry in ALIST using `string-match'."
-  (or (gethash file nerd-icons--file-cache)
-      (puthash file
-               (cdr (cl-find-if (lambda (it) (string-match (car it) file)) alist))
-               nerd-icons--file-cache)))
+(defun nerd-icons-match-to-alist (string alist)
+  "Match STRING against an entry in ALIST using `string-match'."
+  (cdr (assoc string alist #'string-match)))
 
 (defun nerd-icons-dir-is-submodule (dir)
   "Checker whether or not DIR is a git submodule."
@@ -1302,6 +1301,7 @@ icon."
 (nerd-icons-cache #'nerd-icons-icon-for-extension)
 (nerd-icons-cache #'nerd-icons-icon-for-mode)
 (nerd-icons-cache #'nerd-icons-icon-for-url)
+(nerd-icons-cache #'nerd-icons--auto-mode-lookup)
 
 ;; Weather icons
 (defun nerd-icons-icon-for-weather (weather)
@@ -1309,6 +1309,8 @@ icon."
   (let ((icon (nerd-icons-match-to-alist weather nerd-icons-weather-icon-alist)))
     (when icon
       (apply (car icon) (cdr icon)))))
+
+(nerd-icons-cache #'nerd-icons-icon-for-weather)
 
 (eval-and-compile
   (defun nerd-icons--function-name (name)
