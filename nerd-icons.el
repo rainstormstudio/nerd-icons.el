@@ -1284,17 +1284,18 @@ icon."
   (unless (get func 'nerd-icons--cached)
     (let ((cache (make-hash-table :test #'equal
                                   :size nerd-icons--cache-limit))
-          (orig-fn (symbol-function func)))
+          (orig-fn (symbol-function func))
+          (unset (make-symbol "unset")))
       (fset func
             (lambda (&rest args)
-              (or (gethash args cache)
-                  (progn
-                    (when (> (hash-table-count cache)
-                             nerd-icons--cache-limit)
-                      (clrhash cache))
-                    (puthash args (apply orig-fn args) cache)))))))
-
-  (put func 'nerd-icons--cached t))
+              (let ((value (gethash args cache unset)))
+                (when (eq value unset)
+                  (when (> (hash-table-count cache)
+                           nerd-icons--cache-limit)
+                    (clrhash cache))
+                  (setq value (puthash args (apply orig-fn args) cache)))
+                value))))
+    (put func 'nerd-icons--cached t)))
 
 (nerd-icons-cache #'nerd-icons-icon-for-dir)
 (nerd-icons-cache #'nerd-icons-icon-for-file)
