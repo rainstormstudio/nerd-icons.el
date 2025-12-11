@@ -489,6 +489,7 @@
     ;; misc GNU documentation files
     ("^\\(MAINTAINERS\\|CONTRIBUTE\\|BUGS\\).*$"  nerd-icons-mdicon
      "nf-md-book" :face nerd-icons-blue)
+    ("^code-of-conduct$"       nerd-icons-octicon "nf-oct-code_of_conduct"   :face nerd-icons-pink)
 
     ;; (info "(standards) NEWS File")
     ("^NEWS.*$"                nerd-icons-faicon "nf-fa-newspaper"           :face nerd-icons-green)
