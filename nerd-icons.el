@@ -292,8 +292,8 @@
     ("tsx"            nerd-icons-devicon "nf-dev-react"          :face nerd-icons-lblue)
     ("njs"            nerd-icons-mdicon "nf-md-nodejs"           :face nerd-icons-lgreen)
     ("vue"            nerd-icons-sucicon "nf-seti-vue"           :face nerd-icons-lgreen)
-    (".mjs"           nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
-    (".cjs"           nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
+    ("mjs"           nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
+    ("cjs"           nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
 
     ("sbt"            nerd-icons-sucicon "nf-seti-sbt"           :face nerd-icons-red)
     ("scala"          nerd-icons-devicon "nf-dev-scala"          :face nerd-icons-red)
