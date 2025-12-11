@@ -500,13 +500,15 @@
     ("^INSTALL.*$"             nerd-icons-faicon "nf-fa-file_arrow_down"     :face nerd-icons-green)
 
     ;; autotools related
-    ("^Makefile.\\(am\\|in\\)$" nerd-icons-sucicon "nf-seti-makefile"        :face nerd-icons-lsilver)
+    ("^Makefile.\\(am\\|in\\)$" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-lsilver)
     ("^configure.\\(in\\|ac\\)" nerd-icons-mdicon  "nf-md-file_cog"           :face nerd-icons-lsilver)
-    ("^configure$"             nerd-icons-devicon "nf-dev-terminal"          :face nerd-icons-lsilver)
+    ("^configure$"              nerd-icons-devicon "nf-dev-terminal"          :face nerd-icons-lsilver)
     ("^config.\\(guess\\|rpath\\|status\\|sub\\)$" nerd-icons-devicon "nf-dev-terminal"
      :face nerd-icons-lsilver)
     ("^\\(ar-lib\\|depmond\\|install-sh\\|missing\\|mkdep\\|mkinstalldirs\\|move-if-change\\|symlink-tree\\|test-driver\\|ylwrap\\)$"
      nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lsilver)
+    ("^\\.editorconfig$"        nerd-icons-sucicon "nf-seti-editorconfig"     :face nerd-icons-silver)
+    ("^\\.env$"                      nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
@@ -520,8 +522,10 @@
     ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
 
     ;; Docker
-    ("^\\.?Dockerfile"         nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
-    ("^\\.?Containerfile"      nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
+    ("^\\.dockerignore$"                  nerd-icons-devicon "nf-dev-docker"  :face nerd-icons-dblue)
+    ("^\\.?\\(Container\\|Docker\\)file"  nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-blue)
+    ("^\\(docker-\\)?compose\\.ya?ml$"    nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-cyan)
+    ("^\\docker-compose\\.gitlab\\.ya?ml" nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-cyan)
 
     ;; Homebrew
     ("^Brewfile$"              nerd-icons-faicon "nf-fa-beer"                :face nerd-icons-lsilver)
@@ -562,6 +566,10 @@
     ("-?test\\.jsx$"           nerd-icons-mdicon "nf-md-react"               :face nerd-icons-blue-alt)
 
     ;; Git
+    ("^\\.git$"                nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
+    ("^\\.gitattributes$"      nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
+    ("^\\.gitignore$"          nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
+    ("^\\.gitmodules$"         nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
     ("^MERGE_"                 nerd-icons-octicon "nf-oct-git_merge"         :face nerd-icons-red)
     ("^COMMIT_EDITMSG"         nerd-icons-octicon "nf-oct-git_commit"        :face nerd-icons-red)
 
@@ -1208,10 +1216,10 @@ ARG-OVERRIDES should be a plist containining `:height',
 inserting functions."
   (let* ((name (file-name-nondirectory file))
          (ext (file-name-extension name))
-         (icon (or (and ext
+         (icon (or (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
+                   (and ext
                         (cdr (assoc (downcase ext)
                                     nerd-icons-extension-icon-alist)))
-                   (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
                    nerd-icons-default-file-icon))
          (args (cdr icon)))
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
