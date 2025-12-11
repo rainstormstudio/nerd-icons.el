@@ -292,6 +292,8 @@
     ("tsx"            nerd-icons-devicon "nf-dev-react"          :face nerd-icons-lblue)
     ("njs"            nerd-icons-mdicon "nf-md-nodejs"           :face nerd-icons-lgreen)
     ("vue"            nerd-icons-sucicon "nf-seti-vue"           :face nerd-icons-lgreen)
+    (".mjs"           nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
+    (".cjs"           nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
 
     ("sbt"            nerd-icons-sucicon "nf-seti-sbt"           :face nerd-icons-red)
     ("scala"          nerd-icons-devicon "nf-dev-scala"          :face nerd-icons-red)
@@ -584,7 +586,13 @@
     ("^bower.json$"            nerd-icons-devicon "nf-dev-bower"             :face nerd-icons-lorange)
     ("^gulpfile"               nerd-icons-devicon "nf-dev-gulp"              :face nerd-icons-lred)
     ("^gruntfile"              nerd-icons-devicon "nf-dev-grunt"             :face nerd-icons-lyellow)
-    ("^webpack"                nerd-icons-mdicon "nf-md-webpack"             :face nerd-icons-lblue)
+    ("^webpack"                nerd-icons-devicon "nf-dev-webpack"           :face nerd-icons-lblue)
+    ("^\\.?eslint"             nerd-icons-devicon "nf-dev-eslint"            :face nerd-icons-lblue)
+    ("^\\.?prettier"           nerd-icons-sucicon "nf-custom-prettier"       :face nerd-icons-gray)
+    ("^\\.?babel"              nerd-icons-sucicon "nf-seti-babel"            :face nerd-icons-yellow)
+    ("^vite.config"            nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
+    ("^vitest"                 nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
+    ("^\\.?jest"               nerd-icons-devicon "nf-dev-jest"              :face nerd-icons-lred)
 
     ;; Go
     ("^go.mod$"                nerd-icons-sucicon "nf-seti-config"           :face nerd-icons-blue-alt)
