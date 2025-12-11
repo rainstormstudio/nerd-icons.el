@@ -86,6 +86,7 @@
 
 (defvar nerd-icons-extension-icon-alist
   '(
+    ;; Shell
     ("fish"           nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-lpink)
     ("zsh"            nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-lcyan)
     ("sh"             nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-purple)
@@ -118,17 +119,18 @@
     ("dockerignore"   nerd-icons-devicon "nf-dev-docker"         :face nerd-icons-dblue)
     ("plist"          nerd-icons-faicon "nf-fa-file_code"        :face nerd-icons-dsilver)
     ("xml"            nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lorange)
-    ("json"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
-    ("jsonc"          nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
-    ("jsonl"          nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
+    ("json"           nerd-icons-mdicon "nf-md-code_json"        :face nerd-icons-yellow)
+    ("jsonc"          nerd-icons-mdicon "nf-md-code_json"        :face nerd-icons-yellow)
+    ("jsonl"          nerd-icons-mdicon "nf-md-code_json"        :face nerd-icons-yellow)
     ("cson"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
     ("yml"            nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dyellow)
     ("yaml"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dyellow)
-    ("toml"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-orange)
+    ("toml"           nerd-icons-sucicon "nf-custom-toml"        :face nerd-icons-orange)
     ("conf"           nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dorange)
     ("editorconfig"   nerd-icons-sucicon "nf-seti-editorconfig"  :face nerd-icons-silver)
     ("idekeybindings" nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lblue)
     ("cfg"            nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dorange)
+    ("env"            nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
     ;; ?
     ("pkg"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("rpm"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
@@ -192,6 +194,7 @@
     ("pro"            nerd-icons-sucicon "nf-seti-prolog"        :face nerd-icons-lmaroon)
     ("proog"          nerd-icons-sucicon "nf-seti-prolog"        :face nerd-icons-lmaroon)
     ("py"             nerd-icons-devicon "nf-dev-python"         :face nerd-icons-dblue)
+    ("pyc"            nerd-icons-devicon "nf-dev-python"         :face nerd-icons-dsilver)
     ;; ("idr"         nerd-icons-devicon "idris") TODO: idris
     ("ipynb"          nerd-icons-devicon "nf-dev-jupyter"        :face nerd-icons-orange)
     ("gem"            nerd-icons-codicon "nf-cod-ruby"           :face nerd-icons-red)
@@ -244,6 +247,8 @@
     ("ledger"         nerd-icons-mdicon  "nf-md-file_table_box_multiple" :face nerd-icons-green)
     ("rkt"            nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-red)
     ("scrbl"          nerd-icons-sucicon "nf-custom-scheme"      :face nerd-icons-blue)
+    ;; Vim
+    ("vim"            nerd-icons-sucicon "nf-custom-vim"         :face nerd-icons-dgreen)
     ;; Stylesheeting
     ("css"            nerd-icons-devicon "nf-dev-css3"           :face nerd-icons-yellow)
     ("scss"           nerd-icons-mdicon "nf-md-sass"             :face nerd-icons-pink)
@@ -468,7 +473,9 @@
     ;; backup
     ("backup"         nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
     ("old"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
-    ("bak"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)))
+    ("bak"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
+    ;; Lock
+    ("lock"           nerd-icons-octicon "nf-oct-lock"           :face nerd-icons-red)))
 
 (defvar                        nerd-icons-regexp-icon-alist
   '(
@@ -513,6 +520,7 @@
 
     ;; Docker
     ("^\\.?Dockerfile"         nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
+    ("^\\.?Containerfile"      nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
 
     ;; Homebrew
     ("^Brewfile$"              nerd-icons-faicon "nf-fa-beer"                :face nerd-icons-lsilver)
@@ -760,14 +768,14 @@
     (docker-compose-mode               nerd-icons-sucicon "nf-seti-docker"               :face nerd-icons-lblue)
     (nxml-mode                         nerd-icons-faicon "nf-fa-file_code_o"             :face nerd-icons-lorange)
     (conf-mode                         nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-lyellow)
-    (json-mode                         nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-yellow)
-    (json-ts-mode                      nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-yellow)
-    (jsonc-mode                        nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-yellow)
+    (json-mode                         nerd-icons-mdicon "nf-md-code_json"               :face nerd-icons-yellow)
+    (json-ts-mode                      nerd-icons-mdicon "nf-md-code_json"               :face nerd-icons-yellow)
+    (jsonc-mode                        nerd-icons-mdicon "nf-md-code_json"               :face nerd-icons-yellow)
     (jsonian-mode                      nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-yellow)
     (yaml-mode                         nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-dyellow)
     (yaml-ts-mode                      nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-dyellow)
-    (toml-mode                         nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-orange)
-    (toml-ts-mode                      nerd-icons-codicon "nf-cod-settings"              :face nerd-icons-orange)
+    (toml-mode                         nerd-icons-sucicon "nf-custom-toml"               :face nerd-icons-orange)
+    (toml-ts-mode                      nerd-icons-sucicon "nf-custom-toml"               :face nerd-icons-orange)
     (elisp-byte-code-mode              nerd-icons-octicon "nf-oct-file_binary"           :face nerd-icons-dsilver)
     (archive-mode                      nerd-icons-octicon "nf-oct-file_zip"              :face nerd-icons-lmaroon)
     (elm-mode                          nerd-icons-sucicon "nf-custom-elm"                :face nerd-icons-blue)
