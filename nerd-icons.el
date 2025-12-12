@@ -292,6 +292,8 @@
     ("tsx"            nerd-icons-devicon "nf-dev-react"          :face nerd-icons-lblue)
     ("njs"            nerd-icons-mdicon "nf-md-nodejs"           :face nerd-icons-lgreen)
     ("vue"            nerd-icons-sucicon "nf-seti-vue"           :face nerd-icons-lgreen)
+    ("mjs"            nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
+    ("cjs"            nerd-icons-devicon "nf-dev-javascript"     :face nerd-icons-yellow)
 
     ("sbt"            nerd-icons-sucicon "nf-seti-sbt"           :face nerd-icons-red)
     ("scala"          nerd-icons-devicon "nf-dev-scala"          :face nerd-icons-red)
@@ -500,13 +502,46 @@
     ("^INSTALL.*$"             nerd-icons-faicon "nf-fa-file_arrow_down"     :face nerd-icons-green)
 
     ;; autotools related
-    ("^Makefile.\\(am\\|in\\)$" nerd-icons-sucicon "nf-seti-makefile"        :face nerd-icons-lsilver)
+    ("^Makefile.\\(am\\|in\\)$" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-lsilver)
     ("^configure.\\(in\\|ac\\)" nerd-icons-mdicon  "nf-md-file_cog"           :face nerd-icons-lsilver)
-    ("^configure$"             nerd-icons-devicon "nf-dev-terminal"          :face nerd-icons-lsilver)
+    ("^configure$"              nerd-icons-devicon "nf-dev-terminal"          :face nerd-icons-lsilver)
     ("^config.\\(guess\\|rpath\\|status\\|sub\\)$" nerd-icons-devicon "nf-dev-terminal"
      :face nerd-icons-lsilver)
     ("^\\(ar-lib\\|depmond\\|install-sh\\|missing\\|mkdep\\|mkinstalldirs\\|move-if-change\\|symlink-tree\\|test-driver\\|ylwrap\\)$"
      nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lsilver)
+    ("^\\.editorconfig$"        nerd-icons-sucicon "nf-seti-editorconfig"     :face nerd-icons-silver)
+
+    ;; Env
+    ("^\\.env$"                       nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.defaults$"            nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.example$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.sample$"              nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.template$"            nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.schema$"              nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.local$"               nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.dev$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.development$"         nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.alpha$"               nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.e2e$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.qa$"                  nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.dist$"                nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.prod$"                nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.production$"          nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.stage$"               nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.staging$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.preview$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.test$"                nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.testing$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.dev\\.local$"         nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.development\\.local$" nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.qa\\.local$"          nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.prod\\.local$"        nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.production\\.local$"  nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.staging\\.local$"     nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.test\\.local$"        nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.uat$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.env\\.cat$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.envrc$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
@@ -520,8 +555,10 @@
     ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
 
     ;; Docker
-    ("^\\.?Dockerfile"         nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
-    ("^\\.?Containerfile"      nerd-icons-sucicon "nf-seti-docker"           :face nerd-icons-blue)
+    ("^\\.dockerignore$"                  nerd-icons-devicon "nf-dev-docker"  :face nerd-icons-dblue)
+    ("^\\.?\\(Container\\|Docker\\)file"  nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-blue)
+    ("^\\(docker-\\)?compose\\.ya?ml$"    nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-cyan)
+    ("^\\docker-compose\\.gitlab\\.ya?ml" nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-cyan)
 
     ;; Homebrew
     ("^Brewfile$"              nerd-icons-faicon "nf-fa-beer"                :face nerd-icons-lsilver)
@@ -562,6 +599,10 @@
     ("-?test\\.jsx$"           nerd-icons-mdicon "nf-md-react"               :face nerd-icons-blue-alt)
 
     ;; Git
+    ("^\\.git$"                nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
+    ("^\\.gitattributes$"      nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
+    ("^\\.gitignore$"          nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
+    ("^\\.gitmodules$"         nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
     ("^MERGE_"                 nerd-icons-octicon "nf-oct-git_merge"         :face nerd-icons-red)
     ("^COMMIT_EDITMSG"         nerd-icons-octicon "nf-oct-git_commit"        :face nerd-icons-red)
 
@@ -576,7 +617,13 @@
     ("^bower.json$"            nerd-icons-devicon "nf-dev-bower"             :face nerd-icons-lorange)
     ("^gulpfile"               nerd-icons-devicon "nf-dev-gulp"              :face nerd-icons-lred)
     ("^gruntfile"              nerd-icons-devicon "nf-dev-grunt"             :face nerd-icons-lyellow)
-    ("^webpack"                nerd-icons-mdicon "nf-md-webpack"             :face nerd-icons-lblue)
+    ("^webpack"                nerd-icons-devicon "nf-dev-webpack"           :face nerd-icons-lblue)
+    ("^\\.?eslint"             nerd-icons-devicon "nf-dev-eslint"            :face nerd-icons-lblue)
+    ("^\\.?prettier"           nerd-icons-sucicon "nf-custom-prettier"       :face nerd-icons-gray)
+    ("^\\.?babel"              nerd-icons-sucicon "nf-seti-babel"            :face nerd-icons-yellow)
+    ("^vite.config"            nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
+    ("^vitest"                 nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
+    ("^\\.?jest"               nerd-icons-devicon "nf-dev-jest"              :face nerd-icons-lred)
 
     ;; Go
     ("^go.mod$"                nerd-icons-sucicon "nf-seti-config"           :face nerd-icons-blue-alt)
@@ -1208,10 +1255,10 @@ ARG-OVERRIDES should be a plist containining `:height',
 inserting functions."
   (let* ((name (file-name-nondirectory file))
          (ext (file-name-extension name))
-         (icon (or (and ext
+         (icon (or (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
+                   (and ext
                         (cdr (assoc (downcase ext)
                                     nerd-icons-extension-icon-alist)))
-                   (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
                    nerd-icons-default-file-icon))
          (args (cdr icon)))
     (when arg-overrides (setq args (append `(,(car args)) arg-overrides (cdr args))))
