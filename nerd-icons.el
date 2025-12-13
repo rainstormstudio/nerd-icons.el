@@ -606,8 +606,11 @@
     ("^MERGE_"                 nerd-icons-octicon "nf-oct-git_merge"         :face nerd-icons-red)
     ("^COMMIT_EDITMSG"         nerd-icons-octicon "nf-oct-git_commit"        :face nerd-icons-red)
 
+    ;; Gitlab
+    ("^\\.gitlab-ci\\.ya?ml$"  nerd-icons-devicon "nf-dev-gitlab"            :face nerd-icons-orange)
+
     ;; Stylesheeting
-    ("^stylelint"               nerd-icons-sucicon "nf-seti-stylelint"        :face nerd-icons-lyellow)
+    ("^stylelint"              nerd-icons-sucicon "nf-seti-stylelint"        :face nerd-icons-lyellow)
 
     ;; JavaScript
     ("^package.json$"          nerd-icons-devicon "nf-dev-npm"               :face nerd-icons-red)
@@ -644,6 +647,9 @@
     ;; Rust
     ("^Cargo.toml$"            nerd-icons-devicon "nf-dev-rust"              :face nerd-icons-yellow)
     ("^Cargo.lock$"            nerd-icons-devicon "nf-dev-rust"              :face nerd-icons-dyellow)
+
+    ;; Nix
+    ("^flake\\.lock$"          nerd-icons-mdicon "nf-md-nix"                 :face nerd-icons-blue)
 
     ("^\\."                    nerd-icons-octicon "nf-oct-gear")))
 
