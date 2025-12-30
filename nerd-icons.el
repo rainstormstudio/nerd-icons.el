@@ -880,7 +880,7 @@
     (c++-ts-mode                       nerd-icons-sucicon "nf-custom-cpp"                :face nerd-icons-blue)
     (csharp-mode                       nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-dblue)
     (csharp-ts-mode                    nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-dblue)
-    (csproj-mode                       nerd-icons-devicon "nf-dev-csharp"                :face nerd-icons-purple-alt)
+    (csproj-mode                       nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-green)
     (clojure-mode                      nerd-icons-devicon "nf-dev-clojure_alt"           :face nerd-icons-blue)
     (clojure-ts-mode                   nerd-icons-devicon "nf-dev-clojure_alt"           :face nerd-icons-blue)
     (cider-repl-mode                   nerd-icons-devicon "nf-dev-clojure_alt"           :face nerd-icons-green)
