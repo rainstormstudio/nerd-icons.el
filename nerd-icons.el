@@ -480,7 +480,8 @@
     ("lock"           nerd-icons-octicon "nf-oct-lock"           :face nerd-icons-red)
     ;; Visual Studio
     ("sln"            nerd-icons-mdicon "nf-md-microsoft_visual_studio" :face nerd-icons-purple)
-    ("slnx"           nerd-icons-mdicon "nf-md-microsoft_visual_studio" :face nerd-icons-purple)))
+    ("slnx"           nerd-icons-mdicon "nf-md-microsoft_visual_studio" :face nerd-icons-purple)
+    ("csproj"         nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-green)))
 
 (defvar                        nerd-icons-regexp-icon-alist
   '(
