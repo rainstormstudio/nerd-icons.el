@@ -477,7 +477,10 @@
     ("old"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
     ("bak"            nerd-icons-mdicon "nf-md-file_restore"     :face nerd-icons-lblue)
     ;; Lock
-    ("lock"           nerd-icons-octicon "nf-oct-lock"           :face nerd-icons-red)))
+    ("lock"           nerd-icons-octicon "nf-oct-lock"           :face nerd-icons-red)
+    ;; Visual Studio
+    ("sln"            nerd-icons-mdicon "nf-md-microsoft_visual_studio" :face nerd-icons-purple)
+    ("slnx"           nerd-icons-mdicon "nf-md-microsoft_visual_studio" :face nerd-icons-purple)))
 
 (defvar                        nerd-icons-regexp-icon-alist
   '(
@@ -877,6 +880,7 @@
     (c++-ts-mode                       nerd-icons-sucicon "nf-custom-cpp"                :face nerd-icons-blue)
     (csharp-mode                       nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-dblue)
     (csharp-ts-mode                    nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-dblue)
+    (csproj-mode                       nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-green)
     (clojure-mode                      nerd-icons-devicon "nf-dev-clojure_alt"           :face nerd-icons-blue)
     (clojure-ts-mode                   nerd-icons-devicon "nf-dev-clojure_alt"           :face nerd-icons-blue)
     (cider-repl-mode                   nerd-icons-devicon "nf-dev-clojure_alt"           :face nerd-icons-green)
