@@ -278,6 +278,9 @@
     ("slim"           nerd-icons-codicon "nf-cod-dashboard"      :face nerd-icons-yellow)
     ("jade"           nerd-icons-sucicon "nf-seti-jade"          :face nerd-icons-red)
     ("pug"            nerd-icons-sucicon "nf-seti-pug"           :face nerd-icons-red)
+    ;; WASM
+    ("wasm"           nerd-icons-sucicon "nf-seti-wasm"          :face nerd-icons-purple-alt)
+    ("wat"            nerd-icons-devicon "nf-dev-wasm"           :face nerd-icons-purple-alt)
     ;; Javascript
     ("d3js"           nerd-icons-devicon "nf-dev-d3js"           :face nerd-icons-orange)
     ("re"             nerd-icons-sucicon "nf-seti-reasonml"      :face nerd-icons-red-alt)
@@ -346,6 +349,8 @@
     ("dockerfile"     nerd-icons-sucicon "nf-seti-docker"        :face nerd-icons-cyan)
     ;; Vagrant
     ;; ("vagrantfile" nerd-icons-fileicon "vagrant") TODO: vagrant
+    ;; HLSL
+    ("hlsl"           nerd-icons-faicon "nf-fa-paint_brush"      :face nerd-icons-blue)
     ;; GLSL
     ("glsl"           nerd-icons-faicon "nf-fa-paint_brush"      :face nerd-icons-blue)
     ("vert"           nerd-icons-faicon "nf-fa-paint_brush"      :face nerd-icons-blue)
@@ -354,6 +359,8 @@
     ("geom"           nerd-icons-faicon "nf-fa-paint_brush"      :face nerd-icons-green)
     ("frag"           nerd-icons-faicon "nf-fa-paint_brush"      :face nerd-icons-red)
     ("comp"           nerd-icons-faicon "nf-fa-paint_brush"      :face nerd-icons-dblue)
+    ;; WGSL
+    ("wgsl"           nerd-icons-faicon "nf-fa-paint_brush"      :face nerd-icons-blue)
     ;; CUDA
     ("cu"             nerd-icons-sucicon "nf-custom-c"           :face nerd-icons-green)
     ("cuh"            nerd-icons-faicon "nf-fa-h_square"         :face nerd-icons-green)
