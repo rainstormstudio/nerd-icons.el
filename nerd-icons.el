@@ -635,7 +635,7 @@
     ("^webpack"                nerd-icons-devicon "nf-dev-webpack"           :face nerd-icons-lblue)
     ("^\\.?eslint"             nerd-icons-devicon "nf-dev-eslint"            :face nerd-icons-lblue)
     ("^\\.?prettier"           nerd-icons-sucicon "nf-custom-prettier"       :face nerd-icons-silver)
-    ("^\\.?babel"              nerd-icons-sucicon "nf-seti-babel"            :face nerd-icons-yellow)
+    ("\\`babel\\.config.*"     nerd-icons-sucicon "nf-seti-babel"            :face nerd-icons-yellow)
     ("^vite.config"            nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
     ("^vitest"                 nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
     ("^\\.?jest"               nerd-icons-devicon "nf-dev-jest"              :face nerd-icons-lred)
