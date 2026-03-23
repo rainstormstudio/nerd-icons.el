@@ -1429,19 +1429,18 @@ pause for DURATION seconds between printing each character."
 (defun nerd-icons-set-font (&optional font-family frame)
   "Modify nerd font charsets to use FONT-FAMILY for FRAME."
   (let ((font-f (or font-family nerd-icons-font-family))
-        (charsets '((#xe5fa . #xe6b2)  ;; Seti-UI + Custom
-                    (#xe700 . #xe7c5)  ;; Devicons
-                    (#xf000 . #xf2e0)  ;; Font Awesome
+        (charsets '((#xe5fa . #xe6b9)  ;; Seti-UI + Custom
+                    (#xe700 . #xe8ef)  ;; Devicons
+                    (#xed00 . #xf2ff)  ;; Font Awesome
                     (#xe200 . #xe2a9)  ;; Font Awesome Extension
                     (#xf500 . #xfd46) (#xf0001 . #xf1af0) ;; Material Design Icons
-                    (#xe300 . #xe3eb)  ;; Weather
-                    (#xf400 . #xf4a8) #x2665 #x26a1 #xf27c  ;; Octicons
-                    (#xe0a0 . #xe0a2) (#xe0b0 . #xe0b3)  ;; Powerline Symbols
-                    #xe0a3 (#xe0b4 . #xe0c8) (#xe0cc . #xe0d2) #xe0d4  ;; Powerline Extra Symbols
+                    (#xe300 . #xe3e3)  ;; Weather
+                    (#xf400 . #xf533) #x2665 #x26a1  ;; Octicons
+                    (#xe0a0 . #xe0a3) (#xe0b0 . #xe0d7)  ;; Powerline Symbols + Extra
                     (#x23fb . #x23fe) #x2b58  ;; IEC Power Symbols
-                    (#xf300 . #xf372)  ;; Font Logos
+                    (#xf300 . #xf381)  ;; Font Logos
                     (#xe000 . #xe00a)  ;; Pomicons
-                    (#xea60 . #xebeb))))  ;; Codicons
+                    (#xea60 . #xec1e))))  ;; Codicons
     (cl-loop for charset in charsets do
              (set-fontset-font
               (frame-parameter nil 'font)
