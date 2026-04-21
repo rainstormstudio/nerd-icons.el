@@ -25,21 +25,21 @@ To automatically install =Symbols Nerd Font Mono=, you can use this elisp in you
 
 #+BEGIN_SRC emacs-lisp
 ;; Linux/macOS/BSDs
-  (when (member system-type '(gnu gnu/linux gnu/kfreebsd darwin))
-    (unless (find-font (font-spec :name "Symbols Nerd Font Mono"))
-      (nerd-icons-install-fonts t)))
+(when (member system-type '(gnu gnu/linux gnu/kfreebsd darwin))
+  (unless (find-font (font-spec :name "Symbols Nerd Font Mono"))
+    (nerd-icons-install-fonts t)))
 
 ;; Windows
-  (when (string-equal system-type 'windows-nt)
-    (unless (find-font (font-spec :name "Symbols Nerd Font Mono"))
-      (nerd-icons-install-fonts "c:/Users/username/Desktop/")))
+(when (string-equal system-type 'windows-nt)
+  (unless (find-font (font-spec :name "Symbols Nerd Font Mono"))
+    (nerd-icons-install-fonts "c:/Users/username/Desktop/")))
 
 ;; All-in-one
 ;; This will install in the default fonts folder for Linux/macOS/BSDs
 ;; (same as “t”), but for Windows this will download to the specified
 ;; folder
-  (unless (find-font (font-spec :name "Symbols Nerd Font Mono"))
-    (nerd-icons-install-fonts "c:/Users/username/Desktop/"))
+(unless (find-font (font-spec :name "Symbols Nerd Font Mono"))
+  (nerd-icons-install-fonts "c:/Users/username/Desktop/"))
 #+END_SRC
 
 * Usage
