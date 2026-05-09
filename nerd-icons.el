@@ -234,6 +234,7 @@
     ;; ("hy"             nerd-icons-sucicon "nf-custom-hy"          :face nerd-icons-blue)
     ("el"             nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
     ("eld"            nerd-icons-sucicon "nf-custom-emacs"       :face nerd-icons-purple)
+    ("fnl"            nerd-icons-sucicon "nf-custom-fennel"      :face nerd-icons-green)
     ("clj"            nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljc"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-blue)
     ("cljd"           nerd-icons-devicon "nf-dev-clojure"        :face nerd-icons-green)
