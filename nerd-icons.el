@@ -89,6 +89,7 @@
     ;; Shell
     ("fish"           nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-lpink)
     ("zsh"            nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-lcyan)
+    ("bash"           nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-purple)
     ("sh"             nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-purple)
     ("nu"             nerd-icons-devicon "nf-dev-terminal"       :face nerd-icons-green)
     ("bat"            nerd-icons-codicon "nf-cod-terminal_cmd"   :face nerd-icons-lsilver)
