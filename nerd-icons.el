@@ -1156,7 +1156,8 @@ NOTE: The mode-setting function may not be the same as the mode itself."
 
 (defun nerd-icons-match-to-alist (string alist)
   "Match STRING against an entry in ALIST using `string-match'."
-  (cdr (assoc string alist #'string-match)))
+  (let ((case-fold-search nil))
+    (cdr (assoc string alist #'string-match))))
 
 (defun nerd-icons-dir-is-submodule (dir)
   "Checker whether or not DIR is a git submodule."
