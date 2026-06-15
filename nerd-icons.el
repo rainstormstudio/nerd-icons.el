@@ -684,7 +684,7 @@
     ("[Pp]hotos"        nerd-icons-faicon "nf-fa-camera_retro")
     ("[Mm]usic"         nerd-icons-mdicon "nf-md-folder_music")
     ("[Mm]ovies"        nerd-icons-faicon "nf-fa-film")
-    ("code"             nerd-icons-octicon "nf-oct-code")
+    ("[Cc]ode"          nerd-icons-octicon "nf-oct-code")
     ("[Ww]orkspace"     nerd-icons-octicon "nf-oct-code")
     ;; ("test"             nerd-icons-devicon "test-dir")
     ("\\.git"           nerd-icons-sucicon "nf-custom-folder_git")
