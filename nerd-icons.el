@@ -555,7 +555,7 @@
     ("^\\.env\\.test\\.local$"        nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
     ("^\\.env\\.uat$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
     ("^\\.env\\.cat$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.envrc$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    ("^\\.envrc$"                     nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
@@ -563,8 +563,8 @@
 
     ;; C
     ("^\\(GNU\\|\\)Makefile.*" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
-    ("^CMakeLists.txt$"        nerd-icons-devicon "nf-dev-cmake"               :face nerd-icons-red)
-    ("^CMakeCache.txt$"        nerd-icons-devicon "nf-dev-cmake"               :face nerd-icons-blue)
+    ("^CMakeLists.txt$"        nerd-icons-devicon "nf-dev-cmake"             :face nerd-icons-red)
+    ("^CMakeCache.txt$"        nerd-icons-devicon "nf-dev-cmake"             :face nerd-icons-blue)
     ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
     ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
 
@@ -686,7 +686,7 @@
     ("[Mm]ovies"        nerd-icons-faicon "nf-fa-film")
     ("[Cc]ode"          nerd-icons-octicon "nf-oct-code")
     ("[Ww]orkspace"     nerd-icons-octicon "nf-oct-code")
-    ;; ("test"             nerd-icons-devicon "test-dir")
+    ("[Tt]ests?"        nerd-icons-mdicon "nf-md-test_tube")
     ("\\.git"           nerd-icons-sucicon "nf-custom-folder_git")
     ("\\.config"        nerd-icons-sucicon "nf-custom-folder_config")
     ("hypr"             nerd-icons-flicon "nf-linux-hyprland")
