@@ -432,6 +432,7 @@
     ("webm"           nerd-icons-faicon "nf-fa-film"             :face nerd-icons-blue)
     ;; Fonts
     ("ttf"            nerd-icons-faicon "nf-fa-font"             :face nerd-icons-dcyan)
+    ("otf"            nerd-icons-faicon "nf-fa-font"             :face nerd-icons-dcyan)
     ("woff"           nerd-icons-faicon "nf-fa-font"             :face nerd-icons-cyan)
     ("woff2"          nerd-icons-faicon "nf-fa-font"             :face nerd-icons-cyan)
     ;; Archives
