@@ -695,7 +695,7 @@
     ("inkscape"         nerd-icons-devicon "nf-dev-inkscape")
     ("vlc"              nerd-icons-mdicon "nf-md-vlc")
     ("discord"          nerd-icons-faicon "nf-fa-discord")
-    ("[Jj]etBrains"     nerd-icons-devicon "nf-dev-jetbrains")
+    ("[Jj]et[Bb]rains"  nerd-icons-devicon "nf-dev-jetbrains")
     ("^go$"             nerd-icons-devicon "nf-dev-go")
     ("mpv"              nerd-icons-flicon "nf-linux-mpv")
     ("electron"         nerd-icons-devicon "nf-dev-electron")
