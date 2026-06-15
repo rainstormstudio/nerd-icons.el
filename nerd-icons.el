@@ -687,6 +687,7 @@
     ("[Cc]ode"          nerd-icons-octicon "nf-oct-code")
     ("[Ww]orkspace"     nerd-icons-octicon "nf-oct-code")
     ("[Tt]ests?"        nerd-icons-octicon "nf-oct-beaker")
+    ("\\.cache"         nerd-icons-octicon "nf-oct-folder_cache")
     ("\\.git"           nerd-icons-sucicon "nf-custom-folder_git")
     ("\\.config"        nerd-icons-sucicon "nf-custom-folder_config")
     ("\\.npm"           nerd-icons-sucicon "nf-custom-folder_npm")
