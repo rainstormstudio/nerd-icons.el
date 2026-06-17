@@ -680,6 +680,7 @@
     ("^atom$"           nerd-icons-devicon "nf-dev-atom")
     ("^src$"            nerd-icons-octicon "nf-oct-code")
     ("^tests?$"         nerd-icons-octicon "nf-oct-beaker")
+    ("Applications"     nerd-icons-mdicon "nf-md-application")
     ("[Dd]ocuments"     nerd-icons-mdicon "nf-md-folder_file")
     ("[Dd]ownload"      nerd-icons-mdicon "nf-md-folder_download")
     ("[Dd]esktop"       nerd-icons-octicon "nf-oct-device_desktop")
