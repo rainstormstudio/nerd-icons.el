@@ -678,6 +678,7 @@
     ("google[ _-]drive" nerd-icons-mdicon "nf-md-folder_google_drive")
     ("github"           nerd-icons-sucicon "nf-custom-folder_github")
     ("^atom$"           nerd-icons-devicon "nf-dev-atom")
+    ("^src$"            nerd-icons-octicon "nf-oct-code")
     ("^tests?$"         nerd-icons-octicon "nf-oct-beaker")
     ("[Dd]ocuments"     nerd-icons-mdicon "nf-md-folder_file")
     ("[Dd]ownload"      nerd-icons-mdicon "nf-md-folder_download")
