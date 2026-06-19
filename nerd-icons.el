@@ -695,6 +695,7 @@
     ("\\.git"           nerd-icons-sucicon "nf-custom-folder_git")
     ("\\.npm"           nerd-icons-sucicon "nf-custom-folder_npm")
     ("\\.gem"           nerd-icons-faicon "nf-fa-gem")
+    ("\\.ssh"           nerd-icons-mdicon "nf-md-folder_key")
     ("hypr"             nerd-icons-flicon "nf-linux-hyprland")
     ("kitty"            nerd-icons-devicon "nf-dev-terminal")
     ("^gtk-.*"          nerd-icons-flicon "nf-linux-gtk")
