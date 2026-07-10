@@ -418,8 +418,10 @@
     ("aifc"           nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
     ("aiff"           nerd-icons-faicon "nf-fa-music"                  :face nerd-icons-dred)
     ("svg"            nerd-icons-sucicon "nf-seti-svg"                 :face nerd-icons-lgreen)
-    ("m3u"            nerd-icons-mdicon "nf-md-playlist_music_outline" :face nerd-icons-dred)
-    ("m3u8"           nerd-icons-mdicon "nf-md-playlist_music_outline" :face nerd-icons-dred)
+    ("m3u"            nerd-icons-mdicon "nf-md-playlist_music_outline" :face nerd-icons-lred)
+    ("m3u8"           nerd-icons-mdicon "nf-md-playlist_music_outline" :face nerd-icons-lred)
+    ("cue"            nerd-icons-mdicon "nf-md-playlist_music_outline" :face nerd-icons-lblue)
+
     ;; Video
     ("mov"            nerd-icons-faicon "nf-fa-film"             :face nerd-icons-blue)
     ("mp4"            nerd-icons-faicon "nf-fa-film"             :face nerd-icons-blue)
