@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; flicon
-;; from Nerd Font Version: 3.4.0
+;; from Nerd Font Version: 3.5.0
 
 ;;; Code:
 
@@ -41,6 +41,7 @@
     ("nf-linux-biglinux" . "\xf347")
     ("nf-linux-bspwm" . "\xf355")
     ("nf-linux-budgie" . "\xf320")
+    ("nf-linux-cachyos" . "\xf385")
     ("nf-linux-centos" . "\xf304")
     ("nf-linux-cinnamon" . "\xf35f")
     ("nf-linux-codeberg" . "\xf330")
@@ -58,6 +59,7 @@
     ("nf-linux-fedora" . "\xf30a")
     ("nf-linux-fedora_inverse" . "\xf30b")
     ("nf-linux-ferris" . "\xf323")
+    ("nf-linux-ffmpeg" . "\xf384")
     ("nf-linux-flathub" . "\xf324")
     ("nf-linux-fluxbox" . "\xf358")
     ("nf-linux-forgejo" . "\xf335")
@@ -114,6 +116,7 @@
     ("nf-linux-openbsd" . "\xf328")
     ("nf-linux-openscad" . "\xf34e")
     ("nf-linux-opensuse" . "\xf314")
+    ("nf-linux-openwrt" . "\xf382")
     ("nf-linux-osh" . "\xf34f")
     ("nf-linux-oshwa" . "\xf350")
     ("nf-linux-osi" . "\xf36c")
@@ -152,6 +155,7 @@
     ("nf-linux-vscodium" . "\xf372")
     ("nf-linux-wayland" . "\xf367")
     ("nf-linux-wikimedia" . "\xf36d")
+    ("nf-linux-wireguard" . "\xf383")
     ("nf-linux-xerolinux" . "\xf34a")
     ("nf-linux-xfce" . "\xf368")
     ("nf-linux-xmonad" . "\xf35e")
