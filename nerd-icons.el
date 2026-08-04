@@ -783,6 +783,7 @@
     (magit-diff-mode                   nerd-icons-devicon "nf-dev-git_compare"           :face nerd-icons-lblue)
     (ediff-mode                        nerd-icons-devicon "nf-dev-git_compare"           :face nerd-icons-red)
     (diff-mode                         nerd-icons-octicon "nf-oct-file_diff"             :face nerd-icons-lred)
+    (pr-review-mode                    nerd-icons-octicon "nf-oct-code_review")
     (comint-mode                       nerd-icons-faicon "nf-fa-terminal"                :face nerd-icons-lblue)
     (eww-mode                          nerd-icons-faicon "nf-fa-firefox"                 :face nerd-icons-red)
     (xwidget-webkit-mode               nerd-icons-faicon "nf-fa-chrome"                  :face nerd-icons-blue)
