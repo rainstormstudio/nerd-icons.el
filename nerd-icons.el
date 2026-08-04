@@ -776,6 +776,7 @@
     (term-mode                         nerd-icons-devicon "nf-dev-terminal")
     (vterm-mode                        nerd-icons-devicon "nf-dev-terminal")
     (eat-mode                          nerd-icons-devicon "nf-dev-terminal")
+    (mistty-mode                       nerd-icons-devicon "nf-dev-terminal")
     (eshell-mode                       nerd-icons-devicon "nf-dev-terminal"              :face nerd-icons-purple)
     (magit-refs-mode                   nerd-icons-devicon "nf-dev-git_branch"            :face nerd-icons-red)
     (magit-process-mode                nerd-icons-octicon "nf-oct-mark_github")
