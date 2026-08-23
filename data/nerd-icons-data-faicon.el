@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; faicon
-;; from Nerd Font Version: 3.4.0
+;; from Nerd Font Version: 3.5.1
 
 ;;; Code:
 
@@ -1767,6 +1767,7 @@
     ("nf-fa-voicemail" . "\xefb4")
     ("nf-fa-volcano" . "\xef2e")
     ("nf-fa-volleyball" . "\xed72")
+    ("nf-fa-volume" . "\xefcf")
     ("nf-fa-volume_control_phone" . "\xf2a0")
     ("nf-fa-volume_down" . "\xf027")
     ("nf-fa-volume_high" . "\xf028")

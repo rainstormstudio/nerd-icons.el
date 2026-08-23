@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; wicon
-;; from Nerd Font Version: 3.4.0
+;; from Nerd Font Version: 3.5.1
 
 ;;; Code:
 

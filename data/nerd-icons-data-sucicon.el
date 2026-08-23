@@ -21,7 +21,7 @@
 ;;; Commentary:
 
 ;; sucicon
-;; from Nerd Font Version: 3.4.0
+;; from Nerd Font Version: 3.5.1
 
 ;;; Code:
 
@@ -57,6 +57,7 @@
     ("nf-custom-kotlin" . "\xe634")
     ("nf-custom-msdos" . "\xe629")
     ("nf-custom-neovim" . "\xe6ae")
+    ("nf-custom-obsidian" . "\xe6bb")
     ("nf-custom-orgmode" . "\xe633")
     ("nf-custom-play_arrow" . "\xe602")
     ("nf-custom-prettier" . "\xe6b4")
@@ -69,6 +70,8 @@
     ("nf-custom-vim" . "\xe62b")
     ("nf-custom-vitruvian" . "\xe6b7")
     ("nf-custom-windows" . "\xe62a")
+    ("nf-custom-wireshark" . "\xe6ba")
+    ("nf-custom-zsh" . "\xe6b9")
     ("nf-seti-apple" . "\xe635")
     ("nf-seti-argdown" . "\xe636")
     ("nf-seti-asm" . "\xe637")

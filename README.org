@@ -115,8 +115,8 @@ For example,
 * Glyph Sets
 | Glyph Set               | prefix               | Point Range                          | insert function      |
 |-------------------------+----------------------+--------------------------------------+----------------------|
-| Seti-UI + Custom        | ~nf-seti-~, ~nf-custom-~ | ~e5fa~ - ~e631~                          | ~nerd-icons-sucicon~   |
-| Devicons                | ~nf-dev-~              | ~e700~ - ~e7c5~                          | ~nerd-icons-devicon~   |
+| Seti-UI + Custom        | ~nf-seti-~, ~nf-custom-~ | ~e5fa~ - ~e6bb~                          | ~nerd-icons-sucicon~   |
+| Devicons                | ~nf-dev-~              | ~e700~ - ~e958~                          | ~nerd-icons-devicon~   |
 | Font Awesome            | ~nf-fa-~               | ~f000~ - ~f2e0~                          | ~nerd-icons-faicon~    |
 | Font Awesome Extension  | ~nf-fae-~              | ~e200~ - ~e2a9~                          | ~nerd-icons-faicon~    |
 | Material Design Icons   | ~nf-md-~               | ~f500~ - ~fd46~                          | ~nerd-icons-mdicon~    |
@@ -125,9 +125,9 @@ For example,
 | Powerline Symbols       | ~nf-pl-~               | ~e0a0~ - ~e0a2~, ~e0b0~ - ~e0b3~             | ~nerd-icons-powerline~ |
 | Powerline Extra Symbols | ~nf-ple-~              | ~e0a3~, ~e0b4~ - ~e0c8~, ~e0ca~, ~e0cc~ - ~e0d4~ | ~nerd-icons-powerline~ |
 | IEC Power Symbols       | ~nf-iec-~              | ~23fb~ - ~23fe~, ~2b58~                    | ~nerd-icons-ipsicon~   |
-| Font Logos              | ~nf-linux-~            | ~f300~ - ~f32d~                          | ~nerd-icons-flicon~    |
+| Font Logos              | ~nf-linux-~            | ~f300~ - ~f385~                          | ~nerd-icons-flicon~    |
 | Pomicons                | ~nf-pom-~              | ~e000~ - ~e00a~                          | ~nerd-icons-pomicon~   |
-| Codicons                | ~nf-cod-~              | ~ea60~ - ~ebeb~                          | ~nerd-icons-codicon~   |
+| Codicons                | ~nf-cod-~              | ~ea60~ - ~ec84~                          | ~nerd-icons-codicon~   |
 
 Please check [[https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points][Nerd Fonts Glyph Sets and Code Points]] for more information.
 
