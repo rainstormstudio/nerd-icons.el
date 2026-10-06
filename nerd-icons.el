@@ -474,6 +474,7 @@
     ("xltm"           nerd-icons-mdicon "nf-md-file_excel"       :face nerd-icons-dgreen)
     ("epub"           nerd-icons-mdicon "nf-md-book_open"        :face nerd-icons-green)
     ("ly"             nerd-icons-faicon "nf-fa-music"            :face nerd-icons-green)
+    ("typ"            nerd-icons-flicon "nf-linux-typst"         :face nerd-icons-lred)
     ;;
     ("key"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-lblue)
     ("pem"            nerd-icons-octicon "nf-oct-key"            :face nerd-icons-orange)
@@ -1054,7 +1055,9 @@
     (show-font-mode                    nerd-icons-faicon "nf-fa-font"                    :face nerd-icons-dred)
     (show-font-tabulated-mode          nerd-icons-faicon "nf-fa-font"                    :face nerd-icons-dred)
     (journalctl-mode                   nerd-icons-octicon "nf-oct-log"                   :face nerd-icons-dgreen)
-    (pinentry-prompt-mode              nerd-icons-mdicon "nf-md-form_textbox_password"   :face nerd-icons-dred)))
+    (pinentry-prompt-mode              nerd-icons-mdicon "nf-md-form_textbox_password"   :face nerd-icons-dred)
+    (typst-mode                        nerd-icons-flicon "nf-linux-typst"                :face nerd-icons-lred)
+    (typst-ts-mode                     nerd-icons-flicon "nf-linux-typst"                :face nerd-icons-lred)))
 
 (defvar nerd-icons-url-alist
   '(
