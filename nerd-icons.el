@@ -1272,7 +1272,8 @@ When GLYPH-SET is non-nil, limit the candidates to the icon set matching it."
 ARG-OVERRIDES should be a plist containining `:height',
 `:v-adjust' or `:face' properties like in the normal icon
 inserting functions."
-  (let* ((dir (or dir default-directory "/"))
+  (let* ((non-essential t)
+         (dir (or dir default-directory "/"))
          (dirname (file-name-base (directory-file-name dir)))
          (path (if (file-name-absolute-p dir) dir (expand-file-name dir)))
          (icon (nerd-icons-match-to-alist dirname nerd-icons-dir-icon-alist))
