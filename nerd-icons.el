@@ -497,8 +497,8 @@
     ("slnx"           nerd-icons-mdicon "nf-md-microsoft_visual_studio" :face nerd-icons-purple)
     ("csproj"         nerd-icons-mdicon "nf-md-language_csharp"         :face nerd-icons-green)))
 
-(defvar                        nerd-icons-regexp-icon-alist
-  '(
+(defvar nerd-icons-regexp-icon-alist
+  `(
     ;;
     ("^TAGS$"                  nerd-icons-octicon "nf-oct-tag"               :face nerd-icons-blue)
     ("^TODO$"                  nerd-icons-octicon "nf-oct-checklist"         :face nerd-icons-lyellow)
@@ -523,60 +523,86 @@
     ("^Makefile.\\(am\\|in\\)$" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-lsilver)
     ("^configure.\\(in\\|ac\\)" nerd-icons-mdicon  "nf-md-file_cog"           :face nerd-icons-lsilver)
     ("^configure$"              nerd-icons-devicon "nf-dev-terminal"          :face nerd-icons-lsilver)
-    ("^config.\\(guess\\|rpath\\|status\\|sub\\)$" nerd-icons-devicon "nf-dev-terminal"
-     :face nerd-icons-lsilver)
-    ("^\\(ar-lib\\|depmond\\|install-sh\\|missing\\|mkdep\\|mkinstalldirs\\|move-if-change\\|symlink-tree\\|test-driver\\|ylwrap\\)$"
+    (,(concat "\\`" (regexp-opt '("config.guess"
+                                  "config.rpath"
+                                  "config.status"
+                                  "config.sub"))
+              "\\'")
+     nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lsilver)
+    (,(concat "\\`" (regexp-opt '("ar-lib"
+                                  "depmond"
+                                  "install-sh"
+                                  "missing"
+                                  "mkdep"
+                                  "mkinstalldirs"
+                                  "move-if-change"
+                                  "symlink-tree"
+                                  "test-driver"
+                                  "ylwrap"))
+              "\\'")
      nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lsilver)
     ("^\\.editorconfig$"        nerd-icons-sucicon "nf-seti-editorconfig"     :face nerd-icons-silver)
 
     ;; Env
-    ("^\\.env$"                       nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.defaults$"            nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.example$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.sample$"              nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.template$"            nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.schema$"              nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.local$"               nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.dev$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.development$"         nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.alpha$"               nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.e2e$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.qa$"                  nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.dist$"                nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.prod$"                nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.production$"          nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.stage$"               nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.staging$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.preview$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.test$"                nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.testing$"             nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.dev\\.local$"         nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.development\\.local$" nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.qa\\.local$"          nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.prod\\.local$"        nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.production\\.local$"  nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.staging\\.local$"     nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.test\\.local$"        nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.uat$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.env\\.cat$"                 nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
-    ("^\\.envrc$"                     nerd-icons-codicon "nf-cod-settings"          :face nerd-icons-yellow)
+    (,(concat "\\`" (regexp-opt '(".env"
+                                  ".env.alpha"
+                                  ".env.cat"
+                                  ".env.defaults"
+                                  ".env.dev"
+                                  ".env.dev.local"
+                                  ".env.development"
+                                  ".env.development.local"
+                                  ".env.dist"
+                                  ".env.e2e"
+                                  ".env.example"
+                                  ".env.local"
+                                  ".env.preview"
+                                  ".env.prod"
+                                  ".env.prod.local"
+                                  ".env.production"
+                                  ".env.production.local"
+                                  ".env.qa"
+                                  ".env.qa.local"
+                                  ".env.sample"
+                                  ".env.schema"
+                                  ".env.stage"
+                                  ".env.staging"
+                                  ".env.staging.local"
+                                  ".env.template"
+                                  ".env.test"
+                                  ".env.test.local"
+                                  ".env.testing"
+                                  ".env.uat"
+                                  ".envrc"))
+              "\\'")
+     nerd-icons-codicon "nf-cod-settings" :face nerd-icons-yellow)
 
     ;; Config
     ("nginx$"                  nerd-icons-devicon "nf-dev-nginx"             :face nerd-icons-dgreen)
     ("apache$"                 nerd-icons-devicon "nf-dev-apache"            :face nerd-icons-dgreen)
 
     ;; C
-    ("^\\(GNU\\|\\)Makefile.*" nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
+    ("^\\(GNU\\)?Makefile.*"   nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-dorange)
     ("^CMakeLists.txt$"        nerd-icons-devicon "nf-dev-cmake"             :face nerd-icons-red)
     ("^CMakeCache.txt$"        nerd-icons-devicon "nf-dev-cmake"             :face nerd-icons-blue)
     ("^meson.build$"           nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
     ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
 
     ;; Docker
-    ("^\\.dockerignore$"                  nerd-icons-devicon "nf-dev-docker"  :face nerd-icons-dblue)
-    ("^\\.?\\(Container\\|Docker\\)file"  nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-blue)
-    ("^\\(docker-\\)?compose\\.ya?ml$"    nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-cyan)
-    ("^\\docker-compose\\.gitlab\\.ya?ml" nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-cyan)
+    ("^\\.dockerignore$"       nerd-icons-devicon "nf-dev-docker"            :face nerd-icons-dblue)
+    (,(concat "\\`" (regexp-opt '(".Containerfile"
+                                  ".Dockerfile"
+                                  "Containerfile"
+                                  "Dockerfile"))
+              "\\'")
+     nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-blue)
+    (,(concat "\\`" (regexp-opt '("compose.yaml"
+                                  "compose.yml"
+                                  "docker-compose.yaml"
+                                  "docker-compose.yml"))
+              "\\'")
+     nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-cyan)
+    ("^docker-compose\\.gitlab\\.ya?ml" nerd-icons-sucicon "nf-seti-docker"  :face nerd-icons-cyan)
 
     ;; Homebrew
     ("^Brewfile$"              nerd-icons-faicon "nf-fa-beer"                :face nerd-icons-lsilver)
@@ -597,30 +623,55 @@
 
     ;; Ruby
     ("^Gemfile\\(\\.lock\\)?$" nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-red)
-    ("_?test\\.rb$"            nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-red)
-    ("_?test_helper\\.rb$"     nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-dred)
-    ("_?spec\\.rb$"            nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-red)
-    ("_?spec_helper\\.rb$"     nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-dred)
+    (,(concat "\\`" (regexp-opt '("_spec.rb"
+                                  "_test.rb"
+                                  "spec.rb"
+                                  "test.rb"))
+              "\\'")
+     nerd-icons-codicon "nf-cod-ruby" :face nerd-icons-red)
+    (,(concat "\\`" (regexp-opt '("_spec_helper.rb"
+                                  "_test_helper.rb"
+                                  "spec_helper.rb"
+                                  "test_helper.rb"))
+              "\\'")
+     nerd-icons-codicon "nf-cod-ruby" :face nerd-icons-dred)
     ;;; Cocoapods
     ("^Podfile\\(\\.lock\\)?$" nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-red)
     ;;; Danger
-    ("^Dangerfile\\(\\.lock\\)?$" nerd-icons-codicon "nf-cod-ruby"            :face nerd-icons-red)
+    ("^Dangerfile\\(\\.lock\\)?$" nerd-icons-codicon "nf-cod-ruby"           :face nerd-icons-red)
     ;;; Fastlane
-    ("^Appfile\\(\\.lock\\)?$" nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-red)
-    ("^Matchfile\\(\\.lock\\)?$" nerd-icons-codicon "nf-cod-ruby"            :face nerd-icons-red)
-
-    ("-?spec\\.ts$"            nerd-icons-mdicon "nf-md-language_typescript" :face nerd-icons-blue)
-    ("-?test\\.ts$"            nerd-icons-mdicon "nf-md-language_typescript" :face nerd-icons-blue)
-    ("-?spec\\.js$"            nerd-icons-mdicon "nf-md-language_javascript" :face nerd-icons-lpurple)
-    ("-?test\\.js$"            nerd-icons-mdicon "nf-md-language_javascript" :face nerd-icons-lpurple)
-    ("-?spec\\.jsx$"           nerd-icons-mdicon "nf-md-react"               :face nerd-icons-blue-alt)
-    ("-?test\\.jsx$"           nerd-icons-mdicon "nf-md-react"               :face nerd-icons-blue-alt)
+    (,(concat "\\`" (regexp-opt '("Appfile"
+                                  "Appfile.lock"
+                                  "Matchfile"
+                                  "Matchfile.lock"))
+              "\\'")
+     nerd-icons-codicon "nf-cod-ruby" :face nerd-icons-red)
+    (,(concat "\\`" (regexp-opt '("-spec.ts"
+                                  "-test.ts"
+                                  "spec.ts"
+                                  "test.ts"))
+              "\\'")
+     nerd-icons-mdicon "nf-md-language_typescript" :face nerd-icons-blue)
+    (,(concat "\\`" (regexp-opt '("-spec.js"
+                                  "-test.js"
+                                  "spec.js"
+                                  "test.js"))
+              "\\'")
+     nerd-icons-mdicon "nf-md-language_javascript" :face nerd-icons-lpurple)
+    (,(concat "\\`" (regexp-opt '("-spec.jsx"
+                                  "-test.jsx"
+                                  "spec.jsx"
+                                  "test.jsx"))
+              "\\'")
+     nerd-icons-mdicon "nf-md-react" :face nerd-icons-blue-alt)
 
     ;; Git
-    ("^\\.git$"                nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
-    ("^\\.gitattributes$"      nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
-    ("^\\.gitignore$"          nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
-    ("^\\.gitmodules$"         nerd-icons-sucicon "nf-seti-git"              :face nerd-icons-lred)
+    (,(concat "\\`" (regexp-opt '(".git"
+                                  ".gitattributes"
+                                  ".gitignore"
+                                  ".gitmodules"))
+              "\\'")
+     nerd-icons-sucicon "nf-seti-git" :face nerd-icons-lred)
     ("^MERGE_"                 nerd-icons-octicon "nf-oct-git_merge"         :face nerd-icons-red)
     ("^COMMIT_EDITMSG"         nerd-icons-octicon "nf-oct-git_commit"        :face nerd-icons-red)
 
@@ -641,9 +692,20 @@
     ("^webpack"                nerd-icons-devicon "nf-dev-webpack"           :face nerd-icons-lblue)
     ("^\\.?eslint"             nerd-icons-devicon "nf-dev-eslint"            :face nerd-icons-lblue)
     ("^\\.?prettier"           nerd-icons-sucicon "nf-custom-prettier"       :face nerd-icons-silver)
-    ("\\`babel\\.config.*"     nerd-icons-sucicon "nf-seti-babel"            :face nerd-icons-yellow)
-    ("^vite.config"            nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
-    ("^vitest"                 nerd-icons-devicon "nf-dev-vitest"            :face nerd-icons-yellow)
+    (,(concat "\\`" (regexp-opt '(".babelrc.cjs"
+                                  ".babelrc.cts"
+                                  ".babelrc.js"
+                                  ".babelrc.json"
+                                  ".babelrc.mjs"
+                                  "babel.config.cjs"
+                                  "babel.config.cts"
+                                  "babel.config.js"
+                                  "babel.config.json"
+                                  "babel.config.mjs"))
+              "\\'")
+     nerd-icons-sucicon "nf-seti-babel" :face nerd-icons-yellow)
+    (,(concat "\\`" (regexp-opt '("vite.config" "vitest")) "\\'")
+     nerd-icons-devicon "nf-dev-vitest" :face nerd-icons-yellow)
     ("^\\.?jest"               nerd-icons-devicon "nf-dev-jest"              :face nerd-icons-lred)
 
     ;; Go
