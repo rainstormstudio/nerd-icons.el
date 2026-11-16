@@ -593,8 +593,7 @@
     (,(concat "\\`" (regexp-opt '(".Containerfile"
                                   ".Dockerfile"
                                   "Containerfile"
-                                  "Dockerfile"))
-              "\\'")
+                                  "Dockerfile")))
      nerd-icons-sucicon "nf-seti-docker" :face nerd-icons-blue)
     (,(concat "\\`" (regexp-opt '("compose.yaml"
                                   "compose.yml"
@@ -623,16 +622,16 @@
 
     ;; Ruby
     ("^Gemfile\\(\\.lock\\)?$" nerd-icons-codicon "nf-cod-ruby"              :face nerd-icons-red)
-    (,(concat "\\`" (regexp-opt '("_spec.rb"
-                                  "_test.rb"
-                                  "spec.rb"
-                                  "test.rb"))
+    (,(concat (regexp-opt '("_spec.rb"
+                            "_test.rb"
+                            "spec.rb"
+                            "test.rb"))
               "\\'")
      nerd-icons-codicon "nf-cod-ruby" :face nerd-icons-red)
-    (,(concat "\\`" (regexp-opt '("_spec_helper.rb"
-                                  "_test_helper.rb"
-                                  "spec_helper.rb"
-                                  "test_helper.rb"))
+    (,(concat (regexp-opt '("_spec_helper.rb"
+                            "_test_helper.rb"
+                            "spec_helper.rb"
+                            "test_helper.rb"))
               "\\'")
      nerd-icons-codicon "nf-cod-ruby" :face nerd-icons-dred)
     ;;; Cocoapods
@@ -646,22 +645,22 @@
                                   "Matchfile.lock"))
               "\\'")
      nerd-icons-codicon "nf-cod-ruby" :face nerd-icons-red)
-    (,(concat "\\`" (regexp-opt '("-spec.ts"
-                                  "-test.ts"
-                                  "spec.ts"
-                                  "test.ts"))
+    (,(concat (regexp-opt '("-spec.ts"
+                            "-test.ts"
+                            "spec.ts"
+                            "test.ts"))
               "\\'")
      nerd-icons-mdicon "nf-md-language_typescript" :face nerd-icons-blue)
-    (,(concat "\\`" (regexp-opt '("-spec.js"
-                                  "-test.js"
-                                  "spec.js"
-                                  "test.js"))
+    (,(concat (regexp-opt '("-spec.js"
+                            "-test.js"
+                            "spec.js"
+                            "test.js"))
               "\\'")
      nerd-icons-mdicon "nf-md-language_javascript" :face nerd-icons-lpurple)
-    (,(concat "\\`" (regexp-opt '("-spec.jsx"
-                                  "-test.jsx"
-                                  "spec.jsx"
-                                  "test.jsx"))
+    (,(concat (regexp-opt '("-spec.jsx"
+                            "-test.jsx"
+                            "spec.jsx"
+                            "test.jsx"))
               "\\'")
      nerd-icons-mdicon "nf-md-react" :face nerd-icons-blue-alt)
 
@@ -697,14 +696,18 @@
                                   ".babelrc.js"
                                   ".babelrc.json"
                                   ".babelrc.mjs"
+                                  ".babelrc.mts"
+                                  ".babelrc.ts"
                                   "babel.config.cjs"
                                   "babel.config.cts"
                                   "babel.config.js"
                                   "babel.config.json"
-                                  "babel.config.mjs"))
+                                  "babel.config.mjs"
+                                  "babel.config.mts"
+                                  "babel.config.ts"))
               "\\'")
      nerd-icons-sucicon "nf-seti-babel" :face nerd-icons-yellow)
-    (,(concat "\\`" (regexp-opt '("vite.config" "vitest")) "\\'")
+    (,(concat "\\`" (regexp-opt '("vite.config" "vitest")))
      nerd-icons-devicon "nf-dev-vitest" :face nerd-icons-yellow)
     ("^\\.?jest"               nerd-icons-devicon "nf-dev-jest"              :face nerd-icons-lred)
 
