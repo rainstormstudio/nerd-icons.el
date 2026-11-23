@@ -132,6 +132,7 @@
     ("idekeybindings" nerd-icons-faicon "nf-fa-file_code_o"      :face nerd-icons-lblue)
     ("cfg"            nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-dorange)
     ("env"            nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
+    ("envrc"          nerd-icons-codicon "nf-cod-settings"       :face nerd-icons-yellow)
     ;; ?
     ("pkg"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
     ("rpm"            nerd-icons-octicon "nf-oct-package"        :face nerd-icons-dsilver)
@@ -541,11 +542,9 @@
                                   "ylwrap"))
               "\\'")
      nerd-icons-devicon "nf-dev-terminal" :face nerd-icons-lsilver)
-    ("^\\.editorconfig$"        nerd-icons-sucicon "nf-seti-editorconfig"     :face nerd-icons-silver)
 
     ;; Env
-    (,(concat "\\`" (regexp-opt '(".env"
-                                  ".env.alpha"
+    (,(concat "\\`" (regexp-opt '(".env.alpha"
                                   ".env.cat"
                                   ".env.defaults"
                                   ".env.dev"
@@ -572,8 +571,7 @@
                                   ".env.test"
                                   ".env.test.local"
                                   ".env.testing"
-                                  ".env.uat"
-                                  ".envrc"))
+                                  ".env.uat"))
               "\\'")
      nerd-icons-codicon "nf-cod-settings" :face nerd-icons-yellow)
 
@@ -589,7 +587,6 @@
     ("^meson_options.txt$"     nerd-icons-sucicon "nf-seti-makefile"         :face nerd-icons-purple) ;; TODO: meson
 
     ;; Docker
-    ("^\\.dockerignore$"       nerd-icons-devicon "nf-dev-docker"            :face nerd-icons-dblue)
     (,(concat "\\`" (regexp-opt '(".Containerfile"
                                   ".Dockerfile"
                                   "Containerfile"
@@ -664,13 +661,6 @@
               "\\'")
      nerd-icons-mdicon "nf-md-react" :face nerd-icons-blue-alt)
 
-    ;; Git
-    (,(concat "\\`" (regexp-opt '(".git"
-                                  ".gitattributes"
-                                  ".gitignore"
-                                  ".gitmodules"))
-              "\\'")
-     nerd-icons-sucicon "nf-seti-git" :face nerd-icons-lred)
     ("^MERGE_"                 nerd-icons-octicon "nf-oct-git_merge"         :face nerd-icons-red)
     ("^COMMIT_EDITMSG"         nerd-icons-octicon "nf-oct-git_commit"        :face nerd-icons-red)
 
@@ -1363,7 +1353,11 @@ ARG-OVERRIDES should be a plist containining `:height',
 inserting functions."
   (let* ((name (file-name-nondirectory file))
          (ext (file-name-extension name))
-         (icon (or (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
+         (icon (or (and (not ext) ;; For dotfiles like `.babelrc'
+                        (string-match-p "\\`\\.[^.]+\\'" name)
+                        (cdr (assoc (substring-no-properties name 1)
+                                    nerd-icons-extension-icon-alist)))
+                   (nerd-icons-match-to-alist name nerd-icons-regexp-icon-alist)
                    (and ext
                         (cdr (assoc (downcase ext)
                                     nerd-icons-extension-icon-alist)))
